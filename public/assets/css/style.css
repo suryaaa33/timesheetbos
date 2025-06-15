@@ -1,0 +1,758 @@
+.dashboard-master {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.dashboard-master .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 1070px;
+    position: relative;
+}
+
+.dashboard-master .overlap {
+    position: absolute;
+    width: 1213px;
+    height: 1070px;
+    top: 0;
+    left: 240px;
+}
+
+.dashboard-master .main-bg-color {
+    position: absolute;
+    width: 1213px;
+    height: 1070px;
+    top: 0;
+    left: 0;
+}
+
+.dashboard-master .main-bg {
+    position: relative;
+    width: 1215px;
+    height: 1072px;
+    top: -1px;
+    left: -1px;
+    background-color: #f5f6fa;
+}
+
+.dashboard-master .button-compose {
+    position: absolute;
+    width: 240px;
+    height: 43px;
+    top: 180px;
+    left: 932px;
+}
+
+.dashboard-master .overlap-group {
+    position: relative;
+    height: 45px;
+    top: -1px;
+    left: -1px;
+    border-radius: 8px;
+}
+
+.dashboard-master .rectangle {
+    position: absolute;
+    width: 240px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    background-color: #4880ff;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.dashboard-master .compose {
+    position: absolute;
+    top: 13px;
+    left: 67px;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.05px;
+    line-height: normal;
+}
+
+.dashboard-master .order-list {
+    position: absolute;
+    width: 1141px;
+    height: 733px;
+    top: 261px;
+    left: 29px;
+}
+
+.dashboard-master .overlap-2 {
+    position: relative;
+    width: 1153px;
+    height: 733px;
+}
+
+.dashboard-master .bg {
+    position: absolute;
+    width: 1141px;
+    height: 727px;
+    top: 6px;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 14px;
+    border: 0.3px solid;
+    border-color: #b8b8b8;
+}
+
+.dashboard-master .navbar {
+    position: absolute;
+    width: 1151px;
+    height: 48px;
+    top: 77px;
+    left: 0;
+}
+
+.dashboard-master .text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 32px;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .line {
+    position: absolute;
+    width: 1141px;
+    height: 1px;
+    top: 47px;
+    left: 0;
+}
+
+.dashboard-master .text-wrapper-2 {
+    position: absolute;
+    top: 0;
+    left: 176px;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .text-wrapper-3 {
+    position: absolute;
+    top: 0;
+    left: 378px;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .text-wrapper-4 {
+    position: absolute;
+    top: 0;
+    left: 627px;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .text-wrapper-5 {
+    top: 0;
+    left: 821px;
+    font-weight: 600;
+    position: absolute;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .navbar-2 {
+    position: absolute;
+    width: 1151px;
+    height: 48px;
+    top: 153px;
+    left: 0;
+}
+
+.dashboard-master .navbar-3 {
+    position: absolute;
+    width: 1151px;
+    height: 48px;
+    top: 229px;
+    left: 0;
+}
+
+.dashboard-master .element {
+    position: absolute;
+    width: 1151px;
+    height: 48px;
+    top: 305px;
+    left: 0;
+}
+
+.dashboard-master .element-2 {
+    position: absolute;
+    width: 1151px;
+    height: 48px;
+    top: 381px;
+    left: 0;
+}
+
+.dashboard-master .element-3 {
+    position: absolute;
+    width: 1151px;
+    height: 48px;
+    top: 457px;
+    left: 0;
+}
+
+.dashboard-master .element-4 {
+    position: absolute;
+    width: 1151px;
+    height: 48px;
+    top: 533px;
+    left: 0;
+}
+
+.dashboard-master .element-5 {
+    position: absolute;
+    width: 1151px;
+    height: 48px;
+    top: 609px;
+    left: 0;
+}
+
+.dashboard-master .element-6 {
+    position: absolute;
+    width: 892px;
+    height: 19px;
+    top: 685px;
+    left: 32px;
+}
+
+.dashboard-master .text-wrapper-6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .text-wrapper-7 {
+    position: absolute;
+    top: 0;
+    left: 144px;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .element-lyla-forge-suite {
+    position: absolute;
+    top: 0;
+    left: 346px;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .text-wrapper-8 {
+    left: 595px;
+    position: absolute;
+    top: 0;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .book {
+    position: absolute;
+    top: 0;
+    left: 789px;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .ID-status {
+    position: absolute;
+    width: 1153px;
+    height: 49px;
+    top: 0;
+    left: 0;
+}
+
+.dashboard-master .navbar-4 {
+    position: relative;
+    width: 1141px;
+    height: 49px;
+    background-color: #fcfcfc;
+    border-radius: 14px 14px 0px 0px;
+    border: 0.6px solid;
+    border-color: #d4d4d4;
+}
+
+.dashboard-master .text-wrapper-9 {
+    top: 14px;
+    left: 30px;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .text-wrapper-10 {
+    top: 14px;
+    left: 175px;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .text-wrapper-11 {
+    position: absolute;
+    top: 14px;
+    left: 377px;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 800;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .DATE {
+    top: 14px;
+    left: 626px;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .TYPE {
+    top: 14px;
+    left: 820px;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .STATUS {
+    top: 14px;
+    left: 1007px;
+    font-weight: 800;
+    position: absolute;
+    opacity: 0.9;
+    font-family: "Nunito Sans", Helvetica;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .separator {
+    position: absolute;
+    width: 1200px;
+    height: 1070px;
+    top: 0;
+    left: 0;
+}
+
+.dashboard-master .dashboard {
+    position: absolute;
+    top: 99px;
+    left: 30px;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 700;
+    color: #202224;
+    font-size: 32px;
+    letter-spacing: -0.11px;
+    line-height: normal;
+}
+
+.dashboard-master .navigation-top-bar {
+    position: absolute;
+    width: 1201px;
+    height: 70px;
+    top: 0;
+    left: 0;
+}
+
+.dashboard-master .navigation-top-bar-2 {
+    position: relative;
+    height: 70px;
+}
+
+.dashboard-master .profile-wrapper {
+    position: absolute;
+    width: 1203px;
+    height: 72px;
+    top: -1px;
+    left: -1px;
+    background-color: #ffffff;
+}
+
+.dashboard-master .profile {
+    position: relative;
+    width: 119px;
+    height: 44px;
+    top: 14px;
+    left: 1002px;
+}
+
+.dashboard-master .jone-aly {
+    position: absolute;
+    top: 3px;
+    left: 64px;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 700;
+    color: #404040;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .admin {
+    position: absolute;
+    top: 25px;
+    left: 64px;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #565656;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .man {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 0;
+    left: 0;
+}
+
+.dashboard-master .icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: -4716px;
+    opacity: 0.9;
+    background-size: 100% 100%;
+}
+
+.dashboard-master .navigation-sidebar {
+    position: absolute;
+    width: 240px;
+    height: 1070px;
+    top: 0;
+    left: 0;
+}
+
+.dashboard-master .overlap-3 {
+    position: relative;
+    width: 242px;
+    height: 1072px;
+    top: -1px;
+    left: -1px;
+    background-color: #ffffff;
+}
+
+.dashboard-master .products-wrapper {
+    top: 930px;
+    left: 1px;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+}
+
+.dashboard-master .products {
+    position: relative;
+    width: 244px;
+    height: 50px;
+}
+
+.dashboard-master .products-2 {
+    position: absolute;
+    top: 16px;
+    left: 78px;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #202224;
+    font-size: 14px;
+    letter-spacing: 0.30px;
+    line-height: normal;
+}
+
+.dashboard-master .text-wrapper-12 {
+    position: absolute;
+    top: 13px;
+    left: 42px;
+    font-family: "LineAwesome-Medium", Helvetica;
+    font-weight: 500;
+    color: #202224;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard-master .div-wrapper {
+    top: 880px;
+    left: 1px;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+}
+
+.dashboard-master .divider {
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    top: 863px;
+    left: 1px;
+}
+
+.dashboard-master .overlap-4 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 132px;
+    left: 1px;
+}
+
+.dashboard-master .navigation-sidebar-2 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+.dashboard-master .navigation-sidebar-3 {
+    top: 0;
+    left: 0;
+    background-image: url(https://c.animaapp.com/mbxyseusBGyYnj/img/hide-bg---hide-bg-copy-mask.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+}
+
+.dashboard-master .products-3 {
+    position: absolute;
+    top: 16px;
+    left: 78px;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0.30px;
+    line-height: normal;
+}
+
+.dashboard-master .text-wrapper-13 {
+    left: 42px;
+    color: #ffffff;
+    position: absolute;
+    top: 13px;
+    font-family: "LineAwesome-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.dashboard-master .navigation-sidebar-4 {
+    top: 232px;
+    left: 1px;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+}
+
+.dashboard-master .navigation-sidebar-5 {
+    top: 332px;
+    left: 1px;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+}
+
+.dashboard-master .navigation-sidebar-6 {
+    top: 282px;
+    left: 1px;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+}
+
+.dashboard-master .overlap-5 {
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    top: 182px;
+    left: 1px;
+}
+
+.dashboard-master .products-4 {
+    position: relative;
+    width: 242px;
+    height: 50px;
+}
+
+.dashboard-master .element-icon-product {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    left: 41px;
+}
+
+.dashboard-master .overlap-group-2 {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    top: 3px;
+    left: 2px;
+}
+
+.dashboard-master .path {
+    position: absolute;
+    width: 9px;
+    height: 14px;
+    top: 5px;
+    left: 0;
+}
+
+.dashboard-master .img {
+    position: absolute;
+    width: 19px;
+    height: 9px;
+    top: 0;
+    left: 0;
+}
+
+.dashboard-master .path-2 {
+    position: absolute;
+    width: 9px;
+    height: 14px;
+    top: 5px;
+    left: 10px;
+}
+
+.dashboard-master .logo {
+    position: absolute;
+    width: 129px;
+    height: 27px;
+    top: 25px;
+    left: 67px;
+}
+
+.dashboard-master .bright-web {
+    position: absolute;
+    width: 121px;
+    top: -1px;
+    left: 0;
+    font-family: "Nunito Sans", Helvetica;
+    font-weight: 800;
+    color: transparent;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.dashboard-master .span {
+    color: #4880ff;
+}
+
+.dashboard-master .text-wrapper-14 {
+    color: #202224;
+}
+
+.dashboard-master .navigation-sidebar-7 {
+    top: 82px;
+    left: 1px;
+    position: absolute;
+    width: 240px;
+    height: 50px;
+}
+
+.dashboard-master .text-wrapper-15 {
+    left: 40px;
+    color: #202224;
+    position: absolute;
+    top: 13px;
+    font-family: "LineAwesome-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
