@@ -6,8 +6,14 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
+$routes->setAutoRoute(false); // karena kita pakai manual routing
 
+#client
 $routes->get('/client', 'Client::index');
+$routes->post('/client/store', 'Client::store');
+$routes->get('/client/edit/(:num)', 'Client::edit/$1');     // Redirect ke index dgn ?edit_id
+$routes->post('/client/update/(:num)', 'Client::update/$1');
+$routes->post('/client/delete/(:num)', 'Client::delete/$1');
 
 $routes->get('/project', 'Project::index');
 

@@ -10,3 +10,117 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
  7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 19:24:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "client/index.php"
+[Method: GET, Route: client]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('client/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('client/index', [], true)
+ 3 APPPATH\Controllers\Client.php(17): view('client/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 19:24:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "client/index.php"
+[Method: GET, Route: client]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('client/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('client/index', [], true)
+ 3 APPPATH\Controllers\Client.php(17): view('client/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 19:28:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "clients/index.php"
+[Method: GET, Route: client]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clients/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('clients/index', [], true)
+ 3 APPPATH\Controllers\Client.php(12): view('clients/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 19:28:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "clients/index.php"
+[Method: GET, Route: client]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('clients/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('clients/index', [], true)
+ 3 APPPATH\Controllers\Client.php(12): view('clients/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 19:29:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "client/index.php"
+[Method: GET, Route: client]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('client/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('client/index', [], true)
+ 3 APPPATH\Controllers\Client.php(12): view('client/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 19:29:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "client/index.php"
+[Method: GET, Route: client]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('client/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('client/index', [], true)
+ 3 APPPATH\Controllers\Client.php(12): view('client/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 19:29:58 --> ErrorException: Undefined variable $clients
+[Method: GET, Route: client]
+in APPPATH\Views\ClientView.php on line 25.
+ 1 APPPATH\Views\ClientView.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clients', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\ClientView.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\ClientView.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ClientView', [], true)
+ 5 APPPATH\Controllers\Client.php(12): view('ClientView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 19:46:35 --> ErrorException: Undefined array key "id_client"
+[Method: GET, Route: client]
+in APPPATH\Views\ClientView.php on line 17.
+ 1 APPPATH\Views\ClientView.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_client"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\ClientView.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\ClientView.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ClientView', [], true)
+ 5 APPPATH\Controllers\Client.php(19): view('ClientView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 19:47:22 --> ErrorException: Undefined array key "id_client"
+[Method: GET, Route: client]
+in APPPATH\Views\ClientView.php on line 17.
+ 1 APPPATH\Views\ClientView.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_client"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\ClientView.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\ClientView.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ClientView', [], true)
+ 5 APPPATH\Controllers\Client.php(19): view('ClientView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
