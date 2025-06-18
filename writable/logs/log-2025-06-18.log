@@ -378,3 +378,43 @@ in APPPATH\Views\RoleDetailView.php on line 86.
  9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-18 21:47:57 --> ErrorException: Undefined array key "tanggal_sheet"
+[Method: GET, Route: sheet]
+in APPPATH\Views\SheetView.php on line 69.
+ 1 APPPATH\Views\SheetView.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_sheet"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\SheetView.php', 69)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\SheetView.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('SheetView', [], true)
+ 5 APPPATH\Controllers\Sheet.php(12): view('SheetView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sheet))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-18 21:50:53 --> ErrorException: Undefined array key "hasil"
+[Method: GET, Route: sheet]
+in APPPATH\Views\SheetView.php on line 73.
+ 1 APPPATH\Views\SheetView.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "hasil"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\SheetView.php', 73)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\SheetView.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('SheetView', [], true)
+ 5 APPPATH\Controllers\Sheet.php(12): view('SheetView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sheet))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-18 21:54:53 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: sheet/updateAll]
+in APPPATH\Controllers\Sheet.php on line 41.
+ 1 APPPATH\Controllers\Sheet.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\timesheet\\app\\Controllers\\Sheet.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sheet->updateAll()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sheet))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-18 21:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-18 21:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
