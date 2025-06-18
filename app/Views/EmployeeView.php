@@ -31,6 +31,7 @@
                         <input type="text" name="nama_employee" class="form-control" placeholder="Nama Employee" value="<?= $isEdit ? esc($employee['nama_employee']) : '' ?>" required>
                     </div>
                     <div class="col">
+                        <label for="role_employee" class="form-label">Role Employee</label>
                         <select name="id_role" class="form-control" required>
                             <option value="">-- Pilih Role --</option>
                             <option value="1" <?= $isEdit && $employee['id_role'] == 1 ? 'selected' : '' ?>>1 - Konsultan</option>
@@ -45,6 +46,7 @@
                 <input type="text" name="alamat_employee" class="form-control" value="<?= $isEdit ? esc($employee['alamat_employee']) : '' ?>" required>
             </div>
             <div class="col">
+                <label for="nama_employee" class="form-label">Date of Birth Employee</label>
                 <input type="date" name="dob_employee" class="form-control" value="<?= $isEdit ? esc($employee['dob_employee']) : '' ?>" required>
             </div>
 
