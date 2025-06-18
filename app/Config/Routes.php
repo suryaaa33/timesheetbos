@@ -49,6 +49,12 @@ $routes->get('/role/delete/(:num)', 'Role::delete/$1');
 
 
 $routes->get('/roledetail', 'Roledetail::index');
+$routes->post('/roledetail/store', 'Roledetail::store');
+$routes->get('/roledetail/edit/(:num)', 'Roledetail::edit/$1');
+$routes->post('/roledetail/update/(:num)', 'Roledetail::update/$1');
+$routes->get('/roledetail/delete/(:num)', 'Roledetail::delete/$1');
+
+
 
 $routes->get('/sheet', 'Sheet::index');
 
