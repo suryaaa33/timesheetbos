@@ -1,22 +1,26 @@
 <?php namespace App\Controllers;
 
 use App\Models\EmployeeModel;
+use App\Models\RoleModel;
 use CodeIgniter\Controller;
 
 class Employee extends Controller
 {
     public function index()
     {
-        $model = new EmployeeModel();
-        $data['employees'] = $model->findAll();
+        $employeemodel = new EmployeeModel();
+        $rolemodel = new RoleModel();
+
+        $data['employees'] = $employeemodel->findAll();
+        $data['roles'] = $rolemodel->findAll();
         $data['client'] = [];
         return view('EmployeeView', $data);
     }
 
     public function store()
 {
-    $model = new EmployeeModel();
-    $model -> insert([
+    $employeemodel = new EmployeeModel();
+    $employeemodel -> insert([
         'nama_employee'   => $this->request->getPost('nama_employee'),
         'id_role'         => $this->request->getPost('id_role'),
         'alamat_employee' => $this->request->getPost('alamat_employee'),
@@ -34,17 +38,20 @@ class Employee extends Controller
 
     public function edit($id)
 {
-    $model = new EmployeeModel();
-    $data ['employees'] = $model->findAll(); // tetap tampilkan semua
-    $data['employee'] = $model->find($id);
+    $employeemodel = new EmployeeModel();
+    $rolemodel = new RoleModel();
+
+    $data ['employees'] = $employeemodel->findAll(); // tetap tampilkan semua
+    $data['roles'] = $rolemodel->findAll();
+    $data['employee'] = $employeemodel->find($id);
     return view('EmployeeView', $data);
 }
 
 
     public function update($id)
 {
-    $model = new EmployeeModel();
-    $model->update($id, [
+    $employeemodel = new EmployeeModel();
+    $employeemodel->update($id, [
         'nama_employee'   => $this->request->getPost('nama_employee'),
         'id_role'         => $this->request->getPost('id_role'),
         'alamat_employee' => $this->request->getPost('alamat_employee'),
@@ -61,8 +68,8 @@ class Employee extends Controller
 
     public function delete($id)
     {
-        $model = new EmployeeModel();
-        $model->delete($id);
+        $employeemodel = new EmployeeModel();
+        $employeemodel->delete($id);
         return redirect()->to('/employee');
     }
 }

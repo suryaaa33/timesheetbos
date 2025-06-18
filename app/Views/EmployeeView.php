@@ -31,11 +31,15 @@
                         <input type="text" name="nama_employee" class="form-control" placeholder="Nama Employee" value="<?= $isEdit ? esc($employee['nama_employee']) : '' ?>" required>
                     </div>
                     <div class="col">
-                        <label for="role_employee" class="form-label">Role Employee</label>
+                        <label for="id_role" class="form-label">Role Employee</label>
                         <select name="id_role" class="form-control" required>
                             <option value="">-- Pilih Role --</option>
-                            <option value="1" <?= $isEdit && $employee['id_role'] == 1 ? 'selected' : '' ?>>1 - Konsultan</option>
-                            <option value="2" <?= $isEdit && $employee['id_role'] == 2 ? 'selected' : '' ?>>2 - Technical Writer</option>
+                            <?php foreach ($roles as $c): ?>
+                                <option value="<?= $c['id_role'] ?>"
+                                    <?= isset($isEdit) && $isEdit && $employee['id_role'] == $c['id_role'] ? 'selected' : '' ?>>
+                                    <?= $c['id_role'] ?> - <?= esc($c['judul_role']) ?>
+                                </option>
+                            <?php endforeach; ?>
                         </select>
                     </div>
 
@@ -51,9 +55,13 @@
             </div>
 
         </div>
-        <div class="mb-3">
+        <div class="col">
             <label for="status_employee" class="form-label">Status Employee</label>
-            <input type="text" name="status_employee" class="form-control" placeholder="Status" value="<?= $isEdit ? esc($employee['status_employee']) : '' ?>" required>
+            <select name="status_employee" class="form-control" required>
+                <option value="">-- Pilih Status Employee --</option>
+                <option value="1" <?= $isEdit && $employee['status_employee'] == '1' ? 'selected' : '' ?>>Aktif</option>
+                <option value="0" <?= $isEdit && $employee['status_employee'] == '0' ? 'selected' : '' ?>>Tidak Aktif</option>
+            </select>
         </div>
         <div class="col">
             <label for="nohp_employee" class="form-label">Nomor HP Employee</label>
@@ -93,6 +101,8 @@
                     <th>No HP</th>
                     <th>Alamat</th>
                     <th>Tanggal Lahir</th>
+                    <th>Role</th>
+                    <th>Status</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -105,6 +115,17 @@
                         <td><?= esc($e['nohp_employee']) ?></td>
                         <td><?= esc($e['alamat_employee']) ?></td>
                         <td><?= esc($e['dob_employee']) ?></td>
+                        <td>
+                            <?php
+                            if ($e['id_role'] == 1) echo 'Konsultan';
+                            elseif ($e['id_role'] == 2) echo 'Technical Writer';
+                            else echo 'Tidak diketahui';
+                            ?>
+                        </td>
+                        <td>
+                            <?= $e['status_employee'] == '1' ? '<span class="badge bg-success">Aktif</span>' : '<span class="badge bg-secondary">Tidak Aktif</span>' ?>
+                        </td>
+
                         <td>
                             <a href="<?= base_url('employee/edit/' . $e['id_employee']) ?>" class="btn btn-warning btn-sm">Edit</a>
                             <a href="<?= base_url('employee/delete/' . $e['id_employee']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>

@@ -20,8 +20,10 @@ class Client extends Controller
             'nama_client'         => $this->request->getPost('nama_client'),
             'notelp_client'       => $this->request->getPost('notelp_client'),
             'email_client'        => $this->request->getPost('email_client'),
+            'status_client'        => $this->request->getPost('status_client'),
             'namacp_client'       => $this->request->getPost('namacp_client'),
-            'registerdate_client' => date('Y-m-d'),
+            'noHp_cp'       => $this->request->getPost('noHp_cp'),
+            'registerdate_client'    => $this->request->getPost('registerdate_client'),
             'last_modified'       => date('Y-m-d H:i:s'),
             'author'              => 1
         ]);
@@ -45,7 +47,10 @@ class Client extends Controller
             'nama_client'   => $this->request->getPost('nama_client'),
             'notelp_client' => $this->request->getPost('notelp_client'),
             'email_client'  => $this->request->getPost('email_client'),
-            'namacp_client' => $this->request->getPost('namacp_client'),
+            'status_client'        => $this->request->getPost('status_client'),
+            'namacp_client'       => $this->request->getPost('namacp_client'),
+            'noHp_cp'       => $this->request->getPost('noHp_cp'),
+            'registerdate_client'    => $this->request->getPost('registerdate_client'),
             'last_modified' => date('Y-m-d H:i:s')
         ]);
 
