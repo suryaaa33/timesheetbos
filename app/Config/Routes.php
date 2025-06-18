@@ -18,6 +18,11 @@ $routes->post('/client/delete/(:num)', 'Client::delete/$1');
 $routes->get('/project', 'Project::index');
 
 $routes->get('/employee', 'Employee::index');
+$routes->post('/employee/store', 'Employee::store');
+$routes->get('/employee/edit/(:num)', 'Employee::edit/$1');
+$routes->post('/employee/update/(:num)', 'Employee::update/$1');
+$routes->get('/employee/delete/(:num)', 'Employee::delete/$1');
+
 
 $routes->get('/menu', 'Menu::index');
 
