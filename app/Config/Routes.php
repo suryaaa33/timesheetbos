@@ -71,4 +71,4 @@ $routes->get('/cobadashboard', 'Cobadashboard::index');
 $routes->get('/login', 'Login::index');
 $routes->post('/login/auth', 'Login::auth'); 
 $routes->get('/logout', 'Login::logout');
-$routes->get('/dashboard', 'Dashboard::index', ['filter' => 'authGuard']);
+$routes->get('/cobadashboard', 'Cobadashboard::index', ['filter' => 'authGuard']);
