@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="<?= base_url('assets/css/globals.css') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/login.css') ?>" />
 </head>
 
@@ -33,21 +32,25 @@
                             </div>
                         </div>
 
-                        <div class="password">
-                            <label class="text-wrapper-2">Password</label>
-                            <div class="div">
-                                <input type="password" name="password" placeholder="Password" required />
-                            </div>
-                            <div class="text-wrapper-3">Forget Password?</div>
-                        </div>
 
-                        <div class="button-compose">
-                            <button type="submit" class="rectangle">Sign In</button>
-                        </div>
-                    </form>
                 </div>
+                <div class="password">
+                    <label class="text-wrapper-2">Password</label>
+                    <div class="text-wrapper-3">Forgot Password?</div>
+                    <div class="div">
+                        <input type="password" name="password" placeholder="Password" required />
+                    </div>
+                </div>
+
+
+
+                <div class="button-compose">
+                    <button type="submit" class="rectangle">Sign In</button>
+                </div>
+                </form>
             </div>
         </div>
+    </div>
     </div>
 </body>
 

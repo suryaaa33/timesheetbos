@@ -6,61 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f8f9fa;
-        }
-
-        .sidebar {
-            width: 250px;
-            min-height: 100vh;
-            background-color: #ffffff;
-            border-right: 1px solid #dee2e6;
-        }
-
-        .sidebar .logo {
-            font-weight: bold;
-            color: #4ad991;
-        }
-
-        .sidebar .menu-item {
-            padding: 10px 15px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .sidebar .menu-item:hover,
-        .sidebar .menu-item.active {
-            background-color: #f1f1f1;
-            border-radius: 5px;
-        }
-
-        .main-content {
-            padding: 2rem;
-            flex-grow: 1;
-        }
-
-        .summary-card {
-            border: none;
-            border-radius: 8px;
-        }
-
-        .summary-card .icon-circle {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        .summary-card button {
-            font-size: 14px;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/dashboardadmin.css') ?>" />
 </head>
 
 <body>
@@ -70,171 +17,229 @@
             <div class="text-center mb-4 logo">
                 <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
             </div>
-            <div class="menu-item active">📊 Dashboard</div>
-            <div class="menu-item">👥 Employee</div>
-            <div class="menu-item d-flex align-items-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" width="20" height="20" class="me-2" />
-                <span>Client</span>
-            </div>
-
-            <div class="menu-item">📁 Project</div>
-            <div class="menu-item">🛡️ Role</div>
-            <div class="menu-item">🔍 Role Detail</div>
-            <div class="menu-item">📋 Menu</div>
-            <div class="menu-item">🕒 Time Sheet</div>
+            <a href="<?= base_url('cobadashboard') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-tachometer-alt"></i>
+                <span class="ms-2">Dashboard</span>
+            </a>
+            <a href="<?= base_url('employee') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-user"></i>
+                <span class="ms-2">Employee</span>
+            </a>
+            <a href="<?= base_url('client') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-user-friends"></i>
+                <span class="ms-2">Client</span>
+            </a>
+            <a href="<?= base_url('project') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-cube"></i>
+                <span class="ms-2">Project</span>
+            </a>
+            <a href="<?= base_url('role') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-database"></i>
+                <span class="ms-2">Role</span>
+            </a>
+            <a href="<?= base_url('roledetail') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-server"></i>
+                <span class="ms-2">Role Detail</span>
+            </a>
+            <a href="<?= base_url('menu') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-list"></i>
+                <span class="ms-2">Menu</span>
+            </a>
+            <a href="<?= base_url('sheet') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-calendar-alt"></i>
+                <span class="ms-2">Time Sheet</span>
+            </a>
             <hr />
-            <div class="menu-item">⚙️ Settings</div>
-            <div class="menu-item">🚪 Logout</div>
+            <a href="<?= base_url('/logout') ?>" onclick="return confirm('Are you sure you want to logout?');"
+                class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-power-off"></i>
+                <span class="ms-2">Logout</span>
+            </a>
         </div>
 
         <!-- Main Content -->
-        <div class="main-content">
+        <div class="main-container">
             <!-- Header -->
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="header-bar d-flex justify-content-between align-items-center shadow-sm">
                 <h2>Dashboard</h2>
                 <div class="d-flex align-items-center gap-3">
                     <div class="text-end">
-                        <div class="fw-bold">Kaithlin</div>
-                        <div class="text-muted small">Master</div>
+                        <div class="fw-bold">Gerit Himawan</div>
+                        <div class="text-muted small">Admin</div>
                     </div>
-                    <img src="https://c.animaapp.com/mby0ww3yUaPjDH/img/man-438081-960-720.png" class="rounded-circle" width="40" height="40" alt="Profile" />
+                    <i class="las la-user icon-big"></i>
                 </div>
             </div>
 
-            <!-- Summary Cards -->
-            <div class="row g-4">
-                <!-- Summary Box Template -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card summary-card shadow">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="icon-circle" style="background-color:#4ad991;">
-                                    <img src="https://c.animaapp.com/mby0ww3yUaPjDH/img/employee.png" width="30" />
-                                </div>
+            <!-- Card Summary Content -->
+            <div class="main-content">
+                <div class="row g-4">
+                    <!-- Example: Employee -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card summary-card shadow">
+                            <div class="card-body d-flex justify-content-between align-items-start">
                                 <div>
-                                    <div>Total Employee</div>
-                                    <h4>72</h4>
+                                    <div class="mb-1">Total Employee</div>
+                                    <h4 class="mb-2"><?= $total_employee ?></h4>
+                                </div>
+                                <div class="d-flex flex-column align-items-end">
+                                    <div class="icon-circle mb-2" style="background-color:#8280FF;">
+                                        <i class="las la-user icon-big"></i>
+                                    </div>
+                                    <a href="<?= base_url('employee') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #8280FF;">
+                                        ➕ Add Employee
+                                    </a>
+
+
                                 </div>
                             </div>
-                            <button class="btn btn-sm text-white" style="background-color:#4ad991;">➕ Add Employee</button>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card summary-card shadow">
+                            <div class="card-body d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="mb-1">Total Client</div>
+                                    <h4 class="mb-2"><?= $total_client ?></h4>
+                                </div>
+                                <div class="d-flex flex-column align-items-end">
+                                    <div class="icon-circle mb-2" style="background-color:#4AD991;">
+                                        <i class="las la-user-friends icon-big"></i>
+                                    </div>
+                                    <a href="<?= base_url('client') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #4AD991;">➕ Add Client</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card summary-card shadow">
+                            <div class="card-body d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="mb-1">Total Project</div>
+                                    <h4 class="mb-2"><?= $total_project ?></h4>
+
+
+                                </div>
+                                <div class="d-flex flex-column align-items-end">
+                                    <div class="icon-circle mb-2" style="background-color:#FEC53D;">
+                                        <i class="las la-cube icon-big"></i>
+                                    </div>
+                                    <a href="<?= base_url('project') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #FEC53D;">➕ Add Project</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Menu -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card summary-card shadow">
+                            <div class="card-body d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="mb-1">Total Menu</div>
+                                    <h4 class="mb-2"><?= $total_menu ?></h4>
+
+
+                                </div>
+                                <div class="d-flex flex-column align-items-end">
+                                    <div class="icon-circle mb-2" style="background-color:#ff9f68;">
+                                        <i class="las la-list icon-big"></i>
+                                    </div>
+                                    <a href="<?= base_url('menu') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff9f68;">➕ Add Menu</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Role -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card summary-card shadow">
+                            <div class="card-body d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="mb-1">Total Role</div>
+                                    <h4 class="mb-2"><?= $total_role ?></h4>
+
+
+                                </div>
+                                <div class="d-flex flex-column align-items-end">
+                                    <div class="icon-circle mb-2" style="background-color:#ff6b6b;">
+                                        <i class="las la-database icon-big"></i>
+                                    </div>
+                                    <a href="<?= base_url('role') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff6b6b;">➕ Add Role</a>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Role Detail -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card summary-card shadow">
+                            <div class="card-body d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="mb-1">Total Role Detail</div>
+                                    <h4 class="mb-2"><?= $total_roledetail ?></h4>
+
+
+                                </div>
+                                <div class="d-flex flex-column align-items-end">
+                                    <div class="icon-circle mb-2" style="background-color:#3edbf0;">
+                                        <i class="las la-server icon-big"></i>
+                                    </div>
+                                    <a href="<?= base_url('roledetail') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #3edbf0;">➕ Add Role Detail</a>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Sheet -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card summary-card shadow">
+                            <div class="card-body d-flex justify-content-between align-items-start">
+                                <div>
+                                    <div class="mb-1">Total Sheet</div>
+                                    <h4 class="mb-2"><?= $total_sheet ?></h4>
+
+
+                                </div>
+                                <div class="d-flex flex-column align-items-end">
+                                    <div class="icon-circle mb-2" style="background-color:#ff7eb9;">
+                                        <i class="las la-calendar-alt icon-big"></i>
+                                    </div>
+                                    <a href="<?= base_url('sheet') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff7eb9;">➕ Add Sheet</a>
+
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Client -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card summary-card shadow">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="icon-circle" style="background-color:#6cc3ff;">
-                                    <img src="https://c.animaapp.com/mby0ww3yUaPjDH/img/client.png" width="30" />
-                                </div>
-                                <div>
-                                    <div>Total Client</div>
-                                    <h4>50</h4>
-                                </div>
-                            </div>
-                            <button class="btn btn-sm text-white" style="background-color:#6cc3ff;">➕ Add Client</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- project -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card summary-card shadow">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="icon-circle" style="background-color:#6cc3ff;">
-                                    <img src="https://c.animaapp.com/mby0ww3yUaPjDH/img/project.png" width="30" />
-                                </div>
-                                <div>
-                                    <div>Total project</div>
-                                    <h4>50</h4>
-                                </div>
-                            </div>
-                            <button class="btn btn-sm text-white" style="background-color:#6cc3ff;">➕ Add project</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- menu -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card summary-card shadow">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="icon-circle" style="background-color:#6cc3ff;">
-                                    <img src="https://c.animaapp.com/mby0ww3yUaPjDH/img/menu.png" width="30" />
-                                </div>
-                                <div>
-                                    <div>Total menu</div>
-                                    <h4>50</h4>
-                                </div>
-                            </div>
-                            <button class="btn btn-sm text-white" style="background-color:#6cc3ff;">➕ Add menu</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- role -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card summary-card shadow">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="icon-circle" style="background-color:#6cc3ff;">
-                                    <img src="https://c.animaapp.com/mby0ww3yUaPjDH/img/role.png" width="30" />
-                                </div>
-                                <div>
-                                    <div>Total role</div>
-                                    <h4>50</h4>
-                                </div>
-                            </div>
-                            <button class="btn btn-sm text-white" style="background-color:#6cc3ff;">➕ Add role</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- roledetail -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card summary-card shadow">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="icon-circle" style="background-color:#6cc3ff;">
-                                    <img src="https://c.animaapp.com/mby0ww3yUaPjDH/img/roledetail.png" width="30" />
-                                </div>
-                                <div>
-                                    <div>Total roledetail</div>
-                                    <h4>50</h4>
-                                </div>
-                            </div>
-                            <button class="btn btn-sm text-white" style="background-color:#6cc3ff;">➕ Add roledetail</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- sheet -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card summary-card shadow">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-2">
-                                <div class="icon-circle" style="background-color:#6cc3ff;">
-                                    <img src="https://c.animaapp.com/mby0ww3yUaPjDH/img/sheet.png" width="30" />
-                                </div>
-                                <div>
-                                    <div>Total sheet</div>
-                                    <h4>50</h4>
-                                </div>
-                            </div>
-                            <button class="btn btn-sm text-white" style="background-color:#6cc3ff;">➕ Add sheet</button>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

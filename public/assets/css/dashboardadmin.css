@@ -1,0 +1,81 @@
+body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .sidebar {
+            width: 250px;
+            min-height: 100vh;
+            background-color: #ffffff;
+            border-right: 1px solid #dee2e6;
+        }
+
+        .sidebar .logo {
+            font-weight: bold;
+            color: #6cc3ff;
+        }
+
+        .sidebar .menu-item {
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .sidebar .menu-item:hover,
+        .sidebar .menu-item.active {
+            background-color: #6cc3ff;
+            border-radius: 5px;
+        }
+
+        .main-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .header-bar {
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #dee2e6;
+            border-radius: 0;
+            margin-bottom: 2rem;
+        }
+
+        .main-content {
+            padding: 0 2rem 2rem 2rem;
+        }
+
+        .summary-card {
+            border: none;
+            border-radius: 8px;
+        }
+
+        .summary-card .icon-circle {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .icon-big {
+            font-size: 30px;
+        }
+
+        .btn-wide {
+            min-width: 140px;
+        }
+
+        @media (max-width: 768px) {
+            .header-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-content {
+                padding: 1rem;
+            }
+        }

@@ -68,7 +68,8 @@ $routes->get('/dashboard', 'Dashboard::index');
 
 $routes->get('/cobadashboard', 'Cobadashboard::index');
 
-$routes->get('/login', 'Login::index');
-$routes->post('/login/auth', 'Login::auth'); 
-$routes->get('/logout', 'Login::logout');
-$routes->get('/cobadashboard', 'Cobadashboard::index', ['filter' => 'authGuard']);
+$routes->get('/login', 'Login::index');              // Form login
+$routes->post('/login/auth', 'Login::auth');         // Proses login
+$routes->get('/logout', 'Login::logout');            // Proses logout
+$routes->get('/cobadashboard', 'Cobadashboard::index', ['filter' => 'authGuard']); // Dashboard (harus login)
+
