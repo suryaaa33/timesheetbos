@@ -14,8 +14,20 @@ class Employee extends Controller
         $data['employees'] = $employeemodel->findAll();
         $data['roles'] = $rolemodel->findAll();
         $data['client'] = [];
-        return view('EmployeeView', $data);
+        return view('dashboard', $data);
     }
+
+    public function create()
+{
+    $employeemodel = new EmployeeModel();
+        $rolemodel = new RoleModel();
+
+        $data['employees'] = $employeemodel->findAll();
+        $data['roles'] = $rolemodel->findAll();
+    return view('EmployeeAdd', $data);
+}
+
+
 
     public function store()
 {
@@ -44,7 +56,7 @@ class Employee extends Controller
     $data ['employees'] = $employeemodel->findAll(); // tetap tampilkan semua
     $data['roles'] = $rolemodel->findAll();
     $data['employee'] = $employeemodel->find($id);
-    return view('EmployeeView', $data);
+    return view('EmployeeEdit', $data);
 }
 
 

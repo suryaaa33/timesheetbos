@@ -106,10 +106,12 @@
                                     <h4 class="mb-2"><?= $total_client ?></h4>
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
-                                    <div class="icon-circle mb-2" style="background-color:#4AD991;">
-                                        <i class="las la-user-friends icon-big"></i>
+                                    <div class="icon-circle mb-2" style="background-color: rgba(148, 250, 199, 0.5);">
+
+
+                                        <img src="<?= base_url('assets/client.png') ?>" alt="Client Icon" width="50" height="50">
                                     </div>
-                                    <a href="<?= base_url('client') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #4AD991;">➕ Add Client</a>
+                                    <a href="<?= base_url('client') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #5AD991;">➕ Add Client</a>
 
 
                                 </div>

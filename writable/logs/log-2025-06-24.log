@@ -1,0 +1,355 @@
+CRITICAL - 2025-06-24 19:11:15 --> ErrorException: Undefined variable $employees
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 197.
+ 1 APPPATH\Views\dashboard.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\dashboard.php', 197)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:11:50 --> ErrorException: Undefined variable $employees
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 197.
+ 1 APPPATH\Views\dashboard.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\dashboard.php', 197)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:38:24 --> ErrorException: Undefined variable $employees
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 200.
+ 1 APPPATH\Views\dashboard.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employees', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\dashboard.php', 200)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(10): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:56:30 --> ErrorException: Undefined array key "tanggal_lahir"
+[Method: GET, Route: employee/edit/1]
+in APPPATH\Views\EmployeeEdit.php on line 14.
+ 1 APPPATH\Views\EmployeeEdit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_lahir"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('EmployeeEdit', [], true)
+ 5 APPPATH\Controllers\Employee.php(53): view('EmployeeEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:56:50 --> ErrorException: Undefined array key "tanggal_lahir"
+[Method: GET, Route: employee/edit/1]
+in APPPATH\Views\EmployeeEdit.php on line 14.
+ 1 APPPATH\Views\EmployeeEdit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_lahir"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('EmployeeEdit', [], true)
+ 5 APPPATH\Controllers\Employee.php(53): view('EmployeeEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:57:30 --> ErrorException: Undefined array key "tanggal_lahir"
+[Method: GET, Route: employee/edit/1]
+in APPPATH\Views\EmployeeEdit.php on line 14.
+ 1 APPPATH\Views\EmployeeEdit.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tanggal_lahir"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('EmployeeEdit', [], true)
+ 5 APPPATH\Controllers\Employee.php(53): view('EmployeeEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:59:08 --> ErrorException: Undefined array key "noHp_employee"
+[Method: GET, Route: employee/edit/1]
+in APPPATH\Views\EmployeeEdit.php on line 18.
+ 1 APPPATH\Views\EmployeeEdit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "noHp_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('EmployeeEdit', [], true)
+ 5 APPPATH\Controllers\Employee.php(53): view('EmployeeEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:59:34 --> ErrorException: Undefined array key "nama_role"
+[Method: GET, Route: employee/edit/2]
+in APPPATH\Views\EmployeeEdit.php on line 25.
+ 1 APPPATH\Views\EmployeeEdit.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_role"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeEdit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('EmployeeEdit', [], true)
+ 5 APPPATH\Controllers\Employee.php(53): view('EmployeeEdit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 20:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-24 20:05:55 --> ErrorException: Undefined array key "nama_role"
+[Method: GET, Route: employee/create]
+in APPPATH\Views\EmployeeAdd.php on line 25.
+ 1 APPPATH\Views\EmployeeAdd.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_role"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeAdd.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeAdd.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('EmployeeAdd', [], true)
+ 5 APPPATH\Controllers\Employee.php(27): view('EmployeeAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-24 20:07:22 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Employee.php on line 42.
+ 1 APPPATH\Controllers\Employee.php(42): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->store()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-24 20:07:22 --> mysqli_sql_exception: Column 'status_employee' cannot be null in C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\timesheet\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\timesheet\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Employee.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(933): App\Controllers\Employee->store()
+#9 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#10 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\timesheet\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\timesheet\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-24 20:07:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'status_employee' cannot be null
+[Method: POST, Route: employee/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (:nama_employee:, :id_role:, :alamat_employee:, :dob_employee:, :status_employee:, :username:, :password:, :nohp_employee:, :last_modified:, :author:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Employee.php(35): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 20:07:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'status_employee' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalan sama kamu\', \'2010-10-20\', NULL, NULL, \'$2y$10$.5itUt3Bz7P2T25lMqSpxu/J8PHAL771cJk3Q4W6oPfJCdgOYIF3y\', \'7748939\', \'2025-06-24 20:07:22\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalan sama kamu\', \'2010-10-20\', NULL, NULL, \'$2y$10$.5itUt3Bz7P2T25lMqSpxu/J8PHAL771cJk3Q4W6oPfJCdgOYIF3y\', \'7748939\', \'2025-06-24 20:07:22\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (:nama_employee:, :id_role:, :alamat_employee:, :dob_employee:, :status_employee:, :username:, :password:, :nohp_employee:, :last_modified:, :author:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Employee.php(35): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 20:07:22 --> [Caused by] mysqli_sql_exception: Column 'status_employee' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalan sama kamu\', \'2010-10-20\', NULL, NULL, \'$2y$10$.5itUt3Bz7P2T25lMqSpxu/J8PHAL771cJk3Q4W6oPfJCdgOYIF3y\', \'7748939\', \'2025-06-24 20:07:22\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalan sama kamu\', \'2010-10-20\', NULL, NULL, \'$2y$10$.5itUt3Bz7P2T25lMqSpxu/J8PHAL771cJk3Q4W6oPfJCdgOYIF3y\', \'7748939\', \'2025-06-24 20:07:22\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalan sama kamu\', \'2010-10-20\', NULL, NULL, \'$2y$10$.5itUt3Bz7P2T25lMqSpxu/J8PHAL771cJk3Q4W6oPfJCdgOYIF3y\', \'7748939\', \'2025-06-24 20:07:22\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (:nama_employee:, :id_role:, :alamat_employee:, :dob_employee:, :status_employee:, :username:, :password:, :nohp_employee:, :last_modified:, :author:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Employee.php(35): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-24 20:14:52 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\Employee.php on line 42.
+ 1 APPPATH\Controllers\Employee.php(42): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->store()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-24 20:14:52 --> mysqli_sql_exception: Column 'username' cannot be null in C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\timesheet\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\timesheet\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\timesheet\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\timesheet\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Employee.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(933): App\Controllers\Employee->store()
+#9 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#10 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\timesheet\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\timesheet\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-24 20:14:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'username' cannot be null
+[Method: POST, Route: employee/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (:nama_employee:, :id_role:, :alamat_employee:, :dob_employee:, :status_employee:, :username:, :password:, :nohp_employee:, :last_modified:, :author:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Employee.php(35): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->store()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 20:14:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'username' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalanan\', \'2010-10-20\', \'1\', NULL, \'$2y$10$FbMUmkJflz16y7lEfx7/HOKDxKw7zKebMQYsjgWvMmFNBE63BWd8O\', \'777777777\', \'2025-06-24 20:14:52\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalanan\', \'2010-10-20\', \'1\', NULL, \'$2y$10$FbMUmkJflz16y7lEfx7/HOKDxKw7zKebMQYsjgWvMmFNBE63BWd8O\', \'777777777\', \'2025-06-24 20:14:52\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (:nama_employee:, :id_role:, :alamat_employee:, :dob_employee:, :status_employee:, :username:, :password:, :nohp_employee:, :last_modified:, :author:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Employee.php(35): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->store()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 20:14:52 --> [Caused by] mysqli_sql_exception: Column 'username' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalanan\', \'2010-10-20\', \'1\', NULL, \'$2y$10$FbMUmkJflz16y7lEfx7/HOKDxKw7zKebMQYsjgWvMmFNBE63BWd8O\', \'777777777\', \'2025-06-24 20:14:52\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalanan\', \'2010-10-20\', \'1\', NULL, \'$2y$10$FbMUmkJflz16y7lEfx7/HOKDxKw7zKebMQYsjgWvMmFNBE63BWd8O\', \'777777777\', \'2025-06-24 20:14:52\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (\'siti\', \'2\', \'jalanan\', \'2010-10-20\', \'1\', NULL, \'$2y$10$FbMUmkJflz16y7lEfx7/HOKDxKw7zKebMQYsjgWvMmFNBE63BWd8O\', \'777777777\', \'2025-06-24 20:14:52\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `employee` (`nama_employee`, `id_role`, `alamat_employee`, `dob_employee`, `status_employee`, `username`, `password`, `nohp_employee`, `last_modified`, `author`) VALUES (:nama_employee:, :id_role:, :alamat_employee:, :dob_employee:, :status_employee:, :username:, :password:, :nohp_employee:, :last_modified:, :author:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Employee.php(35): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->store()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 20:17:45 --> ErrorException: Undefined variable $employee
+[Method: GET, Route: employee/create]
+in APPPATH\Views\EmployeeAdd.php on line 41.
+ 1 APPPATH\Views\EmployeeAdd.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $employee', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeAdd.php', 41)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\EmployeeAdd.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('EmployeeAdd', [], true)
+ 5 APPPATH\Controllers\Employee.php(27): view('EmployeeAdd', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 20:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 20:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 20:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 20:29:00 --> mysqli_sql_exception: Duplicate entry 'matahari' for key 'brilliant_usn' in C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `employe...', 0)
+#1 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `employe...')
+#2 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `employe...')
+#3 C:\xampp\htdocs\timesheet\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `employe...', Array, false)
+#4 C:\xampp\htdocs\timesheet\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\timesheet\system\BaseModel.php(1031): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\timesheet\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\timesheet\app\Controllers\Employee.php(66): CodeIgniter\Model->update('2', Array)
+#8 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(933): App\Controllers\Employee->update('2')
+#9 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+#10 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\timesheet\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\timesheet\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\timesheet\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-24 20:29:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'matahari' for key 'brilliant_usn'
+[Method: POST, Route: employee/update/2]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `employee` SET `nama_employee` = :nama_employee:, `id_role` = :id_role:, `alamat_employee` = :alamat_employee:, `dob_employee` = :dob_employee:, `status_employee` = :status_employee:, `username` = :username:, `nohp_employee` = :nohp_employee:, `last_modified` = :last_modified:
+WHERE `employee`.`id_employee` IN :employee.id_employee:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1031): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Employee.php(66): CodeIgniter\Model->update('2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->update('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 20:29:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'matahari' for key 'brilliant_usn'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `employee` SET `nama_employee` = \'kinan\', `id_role` = \'2\', `alamat_employee` = \'grobogan cui\', `dob_employee` = \'2005-01-21\', `status_employee` = \'1\', `username` = \'matahari\', `nohp_employee` = \'0897567329\', `last_modified` = \'2025-06-24 20:29:00\'
+WHERE `employee`.`id_employee` IN (\'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `employee` SET `nama_employee` = \'kinan\', `id_role` = \'2\', `alamat_employee` = \'grobogan cui\', `dob_employee` = \'2005-01-21\', `status_employee` = \'1\', `username` = \'matahari\', `nohp_employee` = \'0897567329\', `last_modified` = \'2025-06-24 20:29:00\'
+WHERE `employee`.`id_employee` IN (\'2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `employee` SET `nama_employee` = :nama_employee:, `id_role` = :id_role:, `alamat_employee` = :alamat_employee:, `dob_employee` = :dob_employee:, `status_employee` = :status_employee:, `username` = :username:, `nohp_employee` = :nohp_employee:, `last_modified` = :last_modified:
+WHERE `employee`.`id_employee` IN :employee.id_employee:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1031): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Employee.php(66): CodeIgniter\Model->update('2', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->update('2')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 20:29:00 --> [Caused by] mysqli_sql_exception: Duplicate entry 'matahari' for key 'brilliant_usn'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `employee` SET `nama_employee` = \'kinan\', `id_role` = \'2\', `alamat_employee` = \'grobogan cui\', `dob_employee` = \'2005-01-21\', `status_employee` = \'1\', `username` = \'matahari\', `nohp_employee` = \'0897567329\', `last_modified` = \'2025-06-24 20:29:00\'
+WHERE `employee`.`id_employee` IN (\'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `employee` SET `nama_employee` = \'kinan\', `id_role` = \'2\', `alamat_employee` = \'grobogan cui\', `dob_employee` = \'2005-01-21\', `status_employee` = \'1\', `username` = \'matahari\', `nohp_employee` = \'0897567329\', `last_modified` = \'2025-06-24 20:29:00\'
+WHERE `employee`.`id_employee` IN (\'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `employee` SET `nama_employee` = \'kinan\', `id_role` = \'2\', `alamat_employee` = \'grobogan cui\', `dob_employee` = \'2005-01-21\', `status_employee` = \'1\', `username` = \'matahari\', `nohp_employee` = \'0897567329\', `last_modified` = \'2025-06-24 20:29:00\'
+WHERE `employee`.`id_employee` IN (\'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `employee` SET `nama_employee` = :nama_employee:, `id_role` = :id_role:, `alamat_employee` = :alamat_employee:, `dob_employee` = :dob_employee:, `status_employee` = :status_employee:, `username` = :username:, `nohp_employee` = :nohp_employee:, `last_modified` = :last_modified:
+WHERE `employee`.`id_employee` IN :employee.id_employee:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1031): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Employee.php(66): CodeIgniter\Model->update('2', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->update('2')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 20:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
