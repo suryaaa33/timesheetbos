@@ -20,7 +20,7 @@ class Project extends Controller
         $data['employees'] = $employeeModel->findAll();
         $data['project'] = [];
 
-        return view('ProjectView', $data);
+        return view('project/projectDashboard', $data);
     }
 
     public function store()
@@ -54,7 +54,7 @@ public function edit($id)
     $data['employees'] = $employeeModel->findAll();
     $data['project'] = $projectModel->find($id);
 
-    return view('ProjectView', $data);
+    return view('project/ProjectForm', $data);
 }
 
 public function update($id)

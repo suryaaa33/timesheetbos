@@ -16,7 +16,7 @@
         <div class="text-center mb-4 logo">
             <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
         </div>
-        <a href="<?= base_url('cobadashboard') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+        <a href="<?= base_url('dashboard') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
             <i class="las la-tachometer-alt"></i><span class="ms-2">Dashboard</span>
         </a>
         <a href="<?= base_url('employee') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
@@ -51,6 +51,10 @@
     <div class="main-container">
         <!-- Header -->
         <div class="header-bar d-flex justify-content-between align-items-center shadow-sm">
+            <button class="btn d-md-none" id="sidebarToggle">
+                <i class="las la-bars fs-2"></i>
+            </button>
+
             <div class="d-flex align-items-center gap-3 ms-auto">
                 <div class="text-end">
                     <div class="fw-bold">Gerit Himawan</div>
@@ -132,6 +136,29 @@
                 </form>
             </div>
         </div>
+
+        <script>
+            const toggleBtn = document.getElementById("sidebarToggle");
+            const sidebar = document.querySelector(".sidebar");
+            const body = document.body;
+
+            toggleBtn.addEventListener("click", function() {
+                sidebar.classList.toggle("show");
+                body.classList.toggle("sidebar-open");
+            });
+
+            document.addEventListener("click", function(e) {
+                if (
+                    sidebar.classList.contains("show") &&
+                    !sidebar.contains(e.target) &&
+                    !toggleBtn.contains(e.target)
+                ) {
+                    sidebar.classList.remove("show");
+                    body.classList.remove("sidebar-open");
+                }
+            });
+        </script>
+
 </body>
 
 </html>

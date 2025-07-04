@@ -67,14 +67,9 @@ $routes->get('/sheet/edit/(:num)', 'Sheet::edit/$1');
 $routes->post('sheet/updateAll', 'Sheet::updateAll');
 $routes->get('/sheet/delete/(:num)', 'Sheet::delete/$1');
 
-
-
 $routes->get('/dashboard', 'Dashboard::index');
-
-$routes->get('/cobadashboard', 'Cobadashboard::index');
 
 $routes->get('/login', 'Login::index');              // Form login
 $routes->post('/login/auth', 'Login::auth');         // Proses login
 $routes->get('/logout', 'Login::logout');            // Proses logout
-$routes->get('/cobadashboard', 'Cobadashboard::index', ['filter' => 'authGuard']); // Dashboard (harus login)
-
+$routes->get('/dashboard', 'Dashboard::index', ['filter' => 'authGuard']); // Dashboard (harus login)

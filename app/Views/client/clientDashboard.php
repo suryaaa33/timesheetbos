@@ -17,7 +17,7 @@
             <div class="text-center mb-4 logo">
                 <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
             </div>
-            <a href="<?= base_url('cobadashboard') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+            <a href="<?= base_url('dashboard') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
                 <i class="las la-tachometer-alt"></i>
                 <span class="ms-2">Dashboard</span>
             </a>
@@ -61,6 +61,9 @@
         <div class="main-container">
             <!-- Header -->
             <div class="header-bar d-flex justify-content-between align-items-center shadow-sm">
+                <button class="btn d-md-none" id="sidebarToggle">
+                    <i class="las la-bars fs-2"></i>
+                </button>
                 <div class="d-flex align-items-center gap-3 ms-auto">
                     <div class="text-end">
                         <div class="fw-bold">Gerit Himawan</div>
@@ -70,12 +73,28 @@
                 </div>
             </div>
 
+
             <!-- Content -->
             <div class="container-fluid p-4 w-100">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h4>Client List</h4>
+                <!-- Baris atas: judul dan tombol add -->
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="mb-0">Client List</h4>
                     <a href="<?= base_url('client/create') ?>" class="btn btn-primary">+ Add Client</a>
                 </div>
+
+                <!-- Baris kedua: dropdown sort -->
+                <div class="mb-3">
+                    <form method="get" class="d-flex" style="max-width: 200px;">
+                        <select name="sort" class="form-select" onchange="this.form.submit()">
+                            <option value="">Sort By</option>
+                            <option value="az" <?= $sort == 'az' ? 'selected' : '' ?>>Name A-Z</option>
+                            <option value="za" <?= $sort == 'za' ? 'selected' : '' ?>>Name Z-A</option>
+                            <option value="newest" <?= $sort == 'newest' ? 'selected' : '' ?>>Newest</option>
+                            <option value="oldest" <?= $sort == 'oldest' ? 'selected' : '' ?>>Oldest</option>
+                        </select>
+                    </form>
+                </div>
+
 
                 <div class="table-container table-responsive bg-white shadow-sm">
                     <table class="table align-middle mb-0 custom-table">
@@ -120,6 +139,29 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const toggleBtn = document.getElementById("sidebarToggle");
+        const sidebar = document.querySelector(".sidebar");
+        const body = document.body;
+
+        toggleBtn.addEventListener("click", function() {
+            sidebar.classList.toggle("show");
+            body.classList.toggle("sidebar-open");
+        });
+
+        document.addEventListener("click", function(e) {
+            if (
+                sidebar.classList.contains("show") &&
+                !sidebar.contains(e.target) &&
+                !toggleBtn.contains(e.target)
+            ) {
+                sidebar.classList.remove("show");
+                body.classList.remove("sidebar-open");
+            }
+        });
+    </script>
+
 </body>
 
 </html>

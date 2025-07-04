@@ -9,7 +9,7 @@ class Sheet extends Controller
     {
         $model = new SheetModel();
         $data['sheets'] = $model->findAll();
-        return view('SheetView', $data);
+        return view('sheet/sheetDashboard', $data);
     }
 
     public function store()

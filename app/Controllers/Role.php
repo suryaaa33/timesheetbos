@@ -12,7 +12,7 @@ class Role extends Controller
         $model = new RoleModel();
         $data['roles'] = $model->findAll();
         $data['role'] = [];
-        return view('RoleView', $data);
+        return view('role/roleDashboard', $data);
     }
 
     public function store()
@@ -29,7 +29,7 @@ class Role extends Controller
         $model = new RoleModel();
         $data['roles'] = $model->findAll();
         $data['role'] = $model->find($id);
-        return view('RoleView', $data);
+        return view('role/RoleForm', $data);
     }
 
     public function update($id)

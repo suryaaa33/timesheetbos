@@ -18,7 +18,7 @@ class RoleDetail extends Controller
         $data['menus'] = $menuModel->findAll();
         $data['roledetail'] = [];
 
-        return view('RoleDetailView', $data);
+        return view('roledetail/roledetailDashboard', $data);
     }
 
     public function store()
@@ -43,7 +43,7 @@ class RoleDetail extends Controller
         $data['menus'] = $menuModel->findAll();
         $data['roledetail'] = $model->find($id);
 
-        return view('RoleDetailView', $data);
+        return view('roledetail/RoledetailForm', $data);
     }
 
     public function update($id)

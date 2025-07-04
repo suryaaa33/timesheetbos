@@ -10,7 +10,7 @@ class Menu extends Controller
         $model = new MenuModel();
         $data['menus'] = $model->findAll();
         $data['menu'] = [];
-        return view('MenuView', $data);
+        return view('menu/menuDashboard', $data);
     }
 
     public function store()
@@ -27,7 +27,7 @@ class Menu extends Controller
         $model = new MenuModel();
         $data['menus'] = $model->findAll();
         $data['menu'] = $model->find($id);
-        return view('MenuView', $data);
+        return view('menu/MenuForm', $data);
     }
 
     public function update($id)

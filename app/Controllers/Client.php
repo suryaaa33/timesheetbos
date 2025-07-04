@@ -8,12 +8,38 @@ use CodeIgniter\Controller;
 class Client extends Controller
 {
     public function index()
-    {
-        $model = new ClientModel();
-        $data['clients'] = $model->findAll(); // list semua
-        $data['client'] = []; // untuk form create (kosong dulu)
-        return view('client/clientDashboard', $data);
+{
+    $model = new ClientModel();
+
+    // Ambil parameter ?sort dari URL
+    $sort = $this->request->getGet('sort');
+
+    // Default urutan (by id ascending)
+    switch ($sort) {
+        case 'az':
+            $model->orderBy('nama_client', 'ASC');
+            break;
+        case 'za':
+            $model->orderBy('nama_client', 'DESC');
+            break;
+        case 'newest':
+            $model->orderBy('registerdate_client', 'DESC');
+            break;
+        case 'oldest':
+            $model->orderBy('registerdate_client', 'ASC');
+            break;
+        default:
+            $model->orderBy('id_client', 'ASC');
+            break;
     }
+
+    $data['clients'] = $model->findAll();         // list sesuai urutan
+    $data['client'] = [];                         // kosong untuk form create
+    $data['sort'] = $sort;                        // kirim pilihan saat ini ke view
+
+    return view('client/clientDashboard', $data);
+}
+
 
     public function create()
     {

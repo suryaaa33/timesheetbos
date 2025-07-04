@@ -7,7 +7,7 @@ class Login extends BaseController
     public function index()
     {
         helper('url');
-        return view('loginview');
+        return view('LoginView');
     }
 
     public function auth()
@@ -30,7 +30,7 @@ class Login extends BaseController
                 'id_role'       => $query->id_role,
                 'logged_in'     => true
             ]);
-            return redirect()->to('/cobadashboard'); // Ganti ke route dashboard kamu
+            return redirect()->to('/dashboard'); // Ganti ke route dashboard kamu
         } else {
             return redirect()->back()->with('error', 'Password salah');
         }
