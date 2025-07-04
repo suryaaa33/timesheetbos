@@ -1,0 +1,72 @@
+CRITICAL - 2025-07-03 22:48:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "EmployeeEdit.php"
+[Method: GET, Route: employee/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('EmployeeEdit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('EmployeeEdit', [], true)
+ 3 APPPATH\Controllers\Employee.php(59): view('EmployeeEdit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Employee->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 23:32:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ClientView.php"
+[Method: GET, Route: client]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ClientView.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ClientView', [], true)
+ 3 APPPATH\Controllers\Client.php(13): view('ClientView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 23:32:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ClientView.php"
+[Method: GET, Route: client]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ClientView.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ClientView', [], true)
+ 3 APPPATH\Controllers\Client.php(13): view('ClientView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Client->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 23:54:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "CobadashboardView.php"
+[Method: GET, Route: cobadashboard]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('CobadashboardView.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('CobadashboardView', [], true)
+ 3 APPPATH\Controllers\Cobadashboard.php(38): view('CobadashboardView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cobadashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cobadashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 23:56:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "CobadashboardView.php"
+[Method: GET, Route: cobadashboard]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('CobadashboardView.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('CobadashboardView', [], true)
+ 3 APPPATH\Controllers\Cobadashboard.php(38): view('CobadashboardView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cobadashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cobadashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 23:58:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ProjectView.php"
+[Method: GET, Route: project]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ProjectView.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ProjectView', [], true)
+ 3 APPPATH\Controllers\Project.php(23): view('ProjectView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

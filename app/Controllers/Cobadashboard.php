@@ -35,6 +35,6 @@ class Cobadashboard extends BaseController
         $data['total_roledetail'] = $roledetailModel->countAll();
         $data['total_sheet'] = $sheetModel->countAll();
 
-        return view('CobadashboardView', $data);
+        return view('dashboardAdmin', $data);
     }
 }

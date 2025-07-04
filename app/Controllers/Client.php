@@ -1,4 +1,6 @@
-<?php namespace App\Controllers;
+<?php
+
+namespace App\Controllers;
 
 use App\Models\ClientModel;
 use CodeIgniter\Controller;
@@ -6,12 +8,21 @@ use CodeIgniter\Controller;
 class Client extends Controller
 {
     public function index()
-{
-    $model = new ClientModel();
-    $data['clients'] = $model->findAll(); // list semua
-    $data['client'] = []; // untuk form create (kosong dulu)
-    return view('ClientView', $data);
-}
+    {
+        $model = new ClientModel();
+        $data['clients'] = $model->findAll(); // list semua
+        $data['client'] = []; // untuk form create (kosong dulu)
+        return view('client/clientDashboard', $data);
+    }
+
+    public function create()
+    {
+        $model = new ClientModel();
+        $data['clients'] = $model->findAll(); // kalau ingin tetap tampilkan semua client
+        $data['client'] = []; // kosong = mode tambah
+        return view('client/ClientForm', $data);
+    }
+
 
     public function store()
     {
@@ -33,12 +44,12 @@ class Client extends Controller
 
     // Tidak perlu view edit terpisah
     public function edit($id)
-{
-    $model = new ClientModel();
-    $data['clients'] = $model->findAll(); // tetap tampilkan semua
-    $data['client'] = $model->find($id); // data yang mau diedit
-    return view('ClientView', $data);
-}
+    {
+        $model = new ClientModel();
+        $data['clients'] = $model->findAll(); // tetap tampilkan semua
+        $data['client'] = $model->find($id); // data yang mau diedit
+        return view('client/ClientForm', $data);
+    }
 
     public function update($id)
     {

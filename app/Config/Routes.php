@@ -9,11 +9,13 @@ $routes->get('/', 'Home::index');
 $routes->setAutoRoute(false); // karena kita pakai manual routing
 
 #client
-$routes->get('/client', 'Client::index');
-$routes->post('/client/store', 'Client::store');
-$routes->get('/client/edit/(:num)', 'Client::edit/$1');     // Redirect ke index dgn ?edit_id
-$routes->post('/client/update/(:num)', 'Client::update/$1');
-$routes->post('/client/delete/(:num)', 'Client::delete/$1');
+$routes->get('/client', 'Client::index');                       // Halaman utama list client (+ form tambah)
+$routes->get('/client/create', 'Client::create');              // Tampilkan form tambah client
+$routes->post('/client/store', 'Client::store');              // Simpan client baru
+$routes->get('/client/edit/(:num)', 'Client::edit/$1');       // Tampilkan form edit client
+$routes->post('/client/update/(:num)', 'Client::update/$1');  // Simpan update client
+$routes->post('/client/delete/(:num)', 'Client::delete/$1');  // Hapus client
+
 
 
 
