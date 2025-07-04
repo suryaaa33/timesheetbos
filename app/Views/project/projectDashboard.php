@@ -2,149 +2,139 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Data Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/dashboardTable.css') ?>" />
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h2 class="mb-4 text-center"> Daftar Project</h2>
-
-        <!-- Form Tambah / Edit -->
-        <?php
-        $isEdit = isset($project['id_project']);
-        $formAction = $isEdit
-            ? base_url('project/update/' . $project['id_project'])
-            : base_url('project/store');
-        ?>
-        <div class="card mb-4 shadow">
-            <div class="card-header bg-<?= $isEdit ? 'warning' : 'primary' ?> text-white">
-                <?= $isEdit ? '✏️ Edit Project' : '➕ Tambah Project' ?>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar p-3">
+            <div class="text-center mb-4 logo">
+                <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
             </div>
+            <a href="<?= base_url('dashboard') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-tachometer-alt"></i>
+                <span class="ms-2">Dashboard</span>
+            </a>
+            <a href="<?= base_url('employee') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-user"></i>
+                <span class="ms-2">Employee</span>
+            </a>
+            <a href="<?= base_url('client') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-user-friends"></i>
+                <span class="ms-2">Client</span>
+            </a>
+            <a href="<?= base_url('project') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-cube"></i>
+                <span class="ms-2">Project</span>
+            </a>
+            <a href="<?= base_url('role') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-database"></i>
+                <span class="ms-2">Role</span>
+            </a>
+            <a href="<?= base_url('roledetail') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-server"></i>
+                <span class="ms-2">Role Detail</span>
+            </a>
+            <a href="<?= base_url('menu') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-list"></i>
+                <span class="ms-2">Menu</span>
+            </a>
+            <a href="<?= base_url('sheet') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-calendar-alt"></i>
+                <span class="ms-2">Time Sheet</span>
+            </a>
+            <hr />
+            <a href="<?= base_url('/logout') ?>" onclick="return confirm('Are you sure you want to logout?');"
+                class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-power-off"></i>
+                <span class="ms-2">Logout</span>
+            </a>
+        </div>
 
-            <div class="card-body">
-                <form method="post" action="<?= $formAction ?>">
-
-                    <div class="mb-3">
-                        <label for="nama_project" class="form-label">Nama Project</label>
-                        <input type="text" name="nama_project" class="form-control" placeholder="Nama Project" value="<?= $isEdit ? esc($project['nama_project']) : '' ?>" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="deskripsi_project" class="form-label">Deskripsi Project</label>
-                        <input type="text" name="deskripsi_project" class="form-control" placeholder="Deskripsi Project" value="<?= $isEdit ? esc($project['deskripsi_project']) : '' ?>" required>
-                    </div>
-                    <div class="col">
-                        <label for="status_project" class="form-label">Status Project</label>
-                        <select name="status_project" class="form-control" required>
-                            <option value="">-- Pilih Status Project --</option>
-                            <option value="1" <?= $isEdit && $project['status_project'] == 0 ? 'selected' : '' ?>>0 - On Process</option>
-                            <option value="2" <?= $isEdit && $project['status_project'] == 1 ? 'selected' : '' ?>>1 - Completed</option>
-                        </select>
-                    </div>
-
-                    <div class="col">
-                        <label for="startdate_project" class="form-label">Start Date Project</label>
-                        <input type="date" name="startdate_project" class="form-control" value="<?= $isEdit ? esc($project['startdate_project']) : '' ?>" required>
-                    </div>
-                    <div class="col">
-                        <label for="enddate_project" class="form-label">End Date Project</label>
-                        <input type="date" name="enddate_project" class="form-control" value="<?= $isEdit ? esc($project['enddate_project']) : '' ?>" required>
-                    </div>
-                    <div class="col">
-                        <label for="deadline_project" class="form-label">Deadline Project</label>
-                        <input type="date" name="deadline_project" class="form-control" value="<?= $isEdit ? esc($project['deadline_project']) : '' ?>" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="budget_project" class="form-label">Budget Project</label>
-                        <input type="text" name="budget_project" id="budget_project" class="form-control"
-                            value="<?= $isEdit ? number_format((int)$project['budget_project'], 0, ',', '.') : '' ?>"
-                            required>
-                    </div>
-
-
-            </div>
-            <div class="col">
-                <label for="id_client" class="form-label">Client yang Bersangkutan</label>
-                <select name="id_client" class="form-control" required>
-                    <option value="">-- Pilih Client --</option>
-                    <?php foreach ($clients as $c): ?>
-                        <option value="<?= $c['id_client'] ?>"
-                            <?= isset($isEdit) && $isEdit && $project['id_client'] == $c['id_client'] ? 'selected' : '' ?>>
-                            <?= $c['id_client'] ?> - <?= esc($c['nama_client']) ?>
-                        </option>
-                    <?php endforeach; ?>
-                </select>
-            </div>
-
-            <div class="col mt-3">
-                <label for="id_employee" class="form-label">Penanggung Jawab (Employee)</label>
-                <select name="id_employee" class="form-control" required>
-                    <option value="">-- Pilih Employee --</option>
-                    <?php foreach ($employees as $e): ?>
-                        <option value="<?= $e['id_employee'] ?>"
-                            <?= isset($isEdit) && $isEdit && $project['id_employee'] == $e['id_employee'] ? 'selected' : '' ?>>
-                            <?= $e['id_employee'] ?> - <?= esc($e['nama_employee']) ?>
-                        </option>
-                    <?php endforeach; ?>
-                </select>
-            </div>
-
-
-            <div>
-                <button type="submit" class="btn btn-<?= $isEdit ? 'warning' : 'primary' ?>">
-                    <?= $isEdit ? 'Update' : 'Simpan' ?>
+        <!-- Main Content -->
+        <div class="main-container">
+            <!-- Header -->
+            <div class="header-bar d-flex justify-content-between align-items-center shadow-sm">
+                <button class="btn d-md-none" id="sidebarToggle">
+                    <i class="las la-bars fs-2"></i>
                 </button>
-                <?php if ($isEdit): ?>
-                    <a href="<?= base_url('project') ?>" class="btn btn-secondary">Batal</a>
-                <?php endif; ?>
+                <div class="d-flex align-items-center gap-3 ms-auto">
+                    <div class="text-end">
+                        <div class="fw-bold">Gerit Himawan</div>
+                        <div class="text-muted small">Admin</div>
+                    </div>
+                    <i class="las la-user icon-big fs-2"></i>
+                </div>
             </div>
-            </form>
+
+
+            <!-- Content -->
+            <div class="container-fluid p-4 w-100">
+                <!-- Baris atas: judul dan tombol add -->
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="mb-0">Project List</h4>
+                    <a href="<?= base_url('project/create') ?>" class="btn btn-primary">+ Add Project</a>
+                </div>
+                </div>
+
+                <!-- Baris kedua: dropdown sort -->
+                
+
+
+                <div class="table-container table-responsive bg-white shadow-sm">
+                    <table class="table align-middle mb-0 custom-table">
+                        <thead class="table-header">
+                            <tr>
+                                <th>ID</th>
+                                <th>NAME</th>
+                                <th>DESCRIPTION</th>
+                                <th>START DATE</th>
+                                <th>END DATE</th>
+                                <th>DEADLINE</th>
+                                <th>BUDGET</th>
+                                <th>CLIENT</th>
+                                <th>PIC</th>
+                                <th>STATUS</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($projects as $i => $e): ?>
+                                <tr>
+                                    <td><?= $i + 1 ?></td>
+                                    <td><?= esc($e['nama_project']) ?></td>
+                                    <td><?= esc($e['deskripsi_project']) ?></td>
+                                    <td><?= esc($e['startdate_project']) ?></td>
+                                    <td><?= esc($e['enddate_project']) ?></td>
+                                    <td><?= esc($e['deadline_project']) ?></td>
+                                    <td><?= esc($e['budget_project']) ?></td>
+                                    <td><?= esc($e['nama_client']) ?></td>
+                                    <td><?= esc($e['nama_employee']) ?></td>
+                                    <td>
+                                    <?= $e['status_project'] == '1' ? '<span class="badge bg-success">Completed</span>' : '<span class="badge bg-secondary">On-Process</span>' ?>
+                                    </td>
+                                    <td>
+                                        <a href="<?= base_url('project/edit/' . $e['id_project']) ?>" class="btn btn-light-icon"><i class="las la-edit icon-big"></i></a>
+                                        <a href="<?= base_url('project/delete/' . $e['id_project']) ?>" class="btn btn-light-icon" onclick="return confirm('Yakin ingin menghapus?')"><i class="las la-trash icon-big"></i></a>
+                                    </td>
+                                </tr>
+                            <?php endforeach ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Tabel Daftar Project -->
-    <div class="table-responsive shadow rounded">
-        <table class="table table-bordered table-striped table-hover align-middle">
-            <thead class="table-dark">
-                <tr>
-                    <th>#</th>
-                    <th>Nama Project</th>
-                    <th>Deskripsi Project</th>
-                    <th>Status Project</th>
-                    <th>Start Date Project</th>
-                    <th>End date Project</th>
-                    <th>Deadline Project</th>
-                    <th>Budget Project</th>
-                    <th>Client yang Bersangkutan</th>
-                    <th>Penanggung Jawab Project</th>
-                    <th>Aksi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($projects as $i => $e): ?>
-                    <tr>
-                        <td><?= $i + 1 ?></td>
-                        <td><?= esc($e['nama_project']) ?></td>
-                        <td><?= esc($e['deskripsi_project']) ?></td>
-                        <td><?= esc($e['status_project']) ?></td>
-                        <td><?= esc($e['startdate_project']) ?></td>
-                        <td><?= esc($e['enddate_project']) ?></td>
-                        <td><?= esc($e['deadline_project']) ?></td>
-                        <td><?= esc($e['budget_project']) ?></td>
-                        <td><?= esc($e['id_client']) ?></td>
-                        <td><?= esc($e['id_employee']) ?></td>
-                        <td>
-                            <a href="<?= base_url('project/edit/' . $e['id_project']) ?>" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="<?= base_url('project/delete/' . $e['id_project']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
-                        </td>
-                    </tr>
-                <?php endforeach ?>
-            </tbody>
-        </table>
-    </div>
-    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
     const budgetInput = document.getElementById('budget_project');
 
@@ -169,6 +159,28 @@
         return prefix === undefined ? rupiah : (rupiah ? prefix + rupiah : '');
     }
 </script>
+
+    <script>
+        const toggleBtn = document.getElementById("sidebarToggle");
+        const sidebar = document.querySelector(".sidebar");
+        const body = document.body;
+
+        toggleBtn.addEventListener("click", function() {
+            sidebar.classList.toggle("show");
+            body.classList.toggle("sidebar-open");
+        });
+
+        document.addEventListener("click", function(e) {
+            if (
+                sidebar.classList.contains("show") &&
+                !sidebar.contains(e.target) &&
+                !toggleBtn.contains(e.target)
+            ) {
+                sidebar.classList.remove("show");
+                body.classList.remove("sidebar-open");
+            }
+        });
+    </script>
 
 </body>
 

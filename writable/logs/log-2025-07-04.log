@@ -291,3 +291,31 @@ DEBUG - 2025-07-04 21:18:25 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-07-04 21:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-07-04 21:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-07-04 21:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-04 22:19:35 --> ErrorException: Undefined variable $sort
+[Method: GET, Route: project]
+in APPPATH\Views\project\projectDashboard.php on line 90.
+ 1 APPPATH\Views\project\projectDashboard.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sort', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\projectDashboard.php', 90)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\projectDashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/projectDashboard', [], true)
+ 5 APPPATH\Controllers\Project.php(23): view('project/projectDashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 22:21:15 --> ErrorException: Undefined variable $sort
+[Method: GET, Route: project]
+in APPPATH\Views\project\projectDashboard.php on line 90.
+ 1 APPPATH\Views\project\projectDashboard.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sort', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\projectDashboard.php', 90)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\projectDashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/projectDashboard', [], true)
+ 5 APPPATH\Controllers\Project.php(23): view('project/projectDashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Project->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

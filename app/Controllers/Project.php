@@ -15,13 +15,27 @@ class Project extends Controller
         $clientModel = new ClientModel();
         $employeeModel = new EmployeeModel();
 
-        $data['projects'] = $projectModel->findAll();
+        $data['projects'] = $projectModel->getWithClientAndEmployee();
         $data['clients'] = $clientModel->findAll();
         $data['employees'] = $employeeModel->findAll();
         $data['project'] = [];
 
         return view('project/projectDashboard', $data);
     }
+
+    public function create()
+{
+    $projectModel = new ProjectModel();
+    $clientModel = new ClientModel();
+    $employeeModel = new EmployeeModel();
+
+    $data['project'] = []; // kosong = mode tambah
+    $data['clients'] = $clientModel->findAll();     // untuk dropdown client
+    $data['employees'] = $employeeModel->findAll(); // untuk dropdown employee (PIC)
+
+    return view('project/ProjectForm', $data);
+}
+
 
     public function store()
 {

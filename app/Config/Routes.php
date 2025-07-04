@@ -20,6 +20,7 @@ $routes->post('/client/delete/(:num)', 'Client::delete/$1');  // Hapus client
 
 
 $routes->get('/project', 'Project::index');
+$routes->get('/project/create', 'Project::create');
 $routes->post('/project/store', 'Project::store');
 $routes->get('/project/edit/(:num)', 'Project::edit/$1');     // Redirect ke index dgn ?edit_id
 $routes->post('/project/update/(:num)', 'Project::update/$1');
