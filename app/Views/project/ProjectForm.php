@@ -87,7 +87,8 @@
                         <div class="col-md-6 form-group">
                             <label for="budgetProject" class="form-label">Project Budget</label>
                             <input type="text" class="form-control" name="budget_project" placeholder="Enter project budget"
-                                value="<?= $isEdit ? esc($project['budget_project']) : '' ?>" required>
+                                value="<?= $isEdit ? number_format((int)$project['budget_project'], 0, ',', '.') : '' ?>"
+                            required>
                         </div>
                     </div>
                     <div class="row">

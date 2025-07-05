@@ -48,6 +48,7 @@ $routes->get('/menu/delete/(:num)', 'Menu::delete/$1');
 
 
 $routes->get('/role', 'Role::index');
+$routes->get('/role/create', 'Role::create');
 $routes->post('/role/store', 'Role::store');
 $routes->get('/role/edit/(:num)', 'Role::edit/$1');
 $routes->post('/role/update/(:num)', 'Role::update/$1');

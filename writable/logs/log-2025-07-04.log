@@ -319,3 +319,45 @@ in APPPATH\Views\project\projectDashboard.php on line 90.
  9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 23:31:40 --> ErrorException: Undefined variable $e
+[Method: GET, Route: role]
+in APPPATH\Views\role\roleDashboard.php on line 103.
+ 1 APPPATH\Views\role\roleDashboard.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $e', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\role\\roleDashboard.php', 103)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\role\\roleDashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('role/roleDashboard', [], true)
+ 5 APPPATH\Controllers\Role.php(15): view('role/roleDashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 23:32:07 --> ErrorException: Undefined array key "id_project"
+[Method: GET, Route: role]
+in APPPATH\Views\role\roleDashboard.php on line 103.
+ 1 APPPATH\Views\role\roleDashboard.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_project"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\role\\roleDashboard.php', 103)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\role\\roleDashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('role/roleDashboard', [], true)
+ 5 APPPATH\Controllers\Role.php(15): view('role/roleDashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-04 23:38:24 --> ErrorException: Undefined array key "nama_role"
+[Method: GET, Route: role/edit/1]
+in APPPATH\Views\role\RoleForm.php on line 85.
+ 1 APPPATH\Views\role\RoleForm.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_role"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\role\\RoleForm.php', 85)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\role\\RoleForm.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('role/RoleForm', [], true)
+ 5 APPPATH\Controllers\Role.php(32): view('role/RoleForm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Role->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

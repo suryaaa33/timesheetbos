@@ -81,7 +81,6 @@
                     <h4 class="mb-0">Project List</h4>
                     <a href="<?= base_url('project/create') ?>" class="btn btn-primary">+ Add Project</a>
                 </div>
-                </div>
 
                 <!-- Baris kedua: dropdown sort -->
                 
@@ -113,7 +112,8 @@
                                     <td><?= esc($e['startdate_project']) ?></td>
                                     <td><?= esc($e['enddate_project']) ?></td>
                                     <td><?= esc($e['deadline_project']) ?></td>
-                                    <td><?= esc($e['budget_project']) ?></td>
+                                    <td>Rp <?= number_format($e['budget_project'], 0, ',', '.') ?></td>
+
                                     <td><?= esc($e['nama_client']) ?></td>
                                     <td><?= esc($e['nama_employee']) ?></td>
                                     <td>
@@ -134,31 +134,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-    const budgetInput = document.getElementById('budget_project');
-
-    budgetInput.addEventListener('input', function(e) {
-        let angka = this.value.replace(/[^\d]/g, ''); // hapus selain angka
-        this.value = formatRupiah(angka, 'Rp ');
-    });
-
-    function formatRupiah(angka, prefix) {
-        let number_string = angka.replace(/[^,\d]/g, '').toString(),
-            split = number_string.split(','),
-            sisa = split[0].length % 3,
-            rupiah = split[0].substr(0, sisa),
-            ribuan = split[0].substr(sisa).match(/\d{3}/gi);
-        
-        if (ribuan) {
-            let separator = sisa ? '.' : '';
-            rupiah += separator + ribuan.join('.');
-        }
-
-        rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
-        return prefix === undefined ? rupiah : (rupiah ? prefix + rupiah : '');
-    }
-</script>
 
     <script>
         const toggleBtn = document.getElementById("sidebarToggle");
