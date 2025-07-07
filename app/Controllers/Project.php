@@ -29,9 +29,9 @@ class Project extends Controller
     $clientModel = new ClientModel();
     $employeeModel = new EmployeeModel();
 
-    $data['project'] = []; // kosong = mode tambah
-    $data['clients'] = $clientModel->findAll();     // untuk dropdown client
-    $data['employees'] = $employeeModel->findAll(); // untuk dropdown employee (PIC)
+    $data['project'] = []; 
+    $data['clients'] = $clientModel->findAll();    
+    $data['employees'] = $employeeModel->findAll(); 
 
     return view('project/ProjectForm', $data);
 }

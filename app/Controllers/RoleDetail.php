@@ -1,4 +1,6 @@
-<?php namespace App\Controllers;
+<?php
+
+namespace App\Controllers;
 
 use App\Models\RoleDetailModel;
 use App\Models\RoleModel;
@@ -13,12 +15,26 @@ class RoleDetail extends Controller
         $roleModel = new RoleModel();
         $menuModel = new MenuModel();
 
-        $data['roledetails'] = $model->findAll();
+        $data['roledetails'] = $model->getWithMenuAndRole();
         $data['roles'] = $roleModel->findAll();
         $data['menus'] = $menuModel->findAll();
         $data['roledetail'] = [];
 
         return view('roledetail/roledetailDashboard', $data);
+    }
+
+    public function create()
+    {
+        $model = new RoleDetailModel();
+        $roleModel = new RoleModel();
+        $menuModel = new MenuModel();
+
+
+        $data['roledetails'] = $model->findAll();
+        $data['roledetail'] = [];
+        $data['roles'] = $roleModel->findAll();
+        $data['menus'] = $menuModel->findAll();
+        return view('roledetail/RoledetailForm', $data);
     }
 
     public function store()

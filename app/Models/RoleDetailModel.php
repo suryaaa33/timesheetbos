@@ -10,7 +10,7 @@ class RoledetailModel extends Model
     protected $primaryKey = 'id_roledetail';
     protected $allowedFields = ['id_menu', 'id_role'];
 
-    public function getWithNames()
+    public function getWithMenuAndRole()
     {
         return $this->select('roledetail.id_roledetail, menu.nama_menu, role.judul_role')
                     ->join('menu', 'menu.id_menu = roledetail.id_menu')

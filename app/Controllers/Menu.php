@@ -13,6 +13,14 @@ class Menu extends Controller
         return view('menu/menuDashboard', $data);
     }
 
+        public function create()
+{
+    $model = new MenuModel();
+    $data['menus'] = $model->findAll(); 
+    $data['menu'] = []; 
+    return view('menu/MenuForm', $data);
+}
+
     public function store()
     {
         $model = new MenuModel();

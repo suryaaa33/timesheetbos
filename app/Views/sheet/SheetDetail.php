@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project Dashboard</title>
+    <title>Detail Timesheet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/css/dashboardTable.css') ?>" />
@@ -76,13 +76,26 @@
 
             <!-- Content -->
             <div class="container-fluid p-4 w-100">
-                <!-- Baris atas: judul dan tombol add -->
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h4 class="mb-0">Project List</h4>
-                    <a href="<?= base_url('project/create') ?>" class="btn btn-primary">+ Add Project</a>
+                    <h4 class="mb-0">Detail Timesheet</h4>
                 </div>
-
-                <!-- Baris kedua: dropdown sort -->
+                <div class="mb-4">
+    <div class="d-flex mb-2">
+        <div class="fw-semibold" style="min-width: 140px;">Consultant</div>
+        <div class="me-1">:</div>
+        <div class="fw-semibold"><?= esc($sheet['nama_employee']) ?></div>
+    </div>
+    <div class="d-flex mb-2">
+        <div class="fw-semibold" style="min-width: 140px;">Role</div>
+        <div class="me-1">:</div>
+        <div class="fw-semibold"><?= esc($sheet['judul_role']) ?></div>
+    </div>
+    <div class="d-flex mb-2">
+        <div class="fw-semibold" style="min-width: 140px;">Project Name</div>
+        <div class="me-1">:</div>
+        <div class="fw-semibold"><?= esc($sheet['nama_project']) ?></div>
+    </div>
+</div>
 
 
 
@@ -90,58 +103,22 @@
                     <table class="table align-middle mb-0 custom-table">
                         <thead class="table-header">
                             <tr>
-                                <th>ID</th>
-                                <th>NAME</th>
-                                <th>START DATE</th>
-                                <th>END DATE</th>
-                                <th>DEADLINE</th>
-                                <th>CLIENT</th>
-                                <th>PIC</th>
-                                <th>STATUS</th>
-                                <th>ACTION</th>
+                                <th>DATE</th>
+                                <th>HOURS</th>
+                                <th>ACTIVITY</th>
+                                <th>RESULT</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($projects as $i => $e): ?>
-                                <tr>
-                                    <td><?= $e['id_project'] ?></td>
-                                    <td><?= esc($e['nama_project']) ?></td>
-                                    <td><?= esc($e['startdate_project']) ?></td>
-                                    <td><?= esc($e['enddate_project']) ?></td>
-                                    <td><?= esc($e['deadline_project']) ?></td>
-                                    <td><?= esc($e['nama_client']) ?></td>
-                                    <td><?= esc($e['nama_employee']) ?></td>
-                                    <td>
-                                        <?= $e['status_project'] == '1' ? '<span class="badge bg-success">Completed</span>' : '<span class="badge bg-secondary">On-Process</span>' ?>
-                                    </td>
-                                    <td>
-                                        <a href="<?= base_url('project/edit/' . $e['id_project']) ?>" class="btn btn-light-icon"><i class="las la-edit icon-big"></i></a>
-                                        <a href="#" class="btn btn-light-icon" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
-                                            onclick="setDeleteUrl('<?= base_url('project/delete/' . $e['id_project']) ?>')">
-                                            <i class="las la-trash icon-big"></i>
-                                        </a>
-                                    </td>
-                                </tr>
-                            <?php endforeach ?>
+                            <tr>
+                                <td><?= esc($sheet['date_sheet']) ?></td>
+                                <td><?= esc($sheet['hours_sheet']) ?></td>
+                                <td class="address-column"><?= esc($sheet['activity']) ?></td>
+                                <td class="address-column"><?= esc($sheet['result_path']) ?></td>
+                            </tr>
                         </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Modal Konfirmasi Delete -->
-    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center p-5">
-                <div class="modal-body border-0">
-                    <p class="fs-5 mb-4">Are you sure want to delete this project?</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
-                        <form id="confirmDeleteForm" method="post">
-                            <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
-                        </form>
-                    </div>
+                    </table>
                 </div>
             </div>
         </div>
@@ -149,12 +126,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        function setDeleteUrl(url) {
-            document.getElementById('confirmDeleteForm').setAttribute('action', url);
-        }
-    </script>
 
     <script>
         const toggleBtn = document.getElementById("sidebarToggle");

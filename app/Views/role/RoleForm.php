@@ -71,7 +71,7 @@
 
         <div class="container-fluid p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h3>Form Add/Edit Role</h3>
+                <h3>Form Role</h3>
                 <?php if ($isEdit): ?>
                     <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
                         onclick="setDeleteUrl('<?= base_url('role/delete/' . $role['id_role']) ?>')">Delete Role</a>

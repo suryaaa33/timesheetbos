@@ -2,90 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>📝 TIMESHEET</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        input[type="text"],
-        input[type="date"],
-        input[type="time"] {
-            border: none;
-            background-color: transparent;
-            width: 100%;
-        }
-
-        table input:focus {
-            outline: 1px solid #0d6efd;
-            background-color: #fff;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sheet Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/dashboardTable.css') ?>" />
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h2 class="mb-4 text-center">🗓️ Lembar Aktivitas Harian</h2>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar p-3">
+            <div class="text-center mb-4 logo">
+                <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
+            </div>
+            <a href="<?= base_url('dashboard') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-tachometer-alt"></i>
+                <span class="ms-2">Dashboard</span>
+            </a>
+            <a href="<?= base_url('employee') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-user"></i>
+                <span class="ms-2">Employee</span>
+            </a>
+            <a href="<?= base_url('client') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-user-friends"></i>
+                <span class="ms-2">Client</span>
+            </a>
+            <a href="<?= base_url('project') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-cube"></i>
+                <span class="ms-2">Project</span>
+            </a>
+            <a href="<?= base_url('role') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-database"></i>
+                <span class="ms-2">Role</span>
+            </a>
+            <a href="<?= base_url('roledetail') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-server"></i>
+                <span class="ms-2">Role Detail</span>
+            </a>
+            <a href="<?= base_url('menu') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-list"></i>
+                <span class="ms-2">Menu</span>
+            </a>
+            <a href="<?= base_url('sheet') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-calendar-alt"></i>
+                <span class="ms-2">Time Sheet</span>
+            </a>
+            <hr />
+            <a href="<?= base_url('/logout') ?>" onclick="return confirm('Are you sure you want to logout?');"
+                class="menu-item d-flex align-items-center text-decoration-none text-dark">
+                <i class="las la-power-off"></i>
+                <span class="ms-2">Logout</span>
+            </a>
+        </div>
 
-        <!-- ✅ Form Tambah Data -->
-        <form method="post" action="<?= base_url('sheet/store') ?>" class="mb-4 border rounded p-3 shadow-sm bg-light">
-            <div class="row g-2">
-                <div class="col-md-2">
-                    <input type="date" name="tanggal" class="form-control" required>
-                </div>
-                <div class="col-md-2">
-                    <input type="time" name="jam" class="form-control" required>
-                </div>
-                <div class="col-md-4">
-                    <input type="text" name="aktivitas" class="form-control" placeholder="Aktivitas" required>
-                </div>
-                <div class="col-md-3">
-                    <input type="text" name="hasil" class="form-control" placeholder="Hasil" required>
-                </div>
-                <div class="col-md-1 d-grid">
-                    <button type="submit" class="btn btn-primary">➕</button>
+        <!-- Main Content -->
+        <div class="main-container">
+            <!-- Header -->
+            <div class="header-bar d-flex justify-content-between align-items-center shadow-sm">
+                <button class="btn d-md-none" id="sidebarToggle">
+                    <i class="las la-bars fs-2"></i>
+                </button>
+                <div class="d-flex align-items-center gap-3 ms-auto">
+                    <div class="text-end">
+                        <div class="fw-bold">Gerit Himawan</div>
+                        <div class="text-muted small">Admin</div>
+                    </div>
+                    <i class="las la-user icon-big fs-2"></i>
                 </div>
             </div>
-        </form>
 
-        <!-- ✅ Form Edit Semua -->
-        <form method="post" action="<?= base_url('sheet/updateAll') ?>">
-            <div class="table-responsive shadow-sm">
-                <table class="table table-bordered table-hover align-middle text-center">
-                    <thead class="table-dark">
-                        <tr>
-                            <th style="width:5%;">#</th>
-                            <th style="width:20%;">Tanggal</th>
-                            <th style="width:15%;">Jam</th>
-                            <th style="width:30%;">Aktivitas</th>
-                            <th style="width:20%;">Hasil</th>
-                            <th style="width:10%;">Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($sheets as $i => $s): ?>
+
+            <!-- Content -->
+            <div class="container-fluid p-4 w-100">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h4 class="mb-0">Sheet List</h4>
+                </div>
+
+
+                <div class="table-container table-responsive bg-white shadow-sm">
+                    <table class="table align-middle mb-0 custom-table">
+                        <thead class="table-header">
                             <tr>
-                                <td><?= $i + 1 ?></td>
-                                <td>
-                                    <input type="hidden" name="id_sheet[]" value="<?= $s['id_sheet'] ?>">
-                                    <input type="date" name="tanggal[]" value="<?= esc($s['date_sheet']) ?>">
-                                </td>
-                                <td><input type="time" name="jam[]" value="<?= esc($s['hours_sheet']) ?>"></td>
-                                <td><input type="text" name="aktivitas[]" value="<?= esc($s['activity']) ?>"></td>
-                                <td><input type="text" name="hasil[]" value="<?= esc($s['result_path']) ?>"></td>
-                                <td>
-                                    <a href="<?= base_url('sheet/delete/' . $s['id_sheet']) ?>"
-                                        onclick="return confirm('Yakin ingin menghapus?')"
-                                        class="btn btn-sm btn-danger">🗑️</a>
-                                </td>
+                                <th>ID</th>
+                                <th>PROJECT</th>
+                                <th>EMPLOYEE</th>
+                                <th>ROLE</th>
+                                <th>LAST MODIFIED</th>
+                                <th>DETAILS</th>
                             </tr>
-                        <?php endforeach ?>
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($sheets as $i => $e): ?>
+                                <tr>
+                                    <td><?= $e['id_sheet'] ?></td>
+                                    <td><?= esc($e['nama_project']) ?></td>
+                                    <td><?= esc($e['nama_employee']) ?></td>
+                                    <td><?= esc($e['judul_role']) ?></td>
+                                    <td><?= esc($e['last_modified']) ?></td>
+                                    <td>
+                                        <a href="<?= base_url('sheet/' . $e['id_sheet']) ?>" class="btn btn-light-icon"><i class="las la-chevron-circle-right"></i></i></a>
+                                    </td>
+                                </tr>
+                            <?php endforeach ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="text-end mt-3">
-                <button type="submit" class="btn btn-success">💾 Simpan Perubahan</button>
-            </div>
-        </form>
+        </div>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const toggleBtn = document.getElementById("sidebarToggle");
+        const sidebar = document.querySelector(".sidebar");
+        const body = document.body;
+
+        toggleBtn.addEventListener("click", function() {
+            sidebar.classList.toggle("show");
+            body.classList.toggle("sidebar-open");
+        });
+
+        document.addEventListener("click", function(e) {
+            if (
+                sidebar.classList.contains("show") &&
+                !sidebar.contains(e.target) &&
+                !toggleBtn.contains(e.target)
+            ) {
+                sidebar.classList.remove("show");
+                body.classList.remove("sidebar-open");
+            }
+        });
+    </script>
+
 </body>
 
 </html>

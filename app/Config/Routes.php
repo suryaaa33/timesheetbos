@@ -68,8 +68,10 @@ $routes->get('/sheet', 'Sheet::index');
 $routes->get('/sheet/create', 'Sheet::create');
 $routes->post('/sheet/store', 'Sheet::store');
 $routes->get('/sheet/edit/(:num)', 'Sheet::edit/$1');
-$routes->post('sheet/updateAll', 'Sheet::update/$1');
+$routes->post('sheet/update/$1', 'Sheet::update/$1');
 $routes->post('/sheet/delete/(:num)', 'Sheet::delete/$1');
+$routes->get('sheet/(:num)', 'Sheet::detail/$1');
+
 
 
 $routes->get('/login', 'Login::index');              // Form login

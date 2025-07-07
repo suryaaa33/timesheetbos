@@ -18,8 +18,8 @@ class Role extends Controller
     public function create()
 {
     $model = new RoleModel();
-    $data['roles'] = $model->findAll(); // optional, jika form perlu data ini
-    $data['role'] = []; // kosong karena mode tambah (bukan edit)
+    $data['roles'] = $model->findAll(); 
+    $data['role'] = []; 
     return view('role/RoleForm', $data);
 }
 

@@ -96,7 +96,7 @@
                         <tbody>
                             <?php foreach ($roles as $i => $r): ?>
                                 <tr>
-                                    <td><?= $i + 1 ?></td>
+                                    <td><?= $r['id_role'] ?></td>
                                     <td><?= esc($r['judul_role']) ?></td>
                                     <td><?= esc($r['total_employee']) ?></td>
                                     <td>
