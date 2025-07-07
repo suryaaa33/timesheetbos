@@ -19,20 +19,28 @@ body.d-flex {
 
 .sidebar .logo {
     font-weight: bold;
-    color: #6cc3ff;
+    color: #4880FF;
 }
 
 .sidebar .menu-item {
     padding: 10px 15px;
     cursor: pointer;
     font-size: 16px;
+    color: #000; /* warna teks default */
 }
 
 .sidebar .menu-item:hover,
 .sidebar .menu-item.active {
-    background-color: #6cc3ff;
+    background-color: #4880FF;
     border-radius: 5px;
+    color: #fff !important; /* teks jadi putih saat hover/active */
 }
+
+.sidebar .menu-item:hover i,
+.sidebar .menu-item.active i {
+    color: #fff !important; /* icon (logo) juga jadi putih */
+}
+
 
 .main-container {
     flex-grow: 1;

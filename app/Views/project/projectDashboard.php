@@ -83,7 +83,7 @@
                 </div>
 
                 <!-- Baris kedua: dropdown sort -->
-                
+
 
 
                 <div class="table-container table-responsive bg-white shadow-sm">
@@ -92,11 +92,9 @@
                             <tr>
                                 <th>ID</th>
                                 <th>NAME</th>
-                                <th>DESCRIPTION</th>
                                 <th>START DATE</th>
                                 <th>END DATE</th>
                                 <th>DEADLINE</th>
-                                <th>BUDGET</th>
                                 <th>CLIENT</th>
                                 <th>PIC</th>
                                 <th>STATUS</th>
@@ -108,20 +106,20 @@
                                 <tr>
                                     <td><?= $i + 1 ?></td>
                                     <td><?= esc($e['nama_project']) ?></td>
-                                    <td><?= esc($e['deskripsi_project']) ?></td>
                                     <td><?= esc($e['startdate_project']) ?></td>
                                     <td><?= esc($e['enddate_project']) ?></td>
                                     <td><?= esc($e['deadline_project']) ?></td>
-                                    <td>Rp <?= number_format($e['budget_project'], 0, ',', '.') ?></td>
-
                                     <td><?= esc($e['nama_client']) ?></td>
                                     <td><?= esc($e['nama_employee']) ?></td>
                                     <td>
-                                    <?= $e['status_project'] == '1' ? '<span class="badge bg-success">Completed</span>' : '<span class="badge bg-secondary">On-Process</span>' ?>
+                                        <?= $e['status_project'] == '1' ? '<span class="badge bg-success">Completed</span>' : '<span class="badge bg-secondary">On-Process</span>' ?>
                                     </td>
                                     <td>
                                         <a href="<?= base_url('project/edit/' . $e['id_project']) ?>" class="btn btn-light-icon"><i class="las la-edit icon-big"></i></a>
-                                        <a href="<?= base_url('project/delete/' . $e['id_project']) ?>" class="btn btn-light-icon" onclick="return confirm('Yakin ingin menghapus?')"><i class="las la-trash icon-big"></i></a>
+                                        <a href="#" class="btn btn-light-icon" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
+                                            onclick="setDeleteUrl('<?= base_url('project/delete/' . $e['id_project']) ?>')">
+                                            <i class="las la-trash icon-big"></i>
+                                        </a>
                                     </td>
                                 </tr>
                             <?php endforeach ?>
@@ -132,8 +130,31 @@
         </div>
     </div>
 
+    <!-- Modal Konfirmasi Delete -->
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-5">
+                <div class="modal-body border-0">
+                    <p class="fs-5 mb-4">Are you sure want to delete this project?</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
+                        <form id="confirmDeleteForm" method="post">
+                            <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function setDeleteUrl(url) {
+            document.getElementById('confirmDeleteForm').setAttribute('action', url);
+        }
+    </script>
 
     <script>
         const toggleBtn = document.getElementById("sidebarToggle");

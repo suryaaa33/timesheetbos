@@ -64,31 +64,63 @@
             </div>
         </div>
 
+        <?php
+        $isEdit = isset($role['id_role']);
+        $formAction = $isEdit ? base_url('role/update/' . $role['id_role']) : base_url('role/store');
+        ?>
+
         <div class="container-fluid p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h3>Form Add/Edit Role</h3>
-
+                <?php if ($isEdit): ?>
+                    <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
+                        onclick="setDeleteUrl('<?= base_url('role/delete/' . $role['id_role']) ?>')">Delete Role</a>
+                <?php endif ?>
             </div>
-            <?php
-            $isEdit = isset($role['id_role']);
-            $formAction = $isEdit ? base_url('role/update/' . $role['id_role']) : base_url('role/store');
-            ?>
 
             <div class="form-section">
-                <div class="d-flex justify-content-center"> <!-- Tambahan ini -->
-                    <form method="post" action="<?= $formAction ?>" style="width: 100%; max-width: 500px;"> <!-- Tambahan style -->
+                <div class="d-flex justify-content-center">
+                    <form method="post" action="<?= $formAction ?>" style="width: 100%; max-width: 500px;">
                         <div class="mb-3">
                             <label for="roleName" class="form-label">Role Name</label>
                             <input type="text" class="form-control" name="judul_role" placeholder="Enter role name"
                                 value="<?= $isEdit ? esc($role['judul_role']) : '' ?>" required>
                         </div>
-                        <button type="submit" class="btn-submit"><?= $isEdit ? 'Update' : 'Add Now' ?></button>
-                        <?php if ($isEdit): ?>
-                            <a href="<?= base_url('role') ?>" class="btn btn-danger d-block mx-auto mt-3" style="width: 150px;">Batal</a>
-                        <?php endif ?>
+                        <div class="d-flex justify-content-center">
+                            <?php if ($isEdit): ?>
+                                <a href="<?= base_url('role') ?>" class="btn-cancel">Cancel</a>
+                            <?php endif ?>
+                            <button type="submit" class="btn-submit"><?= $isEdit ? 'Save' : 'Add Now' ?></button>
+                        </div>
                     </form>
                 </div>
             </div>
+
+            <!-- Modal Konfirmasi Delete -->
+            <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-center p-5">
+                        <div class="modal-body border-0">
+                            <p class="fs-5 mb-4">Are you sure want to delete this project?</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
+                                <form id="confirmDeleteForm" method="post">
+                                    <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+            <script>
+                function setDeleteUrl(url) {
+                    document.getElementById('confirmDeleteForm').setAttribute('action', url);
+                }
+            </script>
 
             <script>
                 const toggleBtn = document.getElementById("sidebarToggle");

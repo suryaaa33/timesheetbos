@@ -64,18 +64,21 @@
             </div>
         </div>
 
+        <?php
+        $isEdit = isset($employee['id_employee']);
+        $formAction = $isEdit ? base_url('employee/update/' . $employee['id_employee']) : base_url('employee/store');
+        ?>
 
         <div class="container-fluid p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h3>Form Employee</h3>
-
+                <?php if ($isEdit): ?>
+                    <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
+                        onclick="setDeleteUrl('<?= base_url('employee/delete/' . $employee['id_employee']) ?>')">Delete Employee</a>
+                <?php endif ?>
             </div>
 
 
-            <?php
-            $isEdit = isset($employee['id_employee']);
-            $formAction = $isEdit ? base_url('employee/update/' . $employee['id_employee']) : base_url('employee/store');
-            ?>
             <!-- Form -->
             <div class="form-section">
                 <form method="post" action="<?= $formAction ?>">
@@ -98,15 +101,15 @@
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="id_role" class="form-label">Role</label>
-                        <select name="id_role" class="form-control" required>
-                            <option value="">-- Pilih Role --</option>
-                            <?php foreach ($roles as $c): ?>
-                                <option value="<?= $c['id_role'] ?>"
-                                    <?= isset($isEdit) && $isEdit && $employee['id_role'] == $c['id_role'] ? 'selected' : '' ?>>
-                                    <?= $c['id_role'] ?> - <?= esc($c['judul_role']) ?>
-                                </option>
-                            <?php endforeach; ?>
-                        </select>
+                            <select name="id_role" class="form-control" required>
+                                <option value="">-- Pilih Role --</option>
+                                <?php foreach ($roles as $c): ?>
+                                    <option value="<?= $c['id_role'] ?>"
+                                        <?= isset($isEdit) && $isEdit && $employee['id_role'] == $c['id_role'] ? 'selected' : '' ?>>
+                                        <?= $c['id_role'] ?> - <?= esc($c['judul_role']) ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
 
                         </div>
                     </div>
@@ -121,21 +124,21 @@
                             <input type="text" class="form-control" name="nohp_employee" placeholder="Enter nomor Handphone employee"
                                 value="<?= $isEdit ? esc($employee['nohp_employee']) : '' ?>" required>
                         </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 form-group">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control" name="username" placeholder="Enter employee username"
                                 value="<?= $isEdit ? esc($employee['username']) : '' ?>" required>
                         </div>
-                            <div class="col-md-6 form-group">
+                        <div class="col-md-6 form-group">
                             <label for="password" class="form-label">Password</label>
                             <input type="text" class="form-control" name="password" placeholder="Enter employee password"
                                 value="<?= $isEdit ? esc($employee['password']) : '' ?>" required>
                         </div>
                     </div>
                     <div class="row">
-                            <div class="col-md-6 form-group mt-3">
+                        <div class="col-md-6 form-group mt-3">
                             <label class="form-label">Status</label>
                             <div class="d-flex flex-column">
                                 <label class="mb-2">
@@ -149,13 +152,42 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn-submit"><?= $isEdit ? 'Update' : 'Add Now' ?></button>
-                    <?php if ($isEdit): ?>
-                        <a href="<?= base_url('employee') ?>" class="btn btn-danger d-block mx-auto mt-3" style="width: 150px;">Batal</a>
-                    <?php endif ?>
+                    <div class="d-flex justify-content-center">
+                        <?php if ($isEdit): ?>
+                            <a href="<?= base_url('employee') ?>" class="btn-cancel">Cancel</a>
+                        <?php endif ?>
+                        <button type="submit" class="btn-submit"><?= $isEdit ? 'Save' : 'Add Now' ?></button>
+                    </div>
                 </form>
             </div>
         </div>
+
+        <!-- Modal Konfirmasi Delete -->
+        <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-5">
+                    <div class="modal-body border-0">
+                        <p class="fs-5 mb-4">Are you sure want to delete this project?</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
+                            <form id="confirmDeleteForm" method="post">
+                                <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            function setDeleteUrl(url) {
+                document.getElementById('confirmDeleteForm').setAttribute('action', url);
+            }
+        </script>
+        
         <script>
             const toggleBtn = document.getElementById("sidebarToggle");
             const sidebar = document.querySelector(".sidebar");

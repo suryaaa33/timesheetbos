@@ -78,7 +78,6 @@
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h4>Employee List</h4>
                     <a href="<?= base_url('employee/create') ?>" class="btn btn-primary">+ Add Employee</a>
-
                 </div>
 
                 <div class="table-container table-responsive bg-white shadow-sm">
@@ -103,7 +102,7 @@
                                     <td><?= esc($e['nama_employee']) ?></td>
                                     <td><?= esc($e['username']) ?></td>
                                     <td><?= esc($e['nohp_employee']) ?></td>
-                                    <td><?= esc($e['alamat_employee']) ?></td>
+                                    <td class="address-column"><?= esc($e['alamat_employee']) ?></td>
                                     <td><?= esc($e['dob_employee']) ?></td>
                                     <td>
                                         <?php
@@ -119,7 +118,10 @@
 
                                     <td>
                                         <a href="<?= base_url('employee/edit/' . $e['id_employee']) ?>" class="btn btn-light-icon"><i class="las la-edit icon-big"></i></a>
-                                        <a href="<?= base_url('employee/delete/' . $e['id_employee']) ?>" class="btn btn-light-icon" onclick="return confirm('Yakin ingin menghapus?')"><i class="las la-trash icon-big"></i></a>
+                                        <a href="#" class="btn btn-light-icon" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
+                                            onclick="setDeleteUrl('<?= base_url('employee/delete/' . $e['id_employee']) ?>')">
+                                            <i class="las la-trash icon-big"></i>
+                                        </a>
                                     </td>
                                 </tr>
                             <?php endforeach ?>
@@ -129,11 +131,33 @@
 
             </div>
 
-
+            <!-- Modal Konfirmasi Delete -->
+            <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-center p-5">
+                        <div class="modal-body border-0">
+                            <p class="fs-5 mb-4">Are you sure want to delete this employee?</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
+                                <form id="confirmDeleteForm" method="post">
+                                    <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <!-- Bootstrap JS -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+            <script>
+                function setDeleteUrl(url) {
+                    document.getElementById('confirmDeleteForm').setAttribute('action', url);
+                }
+            </script>
+
             <script>
                 const toggleBtn = document.getElementById("sidebarToggle");
                 const sidebar = document.querySelector(".sidebar");

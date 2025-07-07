@@ -117,23 +117,22 @@
 </body>
 
 <!-- Modal Konfirmasi Delete -->
-<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+<div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content p-3">
-            <div class="modal-header">
-                <h5 class="modal-title" id="confirmDeleteModalLabel">Konfirmasi Hapus</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Apakah kamu yakin ingin menghapus role ini?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <a href="#" id="confirmDeleteBtn" class="btn btn-danger">Hapus</a>
+        <div class="modal-content text-center p-5">
+            <div class="modal-body border-0">
+                <p class="fs-5 mb-4">Are you sure want to delete this role?</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
+                    <form id="confirmDeleteForm" method="post">
+                        <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 
 <!-- Bootstrap JS -->
@@ -141,10 +140,9 @@
 
 <script>
     function setDeleteUrl(url) {
-        document.getElementById('confirmDeleteBtn').setAttribute('href', url);
+        document.getElementById('confirmDeleteForm').setAttribute('action', url);
     }
 </script>
-
 
 <script>
     const toggleBtn = document.getElementById("sidebarToggle");
