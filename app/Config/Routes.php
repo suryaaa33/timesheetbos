@@ -72,7 +72,7 @@ $routes->post('sheet/update/$1', 'Sheet::update/$1');
 $routes->post('/sheet/delete/(:num)', 'Sheet::delete/$1');
 $routes->get('sheet/(:num)', 'Sheet::detail/$1');
 
-
+$routes->get('/dashboard', 'Dashboard::index');
 
 $routes->get('/login', 'Login::index');              // Form login
 $routes->post('/login/auth', 'Login::auth');         // Proses login
