@@ -64,17 +64,29 @@ $routes->post('/roledetail/delete/(:num)', 'Roledetail::delete/$1');
 
 
 
-$routes->get('/sheet', 'Sheet::index');
-$routes->get('/sheet/create', 'Sheet::create');
-$routes->post('/sheet/store', 'Sheet::store');
-$routes->get('/sheet/edit/(:num)', 'Sheet::edit/$1');
-$routes->post('sheet/update/$1', 'Sheet::update/$1');
-$routes->post('/sheet/delete/(:num)', 'Sheet::delete/$1');
-$routes->get('sheet/(:num)', 'Sheet::detail/$1');
+// ADMIN (READ ONLY)
+$routes->get('/sheet', 'Sheet::index');             
+$routes->get('/sheet/(:num)', 'Sheet::detail/$1');  
+
+// USER (CRUD)
+$routes->get('/sheet/user', 'SheetUser::index');                      
+$routes->get('/sheet/user/create', 'SheetUser::create');              
+$routes->post('/sheet/user/store', 'SheetUser::store');               
+$routes->get('/sheet/user/edit/(:num)', 'SheetUser::edit/$1');        
+$routes->post('/sheet/user/update/(:num)', 'SheetUser::update/$1');   
+$routes->post('/sheet/user/delete/(:num)', 'SheetUser::delete/$1');   
+$routes->get('/sheet/user/(:num)', 'SheetUser::detail/$1');   
+$routes->post('sheet/user/add/(:num)', 'SheetUser::add/$1');
+
+
+
 
 $routes->get('/dashboard', 'Dashboard::index');
+
+$routes->get('/dashboarduser', 'Dashboarduser::index');
 
 $routes->get('/login', 'Login::index');              // Form login
 $routes->post('/login/auth', 'Login::auth');         // Proses login
 $routes->get('/logout', 'Login::logout');            // Proses logout
-$routes->get('/dashboard', 'Dashboard::index', ['filter' => 'authGuard']); // Dashboard (harus login)
+$routes->get('/dashboard', 'Dashboard::index', ['filter' => 'authGuard']); 
+$routes->get('dashboarduser', 'Dashboarduser::index', ['filter' => 'authGuard']);

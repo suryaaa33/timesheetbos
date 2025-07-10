@@ -1,0 +1,180 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+body.d-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.sidebar .logo {
+    font-weight: bold;
+    color: #4880FF;
+}
+
+.sidebar .menu-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000; /* warna teks default */
+}
+
+.sidebar .menu-item:hover,
+.sidebar .menu-item.active {
+    background-color: #4880FF;
+    border-radius: 5px;
+    color: #fff !important; /* teks jadi putih saat hover/active */
+}
+
+.sidebar .menu-item:hover i,
+.sidebar .menu-item.active i {
+    color: #fff !important; /* icon (logo) juga jadi putih */
+}
+
+
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-bar {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 2rem;
+}
+
+.main-content {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.summary-card {
+    border: none;
+    border-radius: 8px;
+}
+
+.summary-card .icon-circle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon-big {
+    font-size: 30px;
+}
+
+.btn-wide {
+    min-width: 140px;
+}
+
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1040;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.table-container {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: white;
+}
+
+.table-header th {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.custom-table td {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+.custom-table tr:last-child td {
+    border-bottom: none;
+}
+
+.btn-light-icon {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    body.d-flex {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        z-index: 1050;
+        height: 100%;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .sidebar-overlay.show {
+        display: block;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .header-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .custom-table {
+        min-width: 900px;
+    }
+}

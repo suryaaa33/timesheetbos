@@ -14,48 +14,36 @@
     <div class="d-flex">
         <!-- Sidebar -->
         <div class="sidebar p-3">
-            <div class="text-center mb-4 logo">
-                <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
-            </div>
-            <a href="<?= base_url('dashboard') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-tachometer-alt"></i>
-                <span class="ms-2">Dashboard</span>
-            </a>
-            <a href="<?= base_url('employee') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-user"></i>
-                <span class="ms-2">Employee</span>
-            </a>
-            <a href="<?= base_url('client') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-user-friends"></i>
-                <span class="ms-2">Client</span>
-            </a>
-            <a href="<?= base_url('project') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-cube"></i>
-                <span class="ms-2">Project</span>
-            </a>
-            <a href="<?= base_url('role') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-database"></i>
-                <span class="ms-2">Role</span>
-            </a>
-            <a href="<?= base_url('roledetail') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-server"></i>
-                <span class="ms-2">Role Detail</span>
-            </a>
-            <a href="<?= base_url('menu') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-list"></i>
-                <span class="ms-2">Menu</span>
-            </a>
-            <a href="<?= base_url('sheet') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-calendar-alt"></i>
-                <span class="ms-2">Time Sheet</span>
-            </a>
-            <hr />
-            <a href="<?= base_url('/logout') ?>" onclick="return confirm('Are you sure you want to logout?');"
-                class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-power-off"></i>
-                <span class="ms-2">Logout</span>
-            </a>
+        <div class="text-center mb-4 logo">
+            <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
         </div>
+        <a href="<?= base_url('dashboarduser') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+            <i class="las la-tachometer-alt"></i>
+            <span class="ms-2">Dashboard</span>
+        </a>
+        <a href="<?= base_url('sheet/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+            <i class="las la-calendar-alt"></i>
+            <span class="ms-2">Time Sheet</span>
+        </a>
+        <a href="<?= base_url('project') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+            <i class="las la-cube"></i>
+            <span class="ms-2">Project Assigned</span>
+        </a>
+        <a href="<?= base_url('role') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+            <i class="las la-database"></i>
+            <span class="ms-2">Role Assigned</span>
+        </a>
+        <a href="<?= base_url('roledetail') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+            <i class="las la-folder-plus"></i>
+            <span class="ms-2">Create Timesheet</span>
+        </a>
+        <hr />
+        <a href="<?= base_url('/logout') ?>" onclick="return confirm('Are you sure you want to logout?');"
+            class="menu-item d-flex align-items-center text-decoration-none text-dark">
+            <i class="las la-power-off"></i>
+            <span class="ms-2">Logout</span>
+        </a>
+    </div>
 
         <!-- Main Content -->
         <div class="main-container">
@@ -66,9 +54,9 @@
                 </button>
                 <div class="d-flex align-items-center gap-3 ms-auto">
                     <div class="text-end">
-                        <div class="fw-bold">Gerit Himawan</div>
-                        <div class="text-muted small">Admin</div>
-                    </div>
+                    <div class="fw-bold"><?= session()->get('nama') ?></div>
+                    <div class="text-muted small"><?= session()->get('role') ?></div>
+                </div>
                     <i class="las la-user icon-big fs-2"></i>
                 </div>
             </div>
@@ -87,7 +75,6 @@
                             <tr>
                                 <th>ID</th>
                                 <th>PROJECT</th>
-                                <th>EMPLOYEE</th>
                                 <th>ROLE</th>
                                 <th>LAST MODIFIED</th>
                                 <th>DETAILS</th>
@@ -98,11 +85,10 @@
                                 <tr>
                                     <td><?= $e['id_sheet'] ?></td>
                                     <td><?= esc($e['nama_project']) ?></td>
-                                    <td><?= esc($e['nama_employee']) ?></td>
                                     <td><?= esc($e['judul_role']) ?></td>
                                     <td><?= esc($e['last_modified']) ?></td>
                                     <td>
-                                        <a href="<?= base_url('sheet/' . $e['id_sheet']) ?>" class="btn btn-light-icon"><i class="las la-chevron-circle-right"></i></i></a>
+                                        <a href="<?= base_url('sheet/user/' . $e['id_sheet']) ?>" class="btn btn-light-icon"><i class="las la-chevron-circle-right"></i></i></a>
                                     </td>
                                 </tr>
                             <?php endforeach ?>

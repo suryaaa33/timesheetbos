@@ -67,8 +67,8 @@
             </button>
             <div class="d-flex align-items-center gap-3 ms-auto">
                 <div class="text-end">
-                    <div class="fw-bold">Gerit Himawan</div>
-                    <div class="text-muted small">Admin</div>
+                    <div class="fw-bold"><?= session()->get('nama') ?></div>
+                    <div class="text-muted small"><?= session()->get('role') ?></div>
                 </div>
                 <i class="las la-user icon-big fs-2"></i>
             </div>
