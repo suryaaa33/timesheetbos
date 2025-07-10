@@ -104,6 +104,10 @@
 
             <div class="form-section">
                 <form method="post" action="<?= $formAction ?>">
+                    <?php if (isset($redirect_back)): ?>
+                        <input type="hidden" name="redirect_back" value="<?= $redirect_back ?>">
+                    <?php endif ?>
+
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="date" class="form-label">Date</label>

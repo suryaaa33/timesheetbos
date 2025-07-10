@@ -81,8 +81,9 @@ $routes->post('/sheet/user/store', 'SheetUser::store');
 $routes->get('/sheet/user/edit/(:num)', 'SheetUser::edit/$1');        
 $routes->post('/sheet/user/update/(:num)', 'SheetUser::update/$1');   
 $routes->post('/sheet/user/delete/(:num)', 'SheetUser::delete/$1');   
-$routes->get('/sheet/user/(:num)', 'SheetUser::detail/$1');   
-$routes->post('sheet/user/add/(:num)', 'SheetUser::add/$1');
+$routes->get('/sheet/user/(:num)', 'SheetUser::detail/$1'); 
+$routes->get('sheet/user/detail/(:num)', 'SheetUser::detail/$1');
+// $routes->post('sheet/user/add/(:num)', 'SheetUser::add/$1');
 
 
 

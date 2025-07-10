@@ -64,7 +64,12 @@
             <div class="container-fluid p-4 w-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <h4 class="mb-0">Detail Timesheet</h4>
-                    <a href="<?= base_url('sheet/user/create') ?>" class="btn btn-primary">+ Add Activity</a>
+                    <div class="d-flex justify-content-end mb-3">
+                        <a href="<?= base_url('sheet/user/create?project=' . $sheet['id_project'] . '&from=detail&sheet=' . $sheet['id_sheet']) ?>" class="btn btn-primary">
+                            + Add New Activity
+                        </a>
+                    </div>
+
                 </div>
                 <div class="mb-4">
                     <div class="d-flex mb-2">
@@ -83,27 +88,6 @@
                         <div class="fw-semibold"><?= esc($sheet['nama_project']) ?></div>
                     </div>
                 </div>
-
-                <h5>Add New Activity</h5>
-                <form method="post" action="<?= base_url('sheet/user/add/' . $sheet['id_project']) ?>">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <input type="date" name="date_sheet" class="form-control" required>
-                        </div>
-                        <div class="col-md-2">
-                            <input type="text" name="hours_sheet" class="form-control" placeholder="Hours" required>
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" name="activity" class="form-control" placeholder="Activity" required>
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" name="result_path" class="form-control" placeholder="Result" required>
-                        </div>
-                        <div class="col-md-1">
-                            <button type="submit" class="btn btn-primary">+</button>
-                        </div>
-                    </div>
-                </form>
 
 
                 <div class="table-container table-responsive bg-white shadow-sm">

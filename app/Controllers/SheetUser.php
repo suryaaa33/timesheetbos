@@ -44,31 +44,49 @@ class SheetUser extends Controller
     }
 
     public function create()
-    {
-        $projectModel = new ProjectModel();
+{
+    $projectModel = new ProjectModel();
+    $data['projects'] = $projectModel
+        ->where('id_employee', session()->get('id_employee'))
+        ->findAll();
 
-        $data['projects'] = $projectModel->findAll();
-        $data['sheet'] = [];
+    $id_project = $this->request->getGet('project');
+    $fromDetail = $this->request->getGet('from') === 'detail';
+    $sheet_id = $this->request->getGet('sheet');
 
-        return view('sheet/user/SheetForm', $data);
-    }
+    $data['sheet'] = [
+        'id_project' => $id_project
+    ];
+
+    $data['redirect_back'] = $fromDetail ? 'detail/' . $sheet_id : null;
+
+    return view('sheet/user/SheetForm', $data);
+}
+
 
     public function store()
 {
     $model = new SheetModel();
 
-    $model->insert([
-        'id_employee'   => session()->get('id_employee'),         // ← ambil dari session
-        'id_project'    => $this->request->getPost('id_project'), // ← dari form (harus ada!)
+    $id = $model->insert([
+        'id_employee'   => session()->get('id_employee'),
+        'id_project'    => $this->request->getPost('id_project'),
         'date_sheet'    => $this->request->getPost('date_sheet'),
         'hours_sheet'   => $this->request->getPost('hours_sheet'),
         'activity'      => $this->request->getPost('activity'),
         'result_path'   => $this->request->getPost('result_path'),
         'last_modified' => date('Y-m-d H:i:s'),
-    ]);
+    ], true); // ← true agar return insert ID
 
-    return redirect()->to('/sheet/user');
+    $redirect = $this->request->getPost('redirect_back');
+
+    if ($redirect) {
+        return redirect()->to('/sheet/user/' . $redirect)->with('success', 'Activity added successfully.');
+    }
+
+    return redirect()->to('/sheet/user')->with('success', 'Sheet added.');
 }
+
 
 
     public function edit($id)
@@ -82,7 +100,9 @@ class SheetUser extends Controller
     }
 
     $projectModel = new ProjectModel();
-    $data['projects'] = $projectModel->findAll();
+    $data['projects'] = $projectModel
+        ->where('id_employee', session()->get('id_employee'))
+        ->findAll();
     $data['sheet'] = $sheet;
     return view('sheet/user/SheetForm', $data);
 }
@@ -122,23 +142,6 @@ class SheetUser extends Controller
         $model->delete($id);
         return redirect()->to('/sheet/user');
     }
-
-    public function add($id_project)
-{
-    $model = new SheetModel();
-
-    $model->insert([
-        'date_sheet'    => $this->request->getPost('date_sheet'),
-        'hours_sheet'   => $this->request->getPost('hours_sheet'),
-        'activity'      => $this->request->getPost('activity'),
-        'result_path'   => $this->request->getPost('result_path'),
-        'last_modified' => date('Y-m-d H:i:s'),
-        'id_employee'   => session()->get('id_employee'),
-        'id_project'    => $id_project
-    ]);
-
-    return redirect()->back()->with('success', 'Activity added successfully.');
-}
 
 public function sheetsByProject($id_project)
 {

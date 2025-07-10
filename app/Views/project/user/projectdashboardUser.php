@@ -65,7 +65,7 @@
             <!-- Content -->
             <div class="container-fluid p-4 w-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h4 class="mb-0">Project List</h4>
+                    <h4 class="mb-0">Project Assigned</h4>
                 </div>
 
                 <!-- Baris kedua: dropdown sort -->
