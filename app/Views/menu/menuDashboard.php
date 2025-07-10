@@ -65,10 +65,10 @@
                     <i class="las la-bars fs-2"></i>
                 </button>
                 <div class="d-flex align-items-center gap-3 ms-auto">
-                    <div class="text-end">
-                        <div class="fw-bold">Gerit Himawan</div>
-                        <div class="text-muted small">Admin</div>
-                    </div>
+                <div class="text-end">
+                    <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
+                    <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
+                </div>
                     <i class="las la-user icon-big fs-2"></i>
                 </div>
             </div>

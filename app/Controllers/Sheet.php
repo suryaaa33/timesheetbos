@@ -27,15 +27,7 @@ class Sheet extends Controller
     public function detail($id)
 {
     $model = new SheetModel();
-    $sheets = $model->getWithEmployeeAndProjectAndRole();
-
-    $selected = null;
-    foreach ($sheets as $row) {
-        if ($row['id_sheet'] == $id) {
-            $selected = $row;
-            break;
-        }
-    }
+    $selected = $model->getDetailWithAllRelations($id);
 
     if (!$selected) {
         throw new \CodeIgniter\Exceptions\PageNotFoundException('Data sheet tidak ditemukan');
@@ -45,4 +37,5 @@ class Sheet extends Controller
         'sheet' => $selected
     ]);
 }
+
 }

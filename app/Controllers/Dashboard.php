@@ -37,13 +37,13 @@ class Dashboard extends BaseController
         $data['total_roledetail'] = $roledetailModel->countAll();
         $data['total_sheet'] = $sheetModel->countAll();
 
-        $employee = $employeeModel->find($id_employee);
-        if ($employee && $employee['id_role']) {
-            $data['role'] = $roleModel->find($employee['id_role']);
-            $data['role_name'] = $data['role']['judul_role'] ?? 'No Role';
-        } else {
-            $data['role_name'] = 'No Role Assigned';
-        }
+        // $employee = $employeeModel->find($id_employee);
+        // if ($employee && $employee['id_role']) {
+        //     $data['role'] = $roleModel->find($employee['id_role']);
+        //     $data['role_name'] = $data['role']['judul_role'] ?? 'No Role';
+        // } else {
+        //     $data['role_name'] = 'No Role Assigned';
+        // }
 
         return view('dashboardAdmin', $data);
     }
