@@ -65,10 +65,10 @@
                     <i class="las la-bars fs-2"></i>
                 </button>
                 <div class="d-flex align-items-center gap-3 ms-auto">
-                <div class="text-end">
-                    <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
-                    <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
-                </div>
+                    <div class="text-end">
+                        <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
+                        <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
+                    </div>
                     <i class="las la-user icon-big fs-2"></i>
                 </div>
             </div>
@@ -83,17 +83,32 @@
                 </div>
 
                 <!-- Baris kedua: dropdown sort -->
-                <div class="mb-3">
-                    <form method="get" class="d-flex" style="max-width: 200px;">
-                        <select name="sort" class="form-select" onchange="this.form.submit()">
-                            <option value="">Sort By</option>
-                            <option value="az" <?= $sort == 'az' ? 'selected' : '' ?>>Name A-Z</option>
-                            <option value="za" <?= $sort == 'za' ? 'selected' : '' ?>>Name Z-A</option>
-                            <option value="newest" <?= $sort == 'newest' ? 'selected' : '' ?>>Newest</option>
-                            <option value="oldest" <?= $sort == 'oldest' ? 'selected' : '' ?>>Oldest</option>
-                        </select>
-                    </form>
-                </div>
+                <thead class="table-header align-middle">
+                    <tr>
+                        <th colspan="2" class="bg-light" style="vertical-align: middle;">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="las la-filter fs-5 text-secondary"></i>
+                                <form method="get" class="d-flex align-items-center" style="gap: 6px;">
+                                    <label for="sort" class="form-label mb-0 fw-normal text-muted small">Sort By:</label>
+                                    <select name="sort" id="sort" class="form-select form-select-sm bg-white border-secondary" style="min-width: 140px;" onchange="this.form.submit()">
+                                        <option value="">-- Select --</option>
+                                        <option value="az" <?= $sort == 'az' ? 'selected' : '' ?>>Name A-Z</option>
+                                        <option value="za" <?= $sort == 'za' ? 'selected' : '' ?>>Name Z-A</option>
+                                        <option value="newest" <?= $sort == 'newest' ? 'selected' : '' ?>>Newest</option>
+                                        <option value="oldest" <?= $sort == 'oldest' ? 'selected' : '' ?>>Oldest</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <!-- Tambahkan kolom lain -->
+                    </tr>
+                </thead>
+
+
 
 
                 <div class="table-container table-responsive bg-white shadow-sm">
