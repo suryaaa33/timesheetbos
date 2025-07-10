@@ -140,4 +140,19 @@ class SheetUser extends Controller
     return redirect()->back()->with('success', 'Activity added successfully.');
 }
 
+public function sheetsByProject($id_project)
+{
+    $id_employee = session()->get('id_employee');
+    $sheetModel = new \App\Models\SheetModel();
+
+    $sheets = $sheetModel
+        ->getWithEmployeeAndProjectAndRoleByEmployee($id_employee);
+
+    // Filter hanya untuk project ini
+    $sheets = array_filter($sheets, fn($s) => $s['id_project'] == $id_project);
+
+    return view('project/user/sheetsByProject', ['sheets' => $sheets]);
+}
+
+
 }

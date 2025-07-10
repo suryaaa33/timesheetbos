@@ -18,13 +18,19 @@ $routes->post('/client/delete/(:num)', 'Client::delete/$1');
 
 
 
-
+//admin
 $routes->get('/project', 'Project::index');
 $routes->get('/project/create', 'Project::create');
 $routes->post('/project/store', 'Project::store');
 $routes->get('/project/edit/(:num)', 'Project::edit/$1');     
 $routes->post('/project/update/(:num)', 'Project::update/$1');
 $routes->post('/project/delete/(:num)', 'Project::delete/$1');
+
+//user
+$routes->get('/dashboarduser/projects', 'DashboardUserProject::index', ['filter' => 'auth:user']);
+$routes->get('/sheet/user/project/user/(:num)', 'SheetUser::sheetsByProject/$1');
+$routes->get('/project/user', 'ProjectUser::index'); 
+
 
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Detail Timesheet</title>
+    <title>Project Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/css/dashboardTable.css') ?>" />
@@ -12,6 +12,7 @@
 
 <body>
     <div class="d-flex">
+        <!-- Sidebar -->
         <div class="sidebar p-3">
             <div class="text-center mb-4 logo">
                 <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
@@ -43,6 +44,7 @@
                 <span class="ms-2">Logout</span>
             </a>
         </div>
+
         <!-- Main Content -->
         <div class="main-container">
             <!-- Header -->
@@ -52,8 +54,8 @@
                 </button>
                 <div class="d-flex align-items-center gap-3 ms-auto">
                     <div class="text-end">
-                        <div class="fw-bold"><?= session()->get('nama') ?></div>
-                        <div class="text-muted small"><?= session()->get('role') ?></div>
+                        <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
+                        <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
                     </div>
                     <i class="las la-user icon-big fs-2"></i>
                 </div>
@@ -63,80 +65,47 @@
             <!-- Content -->
             <div class="container-fluid p-4 w-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h4 class="mb-0">Detail Timesheet</h4>
-                    <a href="<?= base_url('sheet/user/create') ?>" class="btn btn-primary">+ Add Activity</a>
-                </div>
-                <div class="mb-4">
-                    <div class="d-flex mb-2">
-                        <div class="fw-semibold" style="min-width: 140px;">Consultant</div>
-                        <div class="me-1">:</div>
-                        <div class="fw-semibold"><?= esc($sheet['nama_employee']) ?></div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <div class="fw-semibold" style="min-width: 140px;">Role</div>
-                        <div class="me-1">:</div>
-                        <div class="fw-semibold"><?= esc($sheet['judul_role']) ?></div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <div class="fw-semibold" style="min-width: 140px;">Project Name</div>
-                        <div class="me-1">:</div>
-                        <div class="fw-semibold"><?= esc($sheet['nama_project']) ?></div>
-                    </div>
+                    <h4 class="mb-0">Project List</h4>
                 </div>
 
-                <h5>Add New Activity</h5>
-                <form method="post" action="<?= base_url('sheet/user/add/' . $sheet['id_project']) ?>">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <input type="date" name="date_sheet" class="form-control" required>
-                        </div>
-                        <div class="col-md-2">
-                            <input type="text" name="hours_sheet" class="form-control" placeholder="Hours" required>
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" name="activity" class="form-control" placeholder="Activity" required>
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" name="result_path" class="form-control" placeholder="Result" required>
-                        </div>
-                        <div class="col-md-1">
-                            <button type="submit" class="btn btn-primary">+</button>
-                        </div>
-                    </div>
-                </form>
+                <!-- Baris kedua: dropdown sort -->
+
 
 
                 <div class="table-container table-responsive bg-white shadow-sm">
                     <table class="table align-middle mb-0 custom-table">
                         <thead class="table-header">
                             <tr>
-                                <th>DATE</th>
-                                <th>HOURS</th>
-                                <th>ACTIVITY</th>
-                                <th>RESULT</th>
+                                <th>ID</th>
+                                <th>NAME</th>
+                                <th>START DATE</th>
+                                <th>END DATE</th>
+                                <th>DEADLINE</th>
+                                <th>CLIENT</th>
+                                <th>STATUS</th>
                                 <th>ACTION</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($activities as $a): ?>
+                            <?php foreach ($projects as $i => $e): ?>
                                 <tr>
-                                    <td><?= esc($a['date_sheet']) ?></td>
-                                    <td><?= esc($a['hours_sheet']) ?></td>
-                                    <td class="address-column"><?= esc($a['activity']) ?></td>
-                                    <td class="address-column"><?= esc($a['result_path']) ?></td>
+                                    <td><?= $e['id_project'] ?></td>
+                                    <td><?= esc($e['nama_project']) ?></td>
+                                    <td><?= esc($e['startdate_project']) ?></td>
+                                    <td><?= esc($e['enddate_project']) ?></td>
+                                    <td><?= esc($e['deadline_project']) ?></td>
+                                    <td><?= esc($e['nama_client']) ?></td>
                                     <td>
-                                        <a href="<?= base_url('sheet/user/edit/' . $a['id_sheet']) ?>" class="btn btn-light-icon">
-                                            <i class="las la-edit icon-big"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-light-icon" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
-                                            onclick="setDeleteUrl('<?= base_url('sheet/user/delete/' . $a['id_sheet']) ?>')">
-                                            <i class="las la-trash icon-big"></i>
+                                        <?= $e['status_project'] == '1' ? '<span class="badge bg-success">Completed</span>' : '<span class="badge bg-secondary">On-Process</span>' ?>
+                                    </td>
+                                    <td>
+                                        <a href="<?= base_url('sheet/user/project/user/' . $e['id_project']) ?>" class="btn btn-sm btn-primary">
+                                            See Timesheet
                                         </a>
                                     </td>
                                 </tr>
-                            <?php endforeach; ?>
+                            <?php endforeach ?>
                         </tbody>
-
                     </table>
                 </div>
             </div>
@@ -148,7 +117,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-center p-5">
                 <div class="modal-body border-0">
-                    <p class="fs-5 mb-4">Are you sure want to delete this sheet?</p>
+                    <p class="fs-5 mb-4">Are you sure want to delete this project?</p>
                     <div class="d-flex justify-content-center gap-3">
                         <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
                         <form id="confirmDeleteForm" method="post">

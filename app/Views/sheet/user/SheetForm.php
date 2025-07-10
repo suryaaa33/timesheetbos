@@ -23,11 +23,11 @@
             <i class="las la-calendar-alt"></i>
             <span class="ms-2">Time Sheet</span>
         </a>
-        <a href="<?= base_url('project') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+        <a href="<?= base_url('project/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
             <i class="las la-cube"></i>
             <span class="ms-2">Project Assigned</span>
         </a>
-        <a href="<?= base_url('role') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+        <a href="<?= base_url('role/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
             <i class="las la-database"></i>
             <span class="ms-2">Role Assigned</span>
         </a>
