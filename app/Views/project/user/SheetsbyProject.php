@@ -99,7 +99,7 @@
                                     <td><?= esc($s['last_modified']) ?></td>
                                     <td>
 
-                                        <a href="<?= base_url('sheet/user/project/user/' . $s['id_project'] . '/' . $s['id_employee']) ?>" class="btn btn-sm btn-primary">
+                                        <a href="<?= base_url('project/user/' . $s['id_project'] ) ?>" class="btn btn-sm btn-primary">
                                             detail
                                         </a>
 
