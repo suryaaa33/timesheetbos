@@ -65,29 +65,26 @@
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <h4 class="mb-0">Detail Timesheet</h4>
                     <div class="d-flex justify-content-end mb-3">
-                        <a href="<?= base_url('sheet/user/create?project=' . $sheet['id_project'] . '&from=detail&sheet=' . $sheet['id_sheet']) ?>" class="btn btn-primary">
-                            + Add New Activity
-                        </a>
                     </div>
+                </div>
 
-                </div>
                 <div class="mb-4">
-                    <div class="d-flex mb-2">
-                        <div class="fw-semibold" style="min-width: 140px;">Consultant</div>
-                        <div class="me-1">:</div>
-                        <div class="fw-semibold"><?= esc($sheet['nama_employee']) ?></div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <div class="fw-semibold" style="min-width: 140px;">Role</div>
-                        <div class="me-1">:</div>
-                        <div class="fw-semibold"><?= esc($sheet['judul_role']) ?></div>
-                    </div>
-                    <div class="d-flex mb-2">
-                        <div class="fw-semibold" style="min-width: 140px;">Project Name</div>
-                        <div class="me-1">:</div>
-                        <div class="fw-semibold"><?= esc($sheet['nama_project']) ?></div>
-                    </div>
-                </div>
+    <div class="d-flex mb-2">
+        <div class="fw-semibold" style="min-width: 140px;">Consultant</div>
+        <div class="me-1">:</div>
+        <div class="fw-semibold"><?= esc($sheet['nama_employee']) ?></div>
+    </div>
+    <div class="d-flex mb-2">
+        <div class="fw-semibold" style="min-width: 140px;">Role</div>
+        <div class="me-1">:</div>
+        <div class="fw-semibold"><?= esc($sheet['judul_role']) ?></div>
+    </div>
+    <div class="d-flex mb-2">
+        <div class="fw-semibold" style="min-width: 140px;">Project Name</div>
+        <div class="me-1">:</div>
+        <div class="fw-semibold"><?= esc($sheet['nama_project']) ?></div>
+    </div>
+</div>
 
 
                 <div class="table-container table-responsive bg-white shadow-sm">
@@ -98,7 +95,6 @@
                                 <th>MINUTES</th>
                                 <th>ACTIVITY</th>
                                 <th>RESULT</th>
-                                <th>ACTION</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -108,37 +104,11 @@
                                     <td><?= esc($a['hours_sheet']) ?></td>
                                     <td class="address-column"><?= esc($a['activity']) ?></td>
                                     <td class="address-column"><?= esc($a['result_path']) ?></td>
-                                    <td>
-                                        <a href="<?= base_url('sheet/user/edit/' . $a['id_sheet']) ?>" class="btn btn-light-icon">
-                                            <i class="las la-edit icon-big"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-light-icon" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
-                                            onclick="setDeleteUrl('<?= base_url('sheet/user/delete/' . $a['id_sheet']) ?>')">
-                                            <i class="las la-trash icon-big"></i>
-                                        </a>
-                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
 
                     </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Konfirmasi Delete -->
-    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center p-5">
-                <div class="modal-body border-0">
-                    <p class="fs-5 mb-4">Are you sure want to delete this sheet?</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
-                        <form id="confirmDeleteForm" method="post">
-                            <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
-                        </form>
-                    </div>
                 </div>
             </div>
         </div>

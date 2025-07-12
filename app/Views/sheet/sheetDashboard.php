@@ -65,10 +65,10 @@
                     <i class="las la-bars fs-2"></i>
                 </button>
                 <div class="d-flex align-items-center gap-3 ms-auto">
-                <div class="text-end">
-                    <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
-                    <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
-                </div>
+                    <div class="text-end">
+                        <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
+                        <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
+                    </div>
                     <i class="las la-user icon-big fs-2"></i>
                 </div>
             </div>
@@ -89,6 +89,7 @@
                                 <th>PROJECT</th>
                                 <th>EMPLOYEE</th>
                                 <th>ROLE</th>
+                                <th>ACTIVITY DURATION</th>
                                 <th>LAST MODIFIED</th>
                                 <th>DETAILS</th>
                             </tr>
@@ -100,6 +101,23 @@
                                     <td><?= esc($e['nama_project']) ?></td>
                                     <td><?= esc($e['nama_employee']) ?></td>
                                     <td><?= esc($e['judul_role']) ?></td>
+                                    <td>
+                                        <?php
+                                        $totalMinutes = (int) $e['hours_sheet'];
+                                        $days = floor($totalMinutes / (60 * 8)); // 1 hari kerja = 8 jam
+                                        $hours = floor(($totalMinutes % (60 * 8)) / 60);
+                                        $minutes = $totalMinutes % 60;
+
+                                        // Tampilkan hanya bagian yang ada nilainya
+                                        $parts = [];
+                                        if ($days > 0) $parts[] = $days . 'd';
+                                        if ($hours > 0) $parts[] = $hours . 'h';
+                                        if ($minutes > 0) $parts[] = $minutes . 'm';
+
+                                        echo implode(' ', $parts);
+                                        ?>
+                                    </td>
+
                                     <td><?= esc($e['last_modified']) ?></td>
                                     <td>
                                         <a href="<?= base_url('sheet/' . $e['id_sheet']) ?>" class="btn btn-light-icon"><i class="las la-chevron-circle-right"></i></i></a>

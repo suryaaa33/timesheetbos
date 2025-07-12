@@ -64,27 +64,45 @@
             <!-- Content -->
             <div class="container-fluid p-4 w-100">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h4 class="mb-0">Timesheet untuk Project: <?= esc($sheets[0]['nama_project'] ?? 'Unknown') ?></h4>
+                    <h4 class="mb-0">Timesheet Project: <?= esc($sheets[0]['nama_project'] ?? 'Unknown') ?></h4>
                 </div>
 
                 <div class="table-container table-responsive bg-white shadow-sm">
                     <table class="table align-middle mb-0 custom-table">
                         <thead class="table-header">
                             <tr>
-                                <th>Tanggal</th>
-                                <th>Jam</th>
-                                <th>Aktivitas</th>
+                                <th>ID</th>
+                                <th>Project</th>
+                                <th>Employee</th>
+                                <th>Role</th>
+                                <th>Activity Duration</th>
+                                <th>Last Modified</th>
                                 <th>Detail</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php foreach ($sheets as $s): ?>
                                 <tr>
-                                    <td><?= esc($s['date_sheet']) ?></td>
-                                    <td><?= esc($s['hours_sheet']) ?></td>
-                                    <td><?= esc($s['activity']) ?></td>
+                                    <td><?= esc($s['id_sheet']) ?></td>
+                                    <td><?= esc($s['nama_project']) ?></td>
+                                    <td><?= esc($s['nama_employee']) ?></td>
+                                    <td><?= esc($s['judul_role']) ?></td>
                                     <td>
-                                        <a href="<?= base_url('sheet/user/' . $s['id_sheet']) ?>" class="btn btn-sm btn-primary">Detail</a>
+                                        <?php
+                                        $minutes = $s['total_minutes'];
+                                        $days = floor($minutes / (60 * 8)); // 1 hari = 8 jam kerja
+                                        $hours = floor(($minutes % (60 * 8)) / 60);
+                                        $mins = $minutes % 60;
+                                        echo "{$days}d {$hours}h {$mins}m";
+                                        ?>
+                                    </td>
+                                    <td><?= esc($s['last_modified']) ?></td>
+                                    <td>
+
+                                        <a href="<?= base_url('sheet/user/project/user/' . $s['id_project'] . '/' . $s['id_employee']) ?>" class="btn btn-sm btn-primary">
+                                            detail
+                                        </a>
+
                                     </td>
                                 </tr>
                             <?php endforeach ?>
@@ -103,12 +121,12 @@
         const sidebar = document.querySelector(".sidebar");
         const body = document.body;
 
-        toggleBtn.addEventListener("click", function () {
+        toggleBtn.addEventListener("click", function() {
             sidebar.classList.toggle("show");
             body.classList.toggle("sidebar-open");
         });
 
-        document.addEventListener("click", function (e) {
+        document.addEventListener("click", function(e) {
             if (
                 sidebar.classList.contains("show") &&
                 !sidebar.contains(e.target) &&
@@ -120,4 +138,5 @@
         });
     </script>
 </body>
+
 </html>

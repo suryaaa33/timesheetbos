@@ -1,0 +1,1446 @@
+DEBUG - 2025-07-12 07:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 07:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 07:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 12:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 18:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 19:08:17 --> ErrorException: Undefined variable $s
+[Method: GET, Route: sheet]
+in APPPATH\Views\sheet\sheetDashboard.php on line 107.
+ 1 APPPATH\Views\sheet\sheetDashboard.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $s', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\sheet\\sheetDashboard.php', 107)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\sheet\\sheetDashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('sheet/sheetDashboard', [], true)
+ 5 APPPATH\Controllers\Sheet.php(24): view('sheet/sheetDashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sheet))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 19:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 19:08:41 --> ErrorException: Undefined array key "total_minutes"
+[Method: GET, Route: sheet]
+in APPPATH\Views\sheet\sheetDashboard.php on line 107.
+ 1 APPPATH\Views\sheet\sheetDashboard.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_minutes"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\sheet\\sheetDashboard.php', 107)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\sheet\\sheetDashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('sheet/sheetDashboard', [], true)
+ 5 APPPATH\Controllers\Sheet.php(24): view('sheet/sheetDashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Sheet->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sheet))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 19:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-12 19:18:09 --> mysqli_sql_exception: Table 'timesheet.sheet_detail' doesn't exist in C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.*, `...', 0)
+#1 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `...')
+#2 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `...')
+#3 C:\xampp\htdocs\timesheet\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\app\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\app\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+#6 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+#7 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+#8 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\timesheet\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\timesheet\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-07-12 19:18:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'timesheet.sheet_detail' doesn't exist
+[Method: GET, Route: sheet/user]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = :s.id_employee:
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', [...], false)
+ 2 APPPATH\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 19:18:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'timesheet.sheet_detail' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = :s.id_employee:
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', [...], false)
+ 4 APPPATH\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 19:18:09 --> [Caused by] mysqli_sql_exception: Table 'timesheet.sheet_detail' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = :s.id_employee:
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', [...], false)
+ 5 APPPATH\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 19:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-12 19:18:28 --> mysqli_sql_exception: Table 'timesheet.sheet_detail' doesn't exist in C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.*, `...', 0)
+#1 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `...')
+#2 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `...')
+#3 C:\xampp\htdocs\timesheet\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\app\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\app\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+#6 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+#7 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+#8 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\timesheet\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\timesheet\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-07-12 19:18:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'timesheet.sheet_detail' doesn't exist
+[Method: GET, Route: sheet/user]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = :s.id_employee:
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', [...], false)
+ 2 APPPATH\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 19:18:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'timesheet.sheet_detail' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = :s.id_employee:
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', [...], false)
+ 4 APPPATH\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 19:18:28 --> [Caused by] mysqli_sql_exception: Table 'timesheet.sheet_detail' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = :s.id_employee:
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', [...], false)
+ 5 APPPATH\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 19:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-12 19:19:45 --> mysqli_sql_exception: Table 'timesheet.sheet_detail' doesn't exist in C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\timesheet\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.*, `...', 0)
+#1 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `...')
+#2 C:\xampp\htdocs\timesheet\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `...')
+#3 C:\xampp\htdocs\timesheet\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `...', Array, false)
+#4 C:\xampp\htdocs\timesheet\app\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\timesheet\app\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+#6 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+#7 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+#8 C:\xampp\htdocs\timesheet\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\timesheet\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\timesheet\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\timesheet\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-07-12 19:19:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'timesheet.sheet_detail' doesn't exist
+[Method: GET, Route: sheet/user]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = :s.id_employee:
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', [...], false)
+ 2 APPPATH\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 19:19:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'timesheet.sheet_detail' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = :s.id_employee:
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', [...], false)
+ 4 APPPATH\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 19:19:45 --> [Caused by] mysqli_sql_exception: Table 'timesheet.sheet_detail' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = \'4\'
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.*, `p`.`nama_project`, `e`.`nama_employee`, `r`.`judul_role`, SUM(sd.hours_sheet) as total_minutes
+FROM `sheet` `s`
+LEFT JOIN `project` `p` ON `p`.`id_project` = `s`.`id_project`
+LEFT JOIN `employee` `e` ON `e`.`id_employee` = `s`.`id_employee`
+LEFT JOIN `role` `r` ON `r`.`id_role` = `e`.`id_role`
+LEFT JOIN `sheet_detail` `sd` ON `s`.`id_sheet` = `sd`.`id_sheet`
+WHERE `s`.`id_employee` = :s.id_employee:
+GROUP BY `s`.`id_sheet`
+ORDER BY `s`.`last_modified` DESC', [...], false)
+ 5 APPPATH\Models\SheetModel.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\SheetUser.php(17): App\Models\SheetModel->getSheetsWithDurationByEmployee('4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 19:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:25:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:40:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 19:49:45 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\SheetModel::getWithEmployeeAndProjectAndRoleByEmployee
+[Method: GET, Route: sheet/user/project/user/3]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\SheetUser.php(150): CodeIgniter\Model->__call('getWithEmployeeAndProjectAndRoleByEmployee', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 19:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 19:50:04 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\SheetModel::getWithEmployeeAndProjectAndRoleByEmployee
+[Method: GET, Route: sheet/user/project/user/3]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\SheetUser.php(150): CodeIgniter\Model->__call('getWithEmployeeAndProjectAndRoleByEmployee', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 19:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 19:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:14:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 20:26:57 --> ArgumentCountError: Too few arguments to function App\Controllers\SheetUser::detail(), 1 passed in C:\xampp\htdocs\timesheet\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: sheet/user/4]
+in APPPATH\Controllers\SheetUser.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->detail('4')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 20:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 20:27:20 --> ArgumentCountError: Too few arguments to function App\Controllers\SheetUser::detail(), 1 passed in C:\xampp\htdocs\timesheet\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: sheet/user/9]
+in APPPATH\Controllers\SheetUser.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->detail('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 20:27:55 --> ArgumentCountError: Too few arguments to function App\Controllers\SheetUser::detail(), 1 passed in C:\xampp\htdocs\timesheet\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: sheet/user/9]
+in APPPATH\Controllers\SheetUser.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->detail('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 20:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 20:45:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "project/user/sheetByProjectDetail.php"
+[Method: GET, Route: project/user/detailsheet/4]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('project/user/sheetByProjectDetail.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetByProjectDetail', [], true)
+ 3 APPPATH\Controllers\ProjectUser.php(32): view('project/user/sheetByProjectDetail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->detailSheetByProject('4')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 20:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 20:46:39 --> ErrorException: Undefined variable $sheet
+[Method: GET, Route: project/user/detailsheet/4]
+in APPPATH\Views\project\user\SheetsbyProjectDetail.php on line 75.
+ 1 APPPATH\Views\project\user\SheetsbyProjectDetail.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sheet', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProjectDetail.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProjectDetail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/SheetsByProjectDetail', [], true)
+ 5 APPPATH\Controllers\ProjectUser.php(32): view('project/user/SheetsByProjectDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->detailSheetByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 20:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 20:48:35 --> ErrorException: Undefined variable $sheet
+[Method: GET, Route: project/user/detailsheet/4]
+in APPPATH\Views\project\user\SheetsbyProjectDetail.php on line 75.
+ 1 APPPATH\Views\project\user\SheetsbyProjectDetail.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sheet', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProjectDetail.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProjectDetail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/SheetsByProjectDetail', [], true)
+ 5 APPPATH\Controllers\ProjectUser.php(32): view('project/user/SheetsByProjectDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->detailSheetByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 20:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 20:48:36 --> ErrorException: Undefined variable $sheet
+[Method: GET, Route: project/user/detailsheet/4]
+in APPPATH\Views\project\user\SheetsbyProjectDetail.php on line 75.
+ 1 APPPATH\Views\project\user\SheetsbyProjectDetail.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sheet', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProjectDetail.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProjectDetail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/SheetsByProjectDetail', [], true)
+ 5 APPPATH\Controllers\ProjectUser.php(32): view('project/user/SheetsByProjectDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->detailSheetByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 20:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 20:48:46 --> ErrorException: Undefined variable $activities
+[Method: GET, Route: project/user/detailsheet/4]
+in APPPATH\Views\project\user\SheetsbyProjectDetail.php on line 86.
+ 1 APPPATH\Views\project\user\SheetsbyProjectDetail.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activities', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProjectDetail.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProjectDetail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/SheetsByProjectDetail', [], true)
+ 5 APPPATH\Controllers\ProjectUser.php(32): view('project/user/SheetsByProjectDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->detailSheetByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 20:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 20:58:58 --> ArgumentCountError: Too few arguments to function App\Controllers\ProjectUser::detailSheetByProject(), 1 passed in C:\xampp\htdocs\timesheet\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: project/user/detailsheet/3]
+in APPPATH\Controllers\ProjectUser.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->detailSheetByProject('3')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 20:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 20:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:01:09 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:01:17 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:02:01 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:05:21 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:05:22 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:05:35 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/4]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:06:43 --> ErrorException: Undefined variable $activities
+[Method: GET, Route: sheet/user/project/user/4]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 84.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activities', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:07:06 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/4]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:09:59 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/4]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:10:00 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/4]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:10:08 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:11:29 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:15:00 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:15:01 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:15:04 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:16:26 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:23:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:24:00 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:25:43 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:25:44 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:26:44 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 102.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 102)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:26:59 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:30:12 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:30:14 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:31:04 --> ErrorException: Undefined variable $activities
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 84.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activities', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:31:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:31:12 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:31:32 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:36:32 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-12 21:36:32 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\SheetModel::getSheetsSummaryByProjectForEmployee
+[Method: GET, Route: project/user]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ProjectUser.php(24): CodeIgniter\Model->__call('getSheetsSummaryByProjectForEmployee', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:36:36 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\SheetModel::getSheetsSummaryByProjectForEmployee
+[Method: GET, Route: project/user]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ProjectUser.php(24): CodeIgniter\Model->__call('getSheetsSummaryByProjectForEmployee', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:36:50 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\SheetModel::getSheetsSummaryByProjectForEmployee
+[Method: GET, Route: project/user]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\ProjectUser.php(24): CodeIgniter\Model->__call('getSheetsSummaryByProjectForEmployee', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:40:31 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:47:58 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 102.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 102)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:53:28 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:53:29 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:53:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:53:36 --> ErrorException: Undefined variable $summaries
+[Method: GET, Route: sheet/user/project/user/4]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summaries', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:54:07 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 102.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 102)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 21:56:57 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 102.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 102)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 21:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 21:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:11:06 --> ErrorException: Undefined array key "id_sheet"
+[Method: GET, Route: sheet/user/project/user/4]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 86.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_sheet"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('4')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:11:14 --> ErrorException: Undefined array key "id_sheet"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 86.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_sheet"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:13:31 --> ErrorException: Undefined array key "id_sheet"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 86.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_sheet"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:14:13 --> ErrorException: Undefined array key "id_sheet"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 86.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_sheet"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:15:42 --> ArgumentCountError: Too few arguments to function App\Controllers\ProjectUser::detailSheetByProject(), 1 passed in C:\xampp\htdocs\timesheet\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: GET, Route: project/user/sheetbyproject/3]
+in APPPATH\Controllers\ProjectUser.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->detailSheetByProject('3')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:17:56 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 102.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 102)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:33:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "project/user/SheetByProjectDetail.php"
+[Method: GET, Route: project/user/3]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('project/user/SheetByProjectDetail.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/SheetByProjectDetail', [], true)
+ 3 APPPATH\Controllers\ProjectUser.php(54): view('project/user/SheetByProjectDetail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProjectUser->detailSheetByProject('3')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProjectUser))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:42:51 --> ErrorException: Undefined variable $summary
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $summary', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:45:50 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:45:52 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 101.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 101)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:47:59 --> ErrorException: Undefined variable $e
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 102.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $e', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 102)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-12 22:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-12 22:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-12 22:49:05 --> ErrorException: Undefined array key "id_employee"
+[Method: GET, Route: sheet/user/project/user/3]
+in APPPATH\Views\project\user\SheetsbyProject.php on line 102.
+ 1 APPPATH\Views\project\user\SheetsbyProject.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_employee"', 'C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php', 102)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\timesheet\\app\\Views\\project\\user\\SheetsbyProject.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('project/user/sheetsByProject', [], true)
+ 5 APPPATH\Controllers\SheetUser.php(125): view('project/user/sheetsByProject', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\SheetUser->sheetsByProject('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SheetUser))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

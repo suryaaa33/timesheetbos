@@ -94,10 +94,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" name="username" placeholder="Enter employee username"
-                                value="<?= $isEdit ? esc($employee['username']) : '' ?>" required>
+                            <div class="col-md-6 form-group">
+                            <label for="datebirth" class="form-label">Date Of Birth</label>
+                            <input type="date" class="form-control" name="dob_employee"
+                                value="<?= $isEdit ? esc($employee['dob_employee']) : '' ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="id_role" class="form-label">Role</label>
@@ -115,29 +115,10 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <label for="datebirth" class="form-label">Date Of Birth</label>
-                            <input type="date" class="form-control" name="dob_employee"
-                                value="<?= $isEdit ? esc($employee['dob_employee']) : '' ?>" required>
-                        </div>
-                        <div class="col-md-6 form-group">
                             <label for="nohpemployee" class="form-label">Nomor Handphone</label>
                             <input type="text" class="form-control" name="nohp_employee" placeholder="Enter nomor Handphone employee"
                                 value="<?= $isEdit ? esc($employee['nohp_employee']) : '' ?>" required>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" name="username" placeholder="Enter employee username"
-                                value="<?= $isEdit ? esc($employee['username']) : '' ?>" required>
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="text" class="form-control" name="password" placeholder="Enter employee password"
-                                value="<?= $isEdit ? esc($employee['password']) : '' ?>" required>
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-6 form-group mt-3">
                             <label class="form-label">Status</label>
                             <div class="d-flex flex-column">
@@ -150,6 +131,18 @@
                                         <?= $isEdit && $employee['status_employee'] == '0' ? 'checked' : '' ?>> Non-Active
                                 </label>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" name="username" placeholder="Enter employee username"
+                                value="<?= $isEdit ? esc($employee['username']) : '' ?>" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="text" class="form-control" name="password" placeholder="Enter employee password"
+                                value="<?= $isEdit ? esc($employee['password']) : '' ?>" required>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">

@@ -13,42 +13,17 @@ class SheetUser extends Controller
         $model = new SheetModel();
         $id_employee = session()->get('id_employee');
 
-        $data['sheets'] = $model->getWithEmployeeAndProjectAndRoleByEmployee($id_employee);
+        $data['sheets'] = $model->getSheetsWithDurationByEmployee($id_employee);
+
         $data['sheet'] = [];
 
         return view('sheet/user/sheetdashboardUser', $data);
     }
 
-    public function detail($id)
-    {
-        $model = new SheetModel();
-        $sheet = $model->find($id);
-        $id_employee = session()->get('id_employee');
-
-        $sheet = $model->getDetailById($id, $id_employee);
-        if (!$sheet) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data tidak ditemukan atau akses ditolak.');
-        }
-
-        $data['activities'] = $model->where('id_project', $sheet['id_project'])
-                            ->where('id_employee', session()->get('id_employee'))
-                            ->orderBy('date_sheet', 'DESC')
-                            ->findAll();
-
-
-        return view('sheet/user/SheetDetailUser', [
-    'sheet' => $sheet,
-    'activities' => $data['activities']
-]);
-
-    }
-
     public function create()
 {
     $projectModel = new ProjectModel();
-    $data['projects'] = $projectModel
-        ->where('id_employee', session()->get('id_employee'))
-        ->findAll();
+    $data['projects'] = $projectModel->findAll();
 
     $id_project = $this->request->getGet('project');
     $fromDetail = $this->request->getGet('from') === 'detail';
@@ -100,9 +75,7 @@ class SheetUser extends Controller
     }
 
     $projectModel = new ProjectModel();
-    $data['projects'] = $projectModel
-        ->where('id_employee', session()->get('id_employee'))
-        ->findAll();
+    $data['projects'] = $projectModel->findAll();
     $data['sheet'] = $sheet;
     return view('sheet/user/SheetForm', $data);
 }
@@ -145,17 +118,13 @@ class SheetUser extends Controller
 
 public function sheetsByProject($id_project)
 {
-    $id_employee = session()->get('id_employee');
-    $sheetModel = new \App\Models\SheetModel();
+    $sheetModel = new SheetModel();
 
-    $sheets = $sheetModel
-        ->getWithEmployeeAndProjectAndRoleByEmployee($id_employee);
-
-    // Filter hanya untuk project ini
-    $sheets = array_filter($sheets, fn($s) => $s['id_project'] == $id_project);
+    $sheets = $sheetModel->getSheetsSummaryByProject($id_project);
 
     return view('project/user/sheetsByProject', ['sheets' => $sheets]);
 }
+
 
 
 }

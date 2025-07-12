@@ -115,7 +115,7 @@
                                 value="<?= $isEdit ? esc($sheet['date_sheet']) : '' ?>" required>
                         </div>
                         <div class="col-md-6 form-group">
-                            <label for="hours" class="form-label">Hours</label>
+                            <label for="hours" class="form-label">Minute</label>
                             <input type="text" class="form-control" name="hours_sheet" placeholder="Enter total hours"
                                 value="<?= $isEdit ? esc($sheet['hours_sheet']) : '' ?>" required>
 

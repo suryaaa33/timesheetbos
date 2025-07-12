@@ -30,6 +30,11 @@ $routes->post('/project/delete/(:num)', 'Project::delete/$1');
 $routes->get('/dashboarduser/projects', 'DashboardUserProject::index', ['filter' => 'auth:user']);
 $routes->get('/sheet/user/project/user/(:num)', 'SheetUser::sheetsByProject/$1');
 $routes->get('/project/user', 'ProjectUser::index'); 
+// $routes->get('/project/user/(:num)', 'ProjectUser::detailSheetByProject/$1');
+$routes->get('project/user/detail/(:num)/(:num)', 'ProjectUser::detailSheetByProjectAndEmployee/$1/$2');
+
+
+// $routes->get('project/user/detailuser/(:num)', 'ProjectUser::detailSheetByProject/$1');
 
 
 
