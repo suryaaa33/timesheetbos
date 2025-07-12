@@ -20,6 +20,30 @@ class SheetUser extends Controller
         return view('sheet/user/sheetdashboardUser', $data);
     }
 
+    public function detail($id)
+    {
+        $model = new SheetModel();
+        $sheet = $model->find($id);
+        $id_employee = session()->get('id_employee');
+
+        $sheet = $model->getDetailById($id, $id_employee);
+        if (!$sheet) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data tidak ditemukan atau akses ditolak.');
+        }
+
+        $data['activities'] = $model->where('id_project', $sheet['id_project'])
+                            ->where('id_employee', session()->get('id_employee'))
+                            ->orderBy('date_sheet', 'DESC')
+                            ->findAll();
+
+
+        return view('sheet/user/SheetDetailUser', [
+    'sheet' => $sheet,
+    'activities' => $data['activities']
+]);
+
+    }
+
     public function create()
 {
     $projectModel = new ProjectModel();

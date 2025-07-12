@@ -23,36 +23,24 @@ class ProjectUser extends Controller
         return view('project/user/projectdashboardUser', ['projects' => $projects]);
     }
 
-// public function sheetsByProject($id_project)
-// {
-//     $sheetModel = new \App\Models\SheetModel();
-
-//     $summaries = $sheetModel->getSheetsSummaryByProject($id_project);
-
-//     return view('project/user/SheetsByProject', [
-//         'summaries' => $summaries
-//     ]);
-// }
-
-
-
-public function detailSheetByProject($id_project)
+public function detailSheetByProject($id_project, $id_employee)
 {
     $sheetModel = new \App\Models\SheetModel();
 
-    $sheets = $sheetModel->getAllSheetsByProject($id_project);
+    $sheets = $sheetModel->getSheetsByProjectAndEmployee($id_project, $id_employee);
 
     if (!$sheets) {
-        throw new \CodeIgniter\Exceptions\PageNotFoundException("Data sheet tidak ditemukan.");
+        throw new \CodeIgniter\Exceptions\PageNotFoundException("Data tidak ditemukan.");
     }
 
     $data = [
         'activities' => $sheets,
-        'sheet' => $sheets[0]
+        'sheet' => $sheets[0] // info employee + project
     ];
 
     return view('project/user/SheetsByProjectDetail', $data);
 }
+
 
 
 }

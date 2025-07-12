@@ -99,7 +99,7 @@
                                         <?= $e['status_project'] == '1' ? '<span class="badge bg-success">Completed</span>' : '<span class="badge bg-secondary">On-Process</span>' ?>
                                     </td>
                                     <td>
-                                        <a href="<?= base_url('sheet/user/project/user/' . $e['id_project']) ?>" class="btn btn-sm btn-primary">
+                                        <a href="<?= base_url('project/user/' . $e['id_project']) ?>" class="btn btn-sm btn-primary">
                                             See Timesheet
                                         </a>
                                     </td>

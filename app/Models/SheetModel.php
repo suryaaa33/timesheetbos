@@ -75,19 +75,20 @@ class SheetModel extends Model
             ->first();
     }
 
-    public function getSheetsSummaryByProject($id_project)
-    {
-        return $this->db->table('sheet s')
-            ->select('s.id_sheet, s.id_project, p.nama_project, e.nama_employee, r.judul_role, 
-                    SUM(s.hours_sheet) as total_minutes, MAX(s.last_modified) as last_modified')
-            ->join('employee e', 's.id_employee = e.id_employee')
-            ->join('project p', 's.id_project = p.id_project')
-            ->join('role r', 'r.id_role = e.id_role')
-            ->where('s.id_project', $id_project)
-            ->groupBy('s.id_employee') // satu baris per employee dalam project tersebut
-            ->get()
-            ->getResultArray();
-    }
+public function getSheetsSummaryByProject($id_project)
+{
+    return $this->db->table('sheet s')
+        ->select('s.id_sheet, s.id_project, s.id_employee, p.nama_project, e.nama_employee, r.judul_role, 
+                SUM(s.hours_sheet) as total_minutes, MAX(s.last_modified) as last_modified')
+        ->join('employee e', 's.id_employee = e.id_employee')
+        ->join('project p', 's.id_project = p.id_project')
+        ->join('role r', 'r.id_role = e.id_role')
+        ->where('s.id_project', $id_project)
+        ->groupBy('s.id_employee') // satu baris per employee dalam project tersebut
+        ->get()
+        ->getResultArray();
+}
+
 
     public function getAllSheetsByProject($id_project)
 {
@@ -112,4 +113,7 @@ public function getSheetsByProjectAndEmployee($id_project, $id_employee)
                 ->findAll();
 }
 
+
+
 }
+
