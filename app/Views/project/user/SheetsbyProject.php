@@ -29,14 +29,6 @@
                 <i class="las la-cube"></i>
                 <span class="ms-2">Project Assigned</span>
             </a>
-            <a href="<?= base_url('role/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-database"></i>
-                <span class="ms-2">Role Assigned</span>
-            </a>
-            <a href="<?= base_url('roledetail') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-folder-plus"></i>
-                <span class="ms-2">Create Timesheet</span>
-            </a>
             <hr />
             <a href="<?= base_url('/logout') ?>" onclick="return confirm('Are you sure you want to logout?');"
                 class="menu-item d-flex align-items-center text-decoration-none text-dark">
