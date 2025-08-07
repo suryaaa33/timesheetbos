@@ -11,32 +11,7 @@
 </head>
 
 <body class="d-flex">
-    <!-- Sidebar -->
-    <div class="sidebar p-3">
-        <div class="text-center mb-4 logo">
-            <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
-        </div>
-        <a href="<?= base_url('dashboarduser') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-tachometer-alt"></i>
-            <span class="ms-2">Dashboard</span>
-        </a>
-        <a href="<?= base_url('sheet/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-calendar-alt"></i>
-            <span class="ms-2">Time Sheet</span>
-        </a>
-        <a href="<?= base_url('project/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-cube"></i>
-            <span class="ms-2">Project Assigned</span>
-        </a>
-        <hr />
-        <a href="<?= base_url('/logout') ?>" onclick="return confirm('Are you sure you want to logout?');"
-            class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-power-off"></i>
-            <span class="ms-2">Logout</span>
-        </a>
-    </div>
-
-    <div class="sidebar-overlay d-md-none"></div>
+    <?= view('partials/sidebarUser') ?>
 
     <!-- Main Content -->
     <div class="main-container">
@@ -92,23 +67,6 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card summary-card shadow">
-                            <div class="card-body d-flex justify-content-between align-items-start">
-                                <div>
-                                    <div class="mb-1">Total Client</div>
-                                    <h4 class="mb-2"><?= $total_client ?></h4>
-                                </div>
-                                <div class="d-flex flex-column align-items-end">
-                                    <div class="icon-circle mb-2" style="background-color:#FEC53D;">
-                                        <i class="las la-cube icon-big"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="d-flex justify-content-between align-items-center mb-3">
@@ -144,27 +102,52 @@
             </div>
         </div>
 
+        <!-- Modal Konfirmasi Logout -->
+        <div class="modal fade" id="confirmLogoutModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-5">
+                    <div class="modal-body border-0">
+                        <p class="fs-5 mb-4">Are you sure you want to logout?</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
+                            <form action="<?= base_url('logout') ?>" method="post">
+                                <?= csrf_field() ?>
+                                <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <script>
-            const sidebar = document.querySelector('.sidebar');
-            const toggleBtn = document.getElementById('sidebarToggle');
-            const overlay = document.querySelector('.sidebar-overlay');
+        document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.getElementById("sidebarToggle");
+        const sidebar = document.querySelector(".sidebar");
+        const body = document.body;
 
-            toggleBtn?.addEventListener('click', () => {
-                sidebar.classList.toggle('show');
-                overlay.classList.toggle('show');
-            });
+        toggleBtn.addEventListener("click", function() {
+            sidebar.classList.toggle("show");
+            body.classList.toggle("sidebar-open");
+        });
 
-            overlay?.addEventListener('click', () => {
-                sidebar.classList.remove('show');
-                overlay.classList.remove('show');
-            });
-        </script>
-
-
-
+        document.addEventListener("click", function(e) {
+            if (
+                sidebar.classList.contains("show") &&
+                !sidebar.contains(e.target) &&
+                !toggleBtn.contains(e.target)
+            ) {
+                sidebar.classList.remove("show");
+                body.classList.remove("sidebar-open");
+            }
+        })
+    });
+        
+    </script>
 </body>
 
 </html>

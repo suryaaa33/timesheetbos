@@ -12,29 +12,9 @@
 
 <body>
     <div class="d-flex">
-        <div class="sidebar p-3">
-            <div class="text-center mb-4 logo">
-                <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
-            </div>
-            <a href="<?= base_url('dashboarduser') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-tachometer-alt"></i>
-                <span class="ms-2">Dashboard</span>
-            </a>
-            <a href="<?= base_url('sheet/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-calendar-alt"></i>
-                <span class="ms-2">Time Sheet</span>
-            </a>
-            <a href="<?= base_url('project/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-cube"></i>
-                <span class="ms-2">Project Assigned</span>
-            </a>
-            <hr />
-            <a href="<?= base_url('/logout') ?>" onclick="return confirm('Are you sure you want to logout?');"
-                class="menu-item d-flex align-items-center text-decoration-none text-dark">
-                <i class="las la-power-off"></i>
-                <span class="ms-2">Logout</span>
-            </a>
-        </div>
+        <?= view('partials/sidebarUser') ?>
+
+        
         <!-- Main Content -->
         <div class="main-container">
             <!-- Header -->
@@ -146,6 +126,7 @@
     </script>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
         const toggleBtn = document.getElementById("sidebarToggle");
         const sidebar = document.querySelector(".sidebar");
         const body = document.body;
@@ -164,7 +145,9 @@
                 sidebar.classList.remove("show");
                 body.classList.remove("sidebar-open");
             }
-        });
+        })
+    });
+        
     </script>
 
 </body>

@@ -102,7 +102,7 @@ $routes->get('/dashboarduser', 'Dashboarduser::index');
 
 $routes->get('/login', 'Login::index');              // Form login
 $routes->post('/login/auth', 'Login::auth');         // Proses login
-$routes->get('/logout', 'Login::logout');            // Proses logout
+$routes->post('/logout', 'Login::logout');            // Proses logout
 $routes->get('/dashboard', 'Dashboard::index', ['filter' => 'auth:admin']);
 $routes->get('/dashboarduser', 'DashboardUser::index', ['filter' => 'auth:user']);
 
