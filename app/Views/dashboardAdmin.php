@@ -11,52 +11,7 @@
 </head>
 
 <body class="d-flex">
-    <!-- Sidebar -->
-    <div class="sidebar p-3">
-        <div class="text-center mb-4 logo">
-            <h4 class="m-0">Bri<span style="color:#000">Sheet</span></h4>
-        </div>
-        <a href="<?= base_url('dashboard') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-tachometer-alt"></i>
-            <span class="ms-2">Dashboard</span>
-        </a>
-        <a href="<?= base_url('employee') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-user"></i>
-            <span class="ms-2">Employee</span>
-        </a>
-        <a href="<?= base_url('client') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-user-friends"></i>
-            <span class="ms-2">Client</span>
-        </a>
-        <a href="<?= base_url('project') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-cube"></i>
-            <span class="ms-2">Project</span>
-        </a>
-        <a href="<?= base_url('role') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-database"></i>
-            <span class="ms-2">Role</span>
-        </a>
-        <a href="<?= base_url('roledetail') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-server"></i>
-            <span class="ms-2">Role Detail</span>
-        </a>
-        <a href="<?= base_url('menu') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-list"></i>
-            <span class="ms-2">Menu</span>
-        </a>
-        <a href="<?= base_url('sheet') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-calendar-alt"></i>
-            <span class="ms-2">Time Sheet</span>
-        </a>
-        <hr />
-        <a href="<?= base_url('/logout') ?>" onclick="return confirm('Are you sure you want to logout?');"
-            class="menu-item d-flex align-items-center text-decoration-none text-dark">
-            <i class="las la-power-off"></i>
-            <span class="ms-2">Logout</span>
-        </a>
-    </div>
-
-    <div class="sidebar-overlay d-md-none"></div>
+    <?= view('partials/sidebarAdmin') ?>
 
     <!-- Main Content -->
     <div class="main-container">
@@ -97,12 +52,8 @@
                                     <a href="<?= base_url('employee') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #8280FF;">
                                         ➕ Add Employee
                                     </a>
-
-
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
 
@@ -115,13 +66,9 @@
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
                                     <div class="icon-circle mb-2" style="background-color: rgba(148, 250, 199, 0.5);">
-
-
                                         <img src="<?= base_url('assets/client.png') ?>" alt="Client Icon" width="50" height="50">
                                     </div>
                                     <a href="<?= base_url('client') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #5AD991;">➕ Add Client</a>
-
-
                                 </div>
                             </div>
                         </div>
@@ -135,16 +82,12 @@
                                 <div>
                                     <div class="mb-1">Total Project</div>
                                     <h4 class="mb-2"><?= $total_project ?></h4>
-
-
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
                                     <div class="icon-circle mb-2" style="background-color:#FEC53D;">
                                         <i class="las la-cube icon-big"></i>
                                     </div>
                                     <a href="<?= base_url('project') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #FEC53D;">➕ Add Project</a>
-
-
                                 </div>
                             </div>
                         </div>
@@ -158,16 +101,12 @@
                                 <div>
                                     <div class="mb-1">Total Menu</div>
                                     <h4 class="mb-2"><?= $total_menu ?></h4>
-
-
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
                                     <div class="icon-circle mb-2" style="background-color:#ff9f68;">
                                         <i class="las la-list icon-big"></i>
                                     </div>
                                     <a href="<?= base_url('menu') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff9f68;">➕ Add Menu</a>
-
-
                                 </div>
                             </div>
                         </div>
@@ -181,18 +120,12 @@
                                 <div>
                                     <div class="mb-1">Total Role</div>
                                     <h4 class="mb-2"><?= $total_role ?></h4>
-
-
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
                                     <div class="icon-circle mb-2" style="background-color:#ff6b6b;">
                                         <i class="las la-database icon-big"></i>
                                     </div>
                                     <a href="<?= base_url('role') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff6b6b;">➕ Add Role</a>
-
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -206,18 +139,12 @@
                                 <div>
                                     <div class="mb-1">Total Role Detail</div>
                                     <h4 class="mb-2"><?= $total_roledetail ?></h4>
-
-
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
                                     <div class="icon-circle mb-2" style="background-color:#3edbf0;">
                                         <i class="las la-server icon-big"></i>
                                     </div>
                                     <a href="<?= base_url('roledetail') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #3edbf0;">➕ Add Role Detail</a>
-
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -231,16 +158,12 @@
                                 <div>
                                     <div class="mb-1">Total Sheet</div>
                                     <h4 class="mb-2"><?= $total_sheet ?></h4>
-
-
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
                                     <div class="icon-circle mb-2" style="background-color:#ff7eb9;">
                                         <i class="las la-calendar-alt icon-big"></i>
                                     </div>
                                     <a href="<?= base_url('sheet') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff7eb9;">➕ Add Sheet</a>
-
-
                                 </div>
                             </div>
                         </div>
@@ -248,27 +171,50 @@
                 </div>
             </div>
 
+            <!-- Modal Konfirmasi Logout -->
+    <div class="modal fade" id="confirmLogoutModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-5">
+                <div class="modal-body border-0">
+                    <p class="fs-5 mb-4">Are you sure you want to logout?</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
+                        <form action="<?= base_url('logout') ?>" method="post">
+                            <?= csrf_field() ?>
+                            <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
             <!-- Bootstrap JS -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
             <script>
-                const sidebar = document.querySelector('.sidebar');
-                const toggleBtn = document.getElementById('sidebarToggle');
-                const overlay = document.querySelector('.sidebar-overlay');
+        document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.getElementById("sidebarToggle");
+        const sidebar = document.querySelector(".sidebar");
+        const body = document.body;
 
-                toggleBtn?.addEventListener('click', () => {
-                    sidebar.classList.toggle('show');
-                    overlay.classList.toggle('show');
-                });
+        toggleBtn.addEventListener("click", function() {
+            sidebar.classList.toggle("show");
+            body.classList.toggle("sidebar-open");
+        });
 
-                overlay?.addEventListener('click', () => {
-                    sidebar.classList.remove('show');
-                    overlay.classList.remove('show');
-                });
-            </script>
-
-
-
+        document.addEventListener("click", function(e) {
+            if (
+                sidebar.classList.contains("show") &&
+                !sidebar.contains(e.target) &&
+                !toggleBtn.contains(e.target)
+            ) {
+                sidebar.classList.remove("show");
+                body.classList.remove("sidebar-open");
+            }
+        })
+    }); 
+    </script>
 </body>
 
 </html>

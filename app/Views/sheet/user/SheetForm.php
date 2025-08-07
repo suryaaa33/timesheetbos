@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?= view('partials/sidebarUser') ?>
+    <?= view('partials/sidebarAdmin') ?>
     
     <!-- Main Content -->
     <div class="main-container">
