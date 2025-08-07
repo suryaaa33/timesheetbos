@@ -45,7 +45,7 @@ class RoleDetail extends Controller
             'id_menu' => $this->request->getPost('id_menu'),
         ]);
 
-        return redirect()->to('/roledetail');
+        return redirect()->to('/roledetail')->with('success', 'Data berhasil ditambahkan.');
     }
 
     public function edit($id)
@@ -70,7 +70,7 @@ class RoleDetail extends Controller
             'id_menu' => $this->request->getPost('id_menu'),
         ]);
 
-        return redirect()->to('/roledetail');
+        return redirect()->to('/roledetail')->with('success', 'Data berhasil diupdate.');
     }
 
     public function delete($id)
@@ -78,6 +78,6 @@ class RoleDetail extends Controller
         $model = new RoleDetailModel();
         $model->delete($id);
 
-        return redirect()->to('/roledetail');
+        return redirect()->to('/roledetail')->with('success', 'Data berhasil dihapus.');
     }
 }

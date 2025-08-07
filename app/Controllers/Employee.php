@@ -44,7 +44,7 @@ class Employee extends Controller
         'last_modified'   => date('Y-m-d H:i:s'),
         'author'          => 1
     ]);
-    return redirect()->to('/employee');
+    return redirect()->to('/employee')->with('success', 'Data berhasil ditambahkan.');
 }
 
 
@@ -63,7 +63,8 @@ class Employee extends Controller
     public function update($id)
 {
     $employeemodel = new EmployeeModel();
-    $employeemodel->update($id, [
+
+    $data = [
         'nama_employee'   => $this->request->getPost('nama_employee'),
         'id_role'         => $this->request->getPost('id_role'),
         'alamat_employee' => $this->request->getPost('alamat_employee'),
@@ -72,16 +73,25 @@ class Employee extends Controller
         'username'        => $this->request->getPost('username'),
         'nohp_employee'   => $this->request->getPost('nohp_employee'),
         'last_modified'   => date('Y-m-d H:i:s'),
-    ]);
+    ];
+
+    // Jika password diisi, update juga
+    $password = $this->request->getPost('password');
+    if (!empty($password)) {
+        $data['password'] = password_hash($password, PASSWORD_DEFAULT);
+    }
+
+    $employeemodel->update($id, $data);
 
     return redirect()->to('/employee')->with('success', 'Data berhasil diupdate.');
 }
+
 
 
     public function delete($id)
     {
         $employeemodel = new EmployeeModel();
         $employeemodel->delete($id);
-        return redirect()->to('/employee');
+        return redirect()->to('/employee')->with('success', 'Data berhasil dihapus.');
     }
 }

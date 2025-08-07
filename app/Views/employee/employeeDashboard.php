@@ -22,10 +22,10 @@
                     <i class="las la-bars fs-2"></i>
                 </button>
                 <div class="d-flex align-items-center gap-3 ms-auto">
-                <div class="text-end">
-                    <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
-                    <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
-                </div>
+                    <div class="text-end">
+                        <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
+                        <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
+                    </div>
                     <i class="las la-user icon-big fs-2"></i>
                 </div>
             </div>
@@ -36,6 +36,20 @@
                     <h4>Employee List</h4>
                     <a href="<?= base_url('employee/create') ?>" class="btn btn-primary">+ Add Employee</a>
                 </div>
+
+                <?php if (session()->getFlashdata('success')) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('success') ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php endif; ?>
+
+                <?php if (session()->getFlashdata('error')) : ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('error') ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php endif; ?>
 
                 <div class="table-container table-responsive bg-white shadow-sm">
                     <table class="table align-middle mb-0 custom-table">
@@ -106,22 +120,22 @@
             </div>
 
             <!-- Modal Konfirmasi Logout -->
-    <div class="modal fade" id="confirmLogoutModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center p-5">
-                <div class="modal-body border-0">
-                    <p class="fs-5 mb-4">Are you sure you want to logout?</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
-                        <form action="<?= base_url('logout') ?>" method="post">
-                            <?= csrf_field() ?>
-                            <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
-                        </form>
+            <div class="modal fade" id="confirmLogoutModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-center p-5">
+                        <div class="modal-body border-0">
+                            <p class="fs-5 mb-4">Are you sure you want to logout?</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
+                                <form action="<?= base_url('logout') ?>" method="post">
+                                    <?= csrf_field() ?>
+                                    <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
 
             <!-- Bootstrap JS -->
@@ -134,29 +148,28 @@
             </script>
 
             <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const toggleBtn = document.getElementById("sidebarToggle");
-        const sidebar = document.querySelector(".sidebar");
-        const body = document.body;
+                document.addEventListener('DOMContentLoaded', function() {
+                    const toggleBtn = document.getElementById("sidebarToggle");
+                    const sidebar = document.querySelector(".sidebar");
+                    const body = document.body;
 
-        toggleBtn.addEventListener("click", function() {
-            sidebar.classList.toggle("show");
-            body.classList.toggle("sidebar-open");
-        });
+                    toggleBtn.addEventListener("click", function() {
+                        sidebar.classList.toggle("show");
+                        body.classList.toggle("sidebar-open");
+                    });
 
-        document.addEventListener("click", function(e) {
-            if (
-                sidebar.classList.contains("show") &&
-                !sidebar.contains(e.target) &&
-                !toggleBtn.contains(e.target)
-            ) {
-                sidebar.classList.remove("show");
-                body.classList.remove("sidebar-open");
-            }
-        })
-    });
-        
-    </script>
+                    document.addEventListener("click", function(e) {
+                        if (
+                            sidebar.classList.contains("show") &&
+                            !sidebar.contains(e.target) &&
+                            !toggleBtn.contains(e.target)
+                        ) {
+                            sidebar.classList.remove("show");
+                            body.classList.remove("sidebar-open");
+                        }
+                    })
+                });
+            </script>
 </body>
 
 </html>

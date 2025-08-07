@@ -30,7 +30,7 @@ class Role extends Controller
         $model->insert([
             'judul_role' => $this->request->getPost('judul_role'),
         ]);
-        return redirect()->to('/role');
+        return redirect()->to('/role')->with('success', 'Data berhasil ditambahkan.');
     }
 
     public function edit($id)
@@ -47,13 +47,13 @@ class Role extends Controller
         $model->update($id, [
             'judul_role' => $this->request->getPost('judul_role'),
         ]);
-        return redirect()->to('/role');
+        return redirect()->to('/role')->with('success', 'Data berhasil diupdate.');
     }
 
     public function delete($id)
     {
         $model = new RoleModel();
         $model->delete($id);
-        return redirect()->to('/role');
+        return redirect()->to('/role')->with('success', 'Data berhasil dihapus.');
     }
 }

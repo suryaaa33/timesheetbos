@@ -54,7 +54,7 @@ class Project extends Controller
         'last_modified'   => date('Y-m-d H:i:s'),
         'author'          => 1
     ]);
-    return redirect()->to('/project');
+    return redirect()->to('/project')->with('success', 'Data berhasil ditambahkan.');
 }
 
 public function edit($id)
@@ -95,7 +95,7 @@ public function update($id)
     {
         $projectModel = new ProjectModel();
         $projectModel->delete($id);
-        return redirect()->to('/project');
+        return redirect()->to('/project')->with('success', 'Data berhasil dihapus.');
     }
 
 }

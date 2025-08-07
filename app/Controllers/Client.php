@@ -65,7 +65,7 @@ class Client extends Controller
             'author'              => 1
         ]);
 
-        return redirect()->to('/client');
+        return redirect()->to('/client')->with('success', 'Data berhasil ditambahkan.');
     }
 
     // Tidak perlu view edit terpisah
@@ -91,13 +91,13 @@ class Client extends Controller
             'last_modified' => date('Y-m-d H:i:s')
         ]);
 
-        return redirect()->to('/client');
+        return redirect()->to('/client')->with('success', 'Data berhasil diupdate.');
     }
 
     public function delete($id)
     {
         $model = new ClientModel();
         $model->delete($id);
-        return redirect()->to('/client');
+        return redirect()->to('/client')->with('success', 'Data berhasil dihapus.');
     }
 }

@@ -27,7 +27,7 @@ class Menu extends Controller
         $model->insert([
             'nama_menu' => $this->request->getPost('nama_menu')
         ]);
-        return redirect()->to('/menu');
+        return redirect()->to('/menu')->with('success', 'Data berhasil ditambahkan.');
     }
 
     public function edit($id)
@@ -44,13 +44,13 @@ class Menu extends Controller
         $model->update($id, [
             'nama_menu' => $this->request->getPost('nama_menu')
         ]);
-        return redirect()->to('/menu');
+        return redirect()->to('/menu')->with('success', 'Data berhasil diupdate.');
     }
 
     public function delete($id)
     {
         $model = new MenuModel();
         $model->delete($id);
-        return redirect()->to('/menu');
+        return redirect()->to('/menu')->with('success', 'Data berhasil dihapus.');
     }
 }

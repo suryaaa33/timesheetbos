@@ -83,7 +83,7 @@ class SheetUser extends Controller
         return redirect()->to('/sheet/user/' . $redirect)->with('success', 'Activity added successfully.');
     }
 
-    return redirect()->to('/sheet/user')->with('success', 'Sheet added.');
+    return redirect()->to('/sheet/user')->with('success', 'Data berhasil ditambahkan.');
 }
 
 
@@ -123,7 +123,7 @@ class SheetUser extends Controller
         'last_modified' => date('Y-m-d H:i:s')
     ]);
 
-        return redirect()->to('/sheet/user');
+        return redirect()->to('/sheet/user')->with('success', 'Data berhasil diupdate.');
     }
 
     public function delete($id)
@@ -137,7 +137,7 @@ class SheetUser extends Controller
         }
 
         $model->delete($id);
-        return redirect()->to('/sheet/user');
+        return redirect()->to('/sheet/user')->with('success', 'Data berhasil dihapus.');
     }
 
 public function sheetsByProject($id_project)
