@@ -32,7 +32,8 @@ class Login extends BaseController
                     'logged_in'     => true,
                     'id_employee'   => $query->id_employee,
                     'nama'          => $query->nama_employee,
-                    'role'          => $query->judul_role
+                    'role'          => $query->judul_role,
+                    'last_active'   => time()
                 ]);
 
                 // Arahkan berdasarkan role

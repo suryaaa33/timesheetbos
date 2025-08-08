@@ -95,9 +95,22 @@ class Client extends Controller
     }
 
     public function delete($id)
-    {
-        $model = new ClientModel();
-        $model->delete($id);
-        return redirect()->to('/client')->with('success', 'Data berhasil dihapus.');
+{
+    $clientModel = new ClientModel();
+
+    // Cek apakah client masih digunakan di tabel project
+    $db = \Config\Database::connect();
+    $builder = $db->table('project');
+    $builder->where('id_client', $id);
+    $usedInProject = $builder->countAllResults();
+
+    if ($usedInProject > 0) {
+        return redirect()->to('/client')->with('error', 'Client tidak dapat dihapus karena masih digunakan di data project.');
     }
+
+    // Kalau tidak dipakai, baru hapus
+    $clientModel->delete($id);
+    return redirect()->to('/client')->with('success', 'Client berhasil dihapus.');
+}
+
 }

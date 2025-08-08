@@ -89,9 +89,22 @@ class Employee extends Controller
 
 
     public function delete($id)
-    {
-        $employeemodel = new EmployeeModel();
-        $employeemodel->delete($id);
-        return redirect()->to('/employee')->with('success', 'Data berhasil dihapus.');
+{
+    $employeemodel = new EmployeeModel();
+
+    // Cek apakah employee digunakan di tabel project
+    $db = \Config\Database::connect();
+    $builder = $db->table('project');
+    $builder->where('id_employee', $id);
+    $usedInProject = $builder->countAllResults();
+
+    if ($usedInProject > 0) {
+        return redirect()->to('/employee')->with('error', 'Employee tidak dapat dihapus karena masih digunakan di data project.');
     }
+
+    // Kalau tidak dipakai, baru hapus
+    $employeemodel->delete($id);
+    return redirect()->to('/employee')->with('success', 'Employee berhasil dihapus.');
+}
+
 }
