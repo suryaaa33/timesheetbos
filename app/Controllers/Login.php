@@ -27,13 +27,19 @@ class Login extends BaseController
 
         if ($query) {
             if (password_verify($password, $query->password)) {
+                //cek apakah user adalah PM atau bukan
+                $isPM = $db->table('project')
+                    ->where('id_employee', $query->id_employee) // FK ke employee
+                    ->countAllResults() > 0;
+
                 // Set session lengkap
                 session()->set([
                     'logged_in'     => true,
                     'id_employee'   => $query->id_employee,
                     'nama'          => $query->nama_employee,
                     'role'          => $query->judul_role,
-                    'last_active'   => time()
+                    'last_active'   => time(),
+                    'has_project_assigned' => $isPM
                 ]);
 
                 // Arahkan berdasarkan role

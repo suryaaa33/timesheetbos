@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?= view('partials/sidebarAdmin') ?>
+    <?= view('partials/sidebarUser') ?>
     
     <!-- Main Content -->
     <div class="main-container">
@@ -87,7 +87,7 @@
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="hours" class="form-label">Minute</label>
-                            <input type="text" class="form-control" name="hours_sheet" placeholder="Enter total hours"
+                            <input type="text" class="form-control" name="hours_sheet" placeholder="Enter total minute"
                                 value="<?= $isEdit ? esc($sheet['hours_sheet']) : '' ?>" required>
 
                         </div>

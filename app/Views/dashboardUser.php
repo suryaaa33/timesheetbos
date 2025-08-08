@@ -91,7 +91,7 @@
                                 <td><?= esc($e['nama_project']) ?></td>
                                 <td><?= esc($e['nama_employee']) ?></td>
                                 <td><?= esc($e['judul_role']) ?></td>
-                                <td><?= esc($e['last_modified']) ?></td>
+                                <td><?= date('D, d M Y H:i', strtotime($e['last_modified'])) ?></td>
                                 <td>
                                     <a href="<?= base_url('sheet/user/' . $e['id_sheet']) ?>" class="btn btn-light-icon"><i class="las la-chevron-circle-right"></i></i></a>
                                 </td>

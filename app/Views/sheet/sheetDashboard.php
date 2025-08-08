@@ -70,12 +70,10 @@
                                         if ($days > 0) $parts[] = $days . 'd';
                                         if ($hours > 0) $parts[] = $hours . 'h';
                                         if ($minutes > 0) $parts[] = $minutes . 'm';
-
                                         echo implode(' ', $parts);
                                         ?>
                                     </td>
-
-                                    <td><?= esc($e['last_modified']) ?></td>
+                                    <td><?= date('D, d M Y H:i', strtotime($e['last_modified'])) ?></td>
                                     <td>
                                         <a href="<?= base_url('sheet/' . $e['id_sheet']) ?>" class="btn btn-light-icon"><i class="las la-chevron-circle-right"></i></i></a>
                                     </td>

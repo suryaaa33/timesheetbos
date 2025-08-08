@@ -30,15 +30,28 @@ class SheetModel extends Model
     }
 
 
-    public function getWithEmployeeAndProjectAndRoleByEmployee($id_employee)
-    {
-        return $this->select('sheet.*, employee.nama_employee, project.nama_project, role.judul_role')
-            ->join('employee', 'employee.id_employee = sheet.id_employee')
-            ->join('project', 'project.id_project = sheet.id_project')
-            ->join('role', 'role.id_role = employee.id_role')
-            ->where('sheet.id_employee', $id_employee)
-            ->findAll();
-    }
+    // public function getWithEmployeeAndProjectAndRoleByEmployee($id_employee)
+    // {
+    //     return $this->select('sheet.*, employee.nama_employee, project.nama_project, role.judul_role')
+    //         ->join('employee', 'employee.id_employee = sheet.id_employee')
+    //         ->join('project', 'project.id_project = sheet.id_project')
+    //         ->join('role', 'role.id_role = employee.id_role')
+    //         ->where('sheet.id_employee', $id_employee)
+    //         ->findAll();
+    // }
+
+    public function getRecentSheetsByEmployee($id_employee, $limit = 5)
+{
+    return $this->select('sheet.*, employee.nama_employee, project.nama_project, role.judul_role')
+        ->join('employee', 'employee.id_employee = sheet.id_employee')
+        ->join('project', 'project.id_project = sheet.id_project')
+        ->join('role', 'role.id_role = employee.id_role')
+        ->where('sheet.id_employee', $id_employee)
+        ->orderBy('sheet.last_modified', 'DESC')
+        ->limit($limit)
+        ->findAll();
+}
+
 
     public function getSheetsWithDurationByEmployee($id_employee)
     {

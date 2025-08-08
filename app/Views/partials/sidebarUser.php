@@ -11,16 +11,16 @@
         <i class="las la-calendar-alt"></i>
         <span class="ms-2">Time Sheet</span>
     </a>
-    <a href="<?= base_url('project/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
-        <i class="las la-cube"></i>
-        <span class="ms-2">Project Assigned</span>
-    </a>
+    <?php if (session('has_project_assigned')): ?>
+        <a href="<?= base_url('project/user') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+            <i class="las la-cube"></i>
+            <span class="ms-2">Project Assigned</span>
+        </a>
+    <?php endif; ?>
     <hr />
     <a href="#" data-bs-toggle="modal" data-bs-target="#confirmLogoutModal"
-    class="menu-item d-flex align-items-center text-decoration-none text-dark">
-    <i class="las la-power-off"></i>
-    <span class="ms-2">Logout</span>
-</a>
+        class="menu-item d-flex align-items-center text-decoration-none text-dark">
+        <i class="las la-power-off"></i>
+        <span class="ms-2">Logout</span>
+    </a>
 </div>
-
-
