@@ -23,14 +23,14 @@
         <i class="las la-database"></i>
         <span class="ms-2">Role</span>
     </a>
-    <a href="<?= base_url('roledetail') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+    <!-- <a href="<?= base_url('roledetail') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
         <i class="las la-server"></i>
         <span class="ms-2">Role Detail</span>
-    </a>
-    <a href="<?= base_url('menu') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
+    </a> -->
+    <!-- <a href="<?= base_url('menu') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
         <i class="las la-list"></i>
         <span class="ms-2">Menu</span>
-    </a>
+    </a> -->
     <a href="<?= base_url('sheet') ?>" class="menu-item d-flex align-items-center text-decoration-none text-dark">
         <i class="las la-calendar-alt"></i>
         <span class="ms-2">Time Sheet</span>

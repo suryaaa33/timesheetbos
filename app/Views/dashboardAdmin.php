@@ -46,11 +46,11 @@
                                     <h4 class="mb-2"><?= $total_employee ?></h4>
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
-                                    <div class="icon-circle mb-2" style="background-color:#8280FF;">
-                                        <i class="las la-user icon-big"></i>
+                                    <div class="icon-circle mb-2" style="background-color:#c2c1f7ff;">
+                                        <img src="<?= base_url('assets/employee.png') ?>" alt="Employee Icon" width="30" height="25">
                                     </div>
                                     <a href="<?= base_url('employee') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #8280FF;">
-                                        ➕ Add Employee
+                                        Add Employee
                                     </a>
                                 </div>
                             </div>
@@ -66,9 +66,9 @@
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
                                     <div class="icon-circle mb-2" style="background-color: rgba(148, 250, 199, 0.5);">
-                                        <img src="<?= base_url('assets/client.png') ?>" alt="Client Icon" width="50" height="50">
+                                        <img src="<?= base_url('assets/client.png') ?>" alt="Client Icon" width="35" height="35">
                                     </div>
-                                    <a href="<?= base_url('client') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #5AD991;">➕ Add Client</a>
+                                    <a href="<?= base_url('client') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #5AD991;">Add Client</a>
                                 </div>
                             </div>
                         </div>
@@ -84,17 +84,17 @@
                                     <h4 class="mb-2"><?= $total_project ?></h4>
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
-                                    <div class="icon-circle mb-2" style="background-color:#FEC53D;">
-                                        <i class="las la-cube icon-big"></i>
+                                    <div class="icon-circle mb-2" style="background-color:#f0e5ccff;">
+                                        <img src="<?= base_url('assets/project.png') ?>" alt="Project Icon" width="30" height="30">
                                     </div>
-                                    <a href="<?= base_url('project') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #FEC53D;">➕ Add Project</a>
+                                    <a href="<?= base_url('project') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #FEC53D;">Add Project</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <!-- Menu -->
+                    <!-- Menu
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card summary-card shadow">
                             <div class="card-body d-flex justify-content-between align-items-start">
@@ -106,11 +106,11 @@
                                     <div class="icon-circle mb-2" style="background-color:#ff9f68;">
                                         <i class="las la-list icon-big"></i>
                                     </div>
-                                    <a href="<?= base_url('menu') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff9f68;">➕ Add Menu</a>
+                                    <a href="<?= base_url('menu') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff9f68;">Add Menu</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Role -->
@@ -122,17 +122,17 @@
                                     <h4 class="mb-2"><?= $total_role ?></h4>
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
-                                    <div class="icon-circle mb-2" style="background-color:#ff6b6b;">
-                                        <i class="las la-database icon-big"></i>
+                                    <div class="icon-circle mb-2" style="background-color:#f5aeaeff;">
+                                        <img src="<?= base_url('assets/role.png') ?>" alt="Role Icon" width="30" height="30">
                                     </div>
-                                    <a href="<?= base_url('role') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff6b6b;">➕ Add Role</a>
+                                    <a href="<?= base_url('role') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff6b6b;">Add Role</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <!-- Role Detail -->
+                    <!-- Role Detail
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card summary-card shadow">
                             <div class="card-body d-flex justify-content-between align-items-start">
@@ -144,11 +144,11 @@
                                     <div class="icon-circle mb-2" style="background-color:#3edbf0;">
                                         <i class="las la-server icon-big"></i>
                                     </div>
-                                    <a href="<?= base_url('roledetail') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #3edbf0;">➕ Add Role Detail</a>
+                                    <a href="<?= base_url('roledetail') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #3edbf0;">Add Role Detail</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Sheet -->
@@ -160,10 +160,10 @@
                                     <h4 class="mb-2"><?= $total_sheet ?></h4>
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
-                                    <div class="icon-circle mb-2" style="background-color:#ff7eb9;">
-                                        <i class="las la-calendar-alt icon-big"></i>
+                                    <div class="icon-circle mb-2" style="background-color:#a4dcf4ff;">
+                                        <img src="<?= base_url('assets/sheet.png') ?>" alt="Sheet Icon" width="30" height="30">
                                     </div>
-                                    <a href="<?= base_url('sheet') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #ff7eb9;">➕ Add Sheet</a>
+                                    <a href="<?= base_url('sheet') ?>" class="btn btn-sm text-white btn-wide" style="background-color: #29ABE2;">Timesheet</a>
                                 </div>
                             </div>
                         </div>

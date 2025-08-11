@@ -35,11 +35,15 @@
         $formAction = $isEdit ? base_url('employee/update/' . $employee['id_employee']) : base_url('employee/store');
         ?>
 
-        
+
 
         <div class="container-fluid p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h3>Form Employee</h3>
+                <h3>
+                    <button onclick="history.back()" style="background:none; border:none; cursor:pointer;">
+                        <i class="las la-chevron-circle-left icon-big"></i>
+                    </button>Form Employee
+                </h3>
                 <?php if ($isEdit): ?>
                     <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
                         onclick="setDeleteUrl('<?= base_url('employee/delete/' . $employee['id_employee']) ?>')">Delete Employee</a>

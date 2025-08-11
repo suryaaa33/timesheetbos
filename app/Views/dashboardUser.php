@@ -44,8 +44,8 @@
                                     <h4 class="mb-2"><?= $total_sheet ?></h4>
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
-                                    <div class="icon-circle mb-2" style="background-color:#8280FF;">
-                                        <i class="las la-user icon-big"></i>
+                                    <div class="icon-circle mb-2" style="background-color:#a4dcf4ff;">
+                                        <img src="<?= base_url('assets/sheet.png') ?>" alt="Sheet Icon" width="30" height="30"></i>
                                     </div>
                                 </div>
                             </div>
@@ -60,8 +60,8 @@
                                     <h4 class="mb-2"><?= $total_project ?></h4>
                                 </div>
                                 <div class="d-flex flex-column align-items-end">
-                                    <div class="icon-circle mb-2" style="background-color: rgba(148, 250, 199, 0.5);">
-                                        <img src="<?= base_url('assets/client.png') ?>" alt="Client Icon" width="50" height="50">
+                                    <div class="icon-circle mb-2" style="background-color:#f0e5ccff;">
+                                        <img src="<?= base_url('assets/project.png') ?>" alt="Project Icon" width="30" height="30">
                                     </div>
                                 </div>
                             </div>

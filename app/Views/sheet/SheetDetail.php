@@ -22,10 +22,10 @@
                     <i class="las la-bars fs-2"></i>
                 </button>
                 <div class="d-flex align-items-center gap-3 ms-auto">
-                <div class="text-end">
-                    <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
-                    <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
-                </div>
+                    <div class="text-end">
+                        <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
+                        <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
+                    </div>
                     <i class="las la-user icon-big fs-2"></i>
                 </div>
             </div>
@@ -34,25 +34,30 @@
             <!-- Content -->
             <div class="container-fluid p-4 w-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h4 class="mb-0">Detail Timesheet</h4>
+                    <h4 class="mb-0">
+                        <button onclick="history.back()" style="background:none; border:none; cursor:pointer;">
+                            <i class="las la-chevron-circle-left icon-big"></i>
+                        </button>
+                        Detail Timesheet
+                    </h4>
                 </div>
                 <div class="mb-4">
-    <div class="d-flex mb-2">
-        <div class="fw-semibold" style="min-width: 140px;">Consultant</div>
-        <div class="me-1">:</div>
-        <div class="fw-semibold"><?= esc($sheet['nama_employee']) ?></div>
-    </div>
-    <div class="d-flex mb-2">
-        <div class="fw-semibold" style="min-width: 140px;">Role</div>
-        <div class="me-1">:</div>
-        <div class="fw-semibold"><?= esc($sheet['judul_role']) ?></div>
-    </div>
-    <div class="d-flex mb-2">
-        <div class="fw-semibold" style="min-width: 140px;">Project Name</div>
-        <div class="me-1">:</div>
-        <div class="fw-semibold"><?= esc($sheet['nama_project']) ?></div>
-    </div>
-</div>
+                    <div class="d-flex mb-2">
+                        <div class="fw-semibold" style="min-width: 140px;">Consultant</div>
+                        <div class="me-1">:</div>
+                        <div class="fw-semibold"><?= esc($sheet['nama_employee']) ?></div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div class="fw-semibold" style="min-width: 140px;">Role</div>
+                        <div class="me-1">:</div>
+                        <div class="fw-semibold"><?= esc($sheet['judul_role']) ?></div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div class="fw-semibold" style="min-width: 140px;">Project Name</div>
+                        <div class="me-1">:</div>
+                        <div class="fw-semibold"><?= esc($sheet['nama_project']) ?></div>
+                    </div>
+                </div>
 
 
 
@@ -104,27 +109,26 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        const toggleBtn = document.getElementById("sidebarToggle");
-        const sidebar = document.querySelector(".sidebar");
-        const body = document.body;
+            const toggleBtn = document.getElementById("sidebarToggle");
+            const sidebar = document.querySelector(".sidebar");
+            const body = document.body;
 
-        toggleBtn.addEventListener("click", function() {
-            sidebar.classList.toggle("show");
-            body.classList.toggle("sidebar-open");
+            toggleBtn.addEventListener("click", function() {
+                sidebar.classList.toggle("show");
+                body.classList.toggle("sidebar-open");
+            });
+
+            document.addEventListener("click", function(e) {
+                if (
+                    sidebar.classList.contains("show") &&
+                    !sidebar.contains(e.target) &&
+                    !toggleBtn.contains(e.target)
+                ) {
+                    sidebar.classList.remove("show");
+                    body.classList.remove("sidebar-open");
+                }
+            })
         });
-
-        document.addEventListener("click", function(e) {
-            if (
-                sidebar.classList.contains("show") &&
-                !sidebar.contains(e.target) &&
-                !toggleBtn.contains(e.target)
-            ) {
-                sidebar.classList.remove("show");
-                body.classList.remove("sidebar-open");
-            }
-        })
-    });
-        
     </script>
 
 </body>

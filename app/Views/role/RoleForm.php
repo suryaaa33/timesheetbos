@@ -37,7 +37,12 @@
 
         <div class="container-fluid p-4">
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h3>Form Role</h3>
+                <h3>
+                    <button onclick="history.back()" style="background:none; border:none; cursor:pointer;">
+                        <i class="las la-chevron-circle-left icon-big"></i>
+                    </button>
+                    Form Role
+                </h3>
                 <?php if ($isEdit): ?>
                     <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal"
                         onclick="setDeleteUrl('<?= base_url('role/delete/' . $role['id_role']) ?>')">Delete Role</a>
@@ -80,22 +85,22 @@
             </div>
 
             <!-- Modal Konfirmasi Logout -->
-    <div class="modal fade" id="confirmLogoutModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center p-5">
-                <div class="modal-body border-0">
-                    <p class="fs-5 mb-4">Are you sure you want to logout?</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
-                        <form action="<?= base_url('logout') ?>" method="post">
-                            <?= csrf_field() ?>
-                            <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
-                        </form>
+            <div class="modal fade" id="confirmLogoutModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content text-center p-5">
+                        <div class="modal-body border-0">
+                            <p class="fs-5 mb-4">Are you sure you want to logout?</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <button type="button" class="btn text-white" style="background-color: #d5d5d5; min-width: 100px;" data-bs-dismiss="modal">No</button>
+                                <form action="<?= base_url('logout') ?>" method="post">
+                                    <?= csrf_field() ?>
+                                    <button type="submit" class="btn text-white" style="background-color: #4880FF; min-width: 100px;">Yes</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
             <!-- Bootstrap JS -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -107,29 +112,28 @@
             </script>
 
             <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const toggleBtn = document.getElementById("sidebarToggle");
-        const sidebar = document.querySelector(".sidebar");
-        const body = document.body;
+                document.addEventListener('DOMContentLoaded', function() {
+                    const toggleBtn = document.getElementById("sidebarToggle");
+                    const sidebar = document.querySelector(".sidebar");
+                    const body = document.body;
 
-        toggleBtn.addEventListener("click", function() {
-            sidebar.classList.toggle("show");
-            body.classList.toggle("sidebar-open");
-        });
+                    toggleBtn.addEventListener("click", function() {
+                        sidebar.classList.toggle("show");
+                        body.classList.toggle("sidebar-open");
+                    });
 
-        document.addEventListener("click", function(e) {
-            if (
-                sidebar.classList.contains("show") &&
-                !sidebar.contains(e.target) &&
-                !toggleBtn.contains(e.target)
-            ) {
-                sidebar.classList.remove("show");
-                body.classList.remove("sidebar-open");
-            }
-        })
-    });
-        
-    </script>
+                    document.addEventListener("click", function(e) {
+                        if (
+                            sidebar.classList.contains("show") &&
+                            !sidebar.contains(e.target) &&
+                            !toggleBtn.contains(e.target)
+                        ) {
+                            sidebar.classList.remove("show");
+                            body.classList.remove("sidebar-open");
+                        }
+                    })
+                });
+            </script>
 </body>
 
 </html>
