@@ -10,18 +10,68 @@ use CodeIgniter\Controller;
 class Project extends Controller
 {
     public function index()
-    {
-        $projectModel = new ProjectModel();
-        $clientModel = new ClientModel();
-        $employeeModel = new EmployeeModel();
+{
+    $projectModel = new ProjectModel();
+    $clientModel  = new ClientModel();
+    $employeeModel = new EmployeeModel();
 
-        $data['projects'] = $projectModel->getWithClientAndEmployee();
-        $data['clients'] = $clientModel->findAll();
-        $data['employees'] = $employeeModel->findAll();
-        $data['project'] = [];
+    // Ambil parameter GET
+    $sortBy     = $this->request->getGet('sort_by') ?? 'id_project';
+    $order      = $this->request->getGet('order') ?? 'ASC';
+    $clientId   = $this->request->getGet('client_id');
+    $status     = $this->request->getGet('status_project');
+    $startDate  = $this->request->getGet('start_date');
+    $endDate    = $this->request->getGet('end_date');
 
-        return view('project/projectDashboard', $data);
+    // Kolom yang valid untuk sorting
+    $allowedSort = ['startdate_project', 'enddate_project', 'id_client', 'status_project'];
+    if (!in_array($sortBy, $allowedSort)) {
+        $sortBy = 'id_project';
     }
+
+    // Builder query
+    $builder = $projectModel->getWithClientAndEmployee();
+
+    // Filter Client
+    if (!empty($clientId)) {
+        $builder->where('project.id_client', $clientId);
+    }
+
+    // Filter Status (0 atau 1 tetap masuk)
+    if ($status !== '' && $status !== null) {
+        $builder->where('status_project', $status);
+    }
+
+    // Filter Start Date
+    if (!empty($startDate)) {
+        $builder->where('startdate_project >=', $startDate);
+    }
+
+    // Filter End Date
+    if (!empty($endDate)) {
+        $builder->where('enddate_project <=', $endDate);
+    }
+
+    // Sorting
+    $builder->orderBy($sortBy, $order);
+
+    $data['projects']  = $builder->findAll();
+    $data['clients']   = $clientModel->findAll();
+    $data['employees'] = $employeeModel->findAll();
+
+    // Simpan filter ke view biar form tetap terisi
+    $data['sort_by']        = $sortBy;
+    $data['order']          = $order;
+    $data['client_id']      = $clientId;
+    $data['status_project'] = $status;
+    $data['start_date']     = $startDate;
+    $data['end_date']       = $endDate;
+
+    return view('project/projectDashboard', $data);
+}
+
+
+
 
     public function create()
 {

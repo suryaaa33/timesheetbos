@@ -55,31 +55,25 @@
 
                 <!-- Baris kedua: dropdown sort -->
                 <thead class="table-header align-middle">
-                    <tr>
-                        <th colspan="2" class="bg-light" style="vertical-align: middle;">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="las la-filter fs-5 text-secondary"></i>
-                                <form method="get" class="d-flex align-items-center" style="gap: 6px;">
-                                    <label for="sort" class="form-label mb-0 fw-normal text-muted small">Sort By:</label>
-                                    <select name="sort" id="sort" class="form-select form-select-sm bg-white border-secondary" style="min-width: 140px;" onchange="this.form.submit()">
-                                        <option value="">-- Select --</option>
-                                        <option value="az" <?= $sort == 'az' ? 'selected' : '' ?>>Name A-Z</option>
-                                        <option value="za" <?= $sort == 'za' ? 'selected' : '' ?>>Name Z-A</option>
-                                        <option value="newest" <?= $sort == 'newest' ? 'selected' : '' ?>>Newest</option>
-                                        <option value="oldest" <?= $sort == 'oldest' ? 'selected' : '' ?>>Oldest</option>
-                                    </select>
-                                </form>
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <!-- Tambahkan kolom lain -->
-                    </tr>
-                </thead>
-
-
+    <tr>
+        <th colspan="2" style="vertical-align: middle; background-color: #fff;">
+            <div class="filter-bar">
+                <div class="filter-item">
+                    <label for="sort">Sort By:</label>
+                    <form method="get">
+                        <select name="sort" id="sort" class="form-select" onchange="this.form.submit()">
+                            <option value="">-- Select --</option>
+                            <option value="az" <?= $sort == 'az' ? 'selected' : '' ?>>Name A-Z</option>
+                            <option value="za" <?= $sort == 'za' ? 'selected' : '' ?>>Name Z-A</option>
+                            <option value="newest" <?= $sort == 'newest' ? 'selected' : '' ?>>Newest</option>
+                            <option value="oldest" <?= $sort == 'oldest' ? 'selected' : '' ?>>Oldest</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </th>
+    </tr>
+</thead>
 
 
                 <div class="table-container table-responsive bg-white shadow-sm">

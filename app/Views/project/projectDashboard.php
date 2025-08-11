@@ -13,7 +13,7 @@
 <body>
     <div class="d-flex">
         <?= view('partials/sidebarAdmin') ?>
-        
+
         <!-- Main Content -->
         <div class="main-container">
             <!-- Header -->
@@ -22,27 +22,27 @@
                     <i class="las la-bars fs-2"></i>
                 </button>
                 <div class="d-flex align-items-center gap-3 ms-auto">
-                <div class="text-end">
-                    <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
-                    <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
-                </div>
+                    <div class="text-end">
+                        <div class="fw-bold"><?= esc(session()->get('nama')) ?></div>
+                        <div class="text-muted small"><?= esc(session()->get('role')) ?></div>
+                    </div>
                     <i class="las la-user icon-big fs-2"></i>
                 </div>
             </div>
 
             <?php if (session()->getFlashdata('success')) : ?>
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <?= session()->getFlashdata('success') ?>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                <?php endif; ?>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <?= session()->getFlashdata('success') ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif; ?>
 
-                <?php if (session()->getFlashdata('error')) : ?>
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <?= session()->getFlashdata('error') ?>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                <?php endif; ?>
+            <?php if (session()->getFlashdata('error')) : ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <?= session()->getFlashdata('error') ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php endif; ?>
 
 
             <!-- Content -->
@@ -54,7 +54,54 @@
                 </div>
 
                 <!-- Baris kedua: dropdown sort -->
+                <form method="get" action="<?= base_url('project') ?>" id="filterForm" class="filter-bar">
+                    <!-- Start Date -->
+                    <div class="filter-item">
+                        <label for="start_date">Start Date</label>
+                        <input type="date" name="start_date" id="start_date"
+                            value="<?= esc($start_date) ?>" class="form-control auto-submit">
+                    </div>
 
+                    <!-- End Date -->
+                    <div class="filter-item">
+                        <label for="end_date">End Date</label>
+                        <input type="date" name="end_date" id="end_date"
+                            value="<?= esc($end_date) ?>" class="form-control auto-submit">
+                    </div>
+
+                    <!-- Client -->
+                    <div class="filter-item">
+                        <label for="client_id">Client</label>
+                        <select name="client_id" id="client_id" class="form-select auto-submit">
+                            <option value="">-- Semua Client --</option>
+                            <?php foreach ($clients as $c): ?>
+                                <option value="<?= $c['id_client'] ?>"
+                                    <?= ($client_id == $c['id_client']) ? 'selected' : '' ?>>
+                                    <?= esc($c['nama_client']) ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+
+                    <!-- Status -->
+                    <div class="filter-item">
+                        <label for="status_project">Status Project</label>
+                        <select name="status_project" id="status_project" class="form-select auto-submit">
+                            <option value="">-- Semua Status --</option>
+                            <option value="0" <?= ($status_project === '0') ? 'selected' : '' ?>>On Process</option>
+                            <option value="1" <?= ($status_project === '1') ? 'selected' : '' ?>>Completed</option>
+                        </select>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <div class="filter-item">
+                        <label>&nbsp;</label>
+                        <a href="<?= base_url('project') ?>" class="btn reset-btn">
+                            <i class="las la-undo-alt"></i> Reset
+                        </a>
+                    </div>
+
+                </form>
 
 
                 <div class="table-container table-responsive bg-white shadow-sm">
@@ -147,27 +194,34 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        const toggleBtn = document.getElementById("sidebarToggle");
-        const sidebar = document.querySelector(".sidebar");
-        const body = document.body;
+            const toggleBtn = document.getElementById("sidebarToggle");
+            const sidebar = document.querySelector(".sidebar");
+            const body = document.body;
 
-        toggleBtn.addEventListener("click", function() {
-            sidebar.classList.toggle("show");
-            body.classList.toggle("sidebar-open");
+            toggleBtn.addEventListener("click", function() {
+                sidebar.classList.toggle("show");
+                body.classList.toggle("sidebar-open");
+            });
+
+            document.addEventListener("click", function(e) {
+                if (
+                    sidebar.classList.contains("show") &&
+                    !sidebar.contains(e.target) &&
+                    !toggleBtn.contains(e.target)
+                ) {
+                    sidebar.classList.remove("show");
+                    body.classList.remove("sidebar-open");
+                }
+            })
         });
+    </script>
 
-        document.addEventListener("click", function(e) {
-            if (
-                sidebar.classList.contains("show") &&
-                !sidebar.contains(e.target) &&
-                !toggleBtn.contains(e.target)
-            ) {
-                sidebar.classList.remove("show");
-                body.classList.remove("sidebar-open");
-            }
-        })
-    });
-        
+    <script>
+        document.querySelectorAll('.auto-submit').forEach(function(el) {
+            el.addEventListener('change', function() {
+                document.getElementById('filterForm').submit();
+            });
+        });
     </script>
 </body>
 

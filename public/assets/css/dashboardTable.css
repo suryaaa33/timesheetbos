@@ -103,6 +103,65 @@ body {
     background-color: #e2e6ea;
 }
 
+/* Filter bar container */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-end;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+/* Filter items */
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+/* Labels */
+.filter-item label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Input & select style */
+.filter-item .form-control,
+.filter-item .form-select {
+    border-radius: 50px;
+    border: 1px solid #dee2e6;
+    padding: 6px 14px;
+    font-size: 14px;
+}
+
+.filter-item .form-control:focus,
+.filter-item .form-select:focus {
+    border-color: #4880FF;
+    box-shadow: 0 0 0 0.15rem rgba(72, 128, 255, 0.25);
+}
+
+/* Reset button style */
+.reset-btn {
+    background-color: #fff;
+    color: #dc3545;
+    font-weight: 700;
+    border: 1px solid #dee2e6;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px; 
+    font-size: 14px;
+}
+
+.reset-btn i {
+    text-shadow: 0 0 3px currentColor;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .sidebar {
