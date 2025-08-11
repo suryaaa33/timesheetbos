@@ -34,7 +34,12 @@
             <!-- Content -->
             <div class="container-fluid p-4 w-100">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h4 class="mb-0">Detail Timesheet</h4>
+                    <h4 class="mb-0">
+                        <button onclick="history.back()" style="background:none; border:none; cursor:pointer;">
+                            <i class="las la-chevron-circle-left icon-big"></i>
+                        </button>
+                        Detail Timesheet
+                    </h4>
                     <div class="d-flex justify-content-end mb-3">
                     </div>
                 </div>
@@ -114,27 +119,26 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        const toggleBtn = document.getElementById("sidebarToggle");
-        const sidebar = document.querySelector(".sidebar");
-        const body = document.body;
+            const toggleBtn = document.getElementById("sidebarToggle");
+            const sidebar = document.querySelector(".sidebar");
+            const body = document.body;
 
-        toggleBtn.addEventListener("click", function() {
-            sidebar.classList.toggle("show");
-            body.classList.toggle("sidebar-open");
+            toggleBtn.addEventListener("click", function() {
+                sidebar.classList.toggle("show");
+                body.classList.toggle("sidebar-open");
+            });
+
+            document.addEventListener("click", function(e) {
+                if (
+                    sidebar.classList.contains("show") &&
+                    !sidebar.contains(e.target) &&
+                    !toggleBtn.contains(e.target)
+                ) {
+                    sidebar.classList.remove("show");
+                    body.classList.remove("sidebar-open");
+                }
+            })
         });
-
-        document.addEventListener("click", function(e) {
-            if (
-                sidebar.classList.contains("show") &&
-                !sidebar.contains(e.target) &&
-                !toggleBtn.contains(e.target)
-            ) {
-                sidebar.classList.remove("show");
-                body.classList.remove("sidebar-open");
-            }
-        })
-    });
-        
     </script>
 </body>
 
