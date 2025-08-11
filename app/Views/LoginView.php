@@ -23,10 +23,10 @@
 
                     <form action="<?= base_url('login/auth') ?>" method="post">
                         <div class="text-wrapper-4">Login to Account</div>
-                        <p class="please-enter-your-em">Please enter your email and password to continue</p>
+                        <p class="please-enter-your-em">Please enter your username and password to continue</p>
 
                         <div class="email">
-                            <label class="text-wrapper-2">Email address:</label>
+                            <label class="text-wrapper-2">Username:</label>
                             <div class="div">
                                 <input type="text" name="username" placeholder="Username / Email" required />
                             </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="password">
                     <label class="text-wrapper-2">Password</label>
-                    <div class="text-wrapper-3">Forgot Password?</div>
+                    <!-- <div class="text-wrapper-3">Forgot Password?</div> -->
                     <div class="div">
                         <input type="password" name="password" placeholder="Password" required />
                     </div>
