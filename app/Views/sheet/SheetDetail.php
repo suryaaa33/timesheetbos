@@ -66,7 +66,7 @@
                         <thead class="table-header">
                             <tr>
                                 <th>DATE</th>
-                                <th>HOURS</th>
+                                <th>MINUTE</th>
                                 <th>ACTIVITY</th>
                                 <th>RESULT</th>
                             </tr>
